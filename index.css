@@ -1385,7 +1385,7 @@ footer {
   padding: 4px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-links.show {
     display: flex !important;
     flex-direction: column;
@@ -1414,11 +1414,11 @@ footer {
 @media (max-width: 1024px) {
   .products-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-inner { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-search { display: none; }
   .mobile-menu-btn { display: flex; }
+}
+@media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
   .hero { min-height: 75vh; }
@@ -1551,7 +1551,7 @@ footer {
   color: var(--green) !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .dropdown-menu {
     position: static !important;
     transform: none !important;
@@ -2521,6 +2521,66 @@ body.theme-fandom::before {
     width: 100%;
     text-align: center;
   }
+}
+
+/* ── ADDITIONAL MOBILE RESPONSIVENESS OVERRIDES ── */
+@media (max-width: 1024px) {
+  .nav-inner {
+    padding: 0 16px;
+    gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .cart-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Compact layout for desktop navbar on small laptops/landscape tablets */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .nav-inner {
+    padding: 0 16px;
+    gap: 12px;
+  }
+  .nav-logo img {
+    height: 32px !important;
+  }
+  .nav-links {
+    gap: 2px;
+  }
+  .nav-links a {
+    font-size: 11px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  .nav-links a.nav-realm-link {
+    padding: 4px 10px;
+  }
+  .nav-search {
+    width: 130px;
+    padding: 6px 10px;
+  }
+  .cart-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+/* Custom grid columns for shop page grid */
+.page-shop .products-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1200px) {
+  .page-shop .products-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 1024px) {
+  .page-shop .products-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .page-shop .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .page-shop .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
 
 
