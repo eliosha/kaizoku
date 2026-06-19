@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Kaizoku Realm</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="icon" type="image/png" href="../public/kaizoku.png" />
+    <style>
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(240, 238, 234, 0.5);
+      }
+      .form-control {
+        width: 100%;
+        padding: 0.85rem;
+        background: rgba(240, 238, 234, 0.04);
+        border: 1px solid rgba(240, 238, 234, 0.1);
+        border-radius: 8px;
+        color: var(--white);
+        outline: none;
+        font-family: inherit;
+        font-size: 14px;
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      .form-control:focus {
+        border-color: var(--green);
+        box-shadow: 0 0 12px var(--green-glow);
+      }
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Shared Navbar -->
+    <div id="shared-header"></div>
+
+    <main class="container" style="padding-top: 100px; padding-bottom: 50px;">
+      <h1 class="text-center mb-3">Secure Checkout</h1>
+
+      <div class="flex" style="gap: 3rem; flex-wrap: wrap;">
+        <!-- Order Summary -->
+        <div style="flex: 1; min-width: 300px;">
+          <div class="glass-card">
+            <h2 class="mb-2">Order Summary</h2>
+            <div id="cart-items-container">
+              <!-- Cart items injected here -->
+            </div>
+            
+            <div style="margin-top: 1.5rem; border-top: 1px solid rgba(240, 238, 234, 0.1); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem;">
+              <div class="flex" style="justify-content: space-between;">
+                <span style="color: rgba(240, 238, 234, 0.5);">Subtotal:</span>
+                <span id="summary-subtotal" style="color: var(--white); font-weight: 600;">UGX 0</span>
+              </div>
+              <div class="flex" style="justify-content: space-between;">
+                <span style="color: rgba(240, 238, 234, 0.5);">Delivery Charge:</span>
+                <span id="summary-delivery" style="color: var(--white); font-weight: 600;">UGX 0</span>
+              </div>
+            </div>
+
+            <div class="flex" style="justify-content: space-between; margin-top: 1rem; border-top: 2px solid rgba(240, 238, 234, 0.1); padding-top: 1rem; font-size: 1.3rem; font-weight: 800;">
+              <span>Total:</span>
+              <span id="cart-total" style="color: var(--clr-green-light); text-shadow: 0 0 10px rgba(74, 222, 128, 0.2);">UGX 0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout Form -->
+        <div style="flex: 2; min-width: 300px;">
+          <form class="glass-card" id="checkout-form">
+            <h2 class="mb-2">Billing Details</h2>
+            
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-control" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="delivery_location">Delivery Option & Area</label>
+              <select id="delivery_location" class="form-control" required>
+                <option value="" disabled selected>Select Delivery Location</option>
+                <option value="pickup" data-price="0">Store Pickup (Free) - UGX 0</option>
+                <option value="central" data-price="3000">Kampala Central (Town, Nakasero, Wandegeya) - UGX 3,000</option>
+                <option value="suburbs" data-price="5000">Kampala Suburbs (Ntinda, Kisaasi, Bugolobi, Muyenga) - UGX 5,000</option>
+                <option value="greater" data-price="10000">Greater Kampala (Entebbe, Wakiso, Mukono, Kyengera) - UGX 10,000</option>
+                <option value="upcountry" data-price="15000">Upcountry Delivery (via Bus/Courier service) - UGX 15,000</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Delivery Address (Specific Landmark/Plot)</label>
+              <input type="text" id="address" class="form-control" required placeholder="e.g. Ntinda, Old Kiira Road, Plot 5">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-control" required placeholder="+256 700 000000">
+            </div>
+
+            <h2 class="mt-3 mb-2">Payment Option (Mobile Money)</h2>
+            <p style="color: rgba(240, 238, 234, 0.5); margin-bottom: 1.5rem; line-height: 1.5;">
+              We support <strong>Airtel</strong> and <strong>MTN</strong> Mobile Money.<br>
+              <strong>Step 1:</strong> Send the total amount to <strong>0703 765398 (Airtel)</strong> or <strong>0782 408000 (MTN)</strong>.<br>
+              <strong>Step 2:</strong> Enter the Transaction ID from your confirmation message below.
+            </p>
+
+            <div class="form-group">
+              <label for="provider">Mobile Money Provider</label>
+              <select id="provider" class="form-control" required>
+                <option value="" disabled selected>Select Provider</option>
+                <option value="airtel">Airtel Money</option>
+                <option value="mtn">MTN Mobile Money</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="trx_id">Transaction ID</label>
+              <input type="text" id="trx_id" class="form-control" required placeholder="e.g. 1234567890">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Complete Order</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <script src="../main.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cart = JSON.parse(localStorage.getItem('kaizoku_cart')) || [];
+        const container = document.getElementById('cart-items-container');
+        const subtotalEl = document.getElementById('summary-subtotal');
+        const deliveryEl = document.getElementById('summary-delivery');
+        const totalEl = document.getElementById('cart-total');
+        const deliverySelect = document.getElementById('delivery_location');
+        
+        let subtotal = 0;
+
+        if (cart.length === 0) {
+          container.innerHTML = '<p style="color: var(--clr-text-muted);">Your cart is empty.</p>';
+        } else {
+          cart.forEach(item => {
+            const itemTotal = item.price * item.qty;
+            subtotal += itemTotal;
+            container.innerHTML += `
+              <div class="cart-item">
+                <div>
+                  <h4 style="margin-bottom: 0.2rem;">${item.name}</h4>
+                  <p style="color: var(--clr-text-muted); font-size: 0.9rem;">Qty: ${item.qty}</p>
+                </div>
+                <div style="font-weight: 600;">UGX ${itemTotal.toLocaleString()}</div>
+              </div>
+            `;
+          });
+        }
+
+        subtotalEl.innerText = `UGX ${subtotal.toLocaleString()}`;
+
+        function updateTotal() {
+          const selectedOption = deliverySelect.options[deliverySelect.selectedIndex];
+          const deliveryPrice = selectedOption && selectedOption.dataset.price ? parseInt(selectedOption.dataset.price) : 0;
+          
+          deliveryEl.innerText = `UGX ${deliveryPrice.toLocaleString()}`;
+          const finalTotal = subtotal + deliveryPrice;
+          totalEl.innerText = `UGX ${finalTotal.toLocaleString()}`;
+        }
+
+        deliverySelect.addEventListener('change', updateTotal);
+        updateTotal(); // initial run
+
+        document.getElementById('checkout-form').addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (cart.length === 0) {
+            alert('Your cart is empty!');
+            return;
+          }
+          alert('Order placed successfully! We will verify your transaction and contact you shortly.');
+          localStorage.removeItem('kaizoku_cart');
+          // Dispatch storage event to keep other pages updated
+          window.dispatchEvent(new Event('cartUpdated'));
+          window.location.href = '../index.html';
+        });
+      });
+    </script>
+  </body>
+</html>

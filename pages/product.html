@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details | Kaizoku Realm</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="icon" type="image/png" href="../public/kaizoku.png" />
+  </head>
+  <body>
+    <!-- Shared Navbar -->
+    <div id="shared-header"></div>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs" id="productBreadcrumbs">
+        <a href="kaizoku.html">Home</a> <span>/</span> 
+        <a href="shop.html">Shop</a> <span>/</span> 
+        <a id="breadcrumbCategoryLink" href="shop.html"><span id="breadcrumbCategory">Category</span></a> <span>/</span> 
+        <span id="breadcrumbName" style="color: var(--white);">Product Name</span>
+      </div>
+
+      <!-- Main Layout -->
+      <div class="product-detail-layout" id="productLayout">
+        <!-- Gallery Section -->
+        <div class="gallery-container">
+          <div class="thumb-stack" id="thumbStack">
+            <!-- Dynamic thumbnails -->
+          </div>
+          <div class="main-image-view">
+            <img id="mainActiveImage" src="" alt="Active Product Image" />
+          </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="product-info-sidebar">
+          <div class="product-series-tag" id="productSeries">Series</div>
+          <h1 class="product-title" id="productTitle">Loading Product...</h1>
+          
+          <div class="rating-stars">
+            <span id="starRating">★★★★★</span>
+            <span class="rating-count">(12 reviews)</span>
+          </div>
+
+          <div class="price-container" id="priceContainer">
+            <!-- Dynamic price & discount -->
+          </div>
+
+          <p class="product-desc" id="productDescription">Loading description...</p>
+
+          <!-- Size Picker (if applicable) -->
+          <div class="size-section" id="sizeSection" style="display: none;">
+            <div class="size-label">
+              <span>Select Size:</span>
+              <span id="selectedSizeDisplay" style="color: var(--green); font-weight: 700;">M</span>
+            </div>
+            <div class="size-pills" id="sizePills">
+              <!-- Dynamic size pills -->
+            </div>
+          </div>
+
+          <!-- Quantity Section -->
+          <div class="qty-section" id="qtySection">
+            <span style="font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Quantity:</span>
+            <div class="qty-control">
+              <button class="qty-change-btn" id="qtyMinusBtn">−</button>
+              <span class="qty-val" id="qtyValue">1</span>
+              <button class="qty-change-btn" id="qtyPlusBtn">+</button>
+            </div>
+          </div>
+
+          <!-- Actions Section -->
+          <div class="action-buttons-row">
+            <button class="btn-primary" id="productActionBtn" style="border: none;">Add to Bag</button>
+          </div>
+
+          <!-- Accordions -->
+          <div class="accordions-container">
+            <!-- Specs Accordion -->
+            <details class="detail-accordion" open>
+              <summary>Product Details & Specs</summary>
+              <div class="accordion-content">
+                <ul class="specs-list" id="specsList">
+                  <!-- Dynamic specs -->
+                </ul>
+              </div>
+            </details>
+
+            <!-- Shipping Accordion -->
+            <details class="detail-accordion">
+              <summary>Shipping & Returns</summary>
+              <div class="accordion-content">
+                <p style="margin-bottom: 8px;">
+                  📍 <strong>Ntinda Store Pickup:</strong> Free pickup at Reed Complex, Ntinda — Old Kiira Road, Shop C-08. Available Mon-Sat 9 AM - 7 PM.
+                </p>
+                <p style="margin-bottom: 8px;">
+                  🚚 <strong>Kampala Delivery:</strong> We deliver same-day or next-day across Kampala, Mukono, and Wakiso. Courier fees apply (UGX 5,000 - 10,000 depending on area).
+                </p>
+                <p>
+                  🔄 <strong>Returns & Exchange:</strong> Exchanges are allowed within 3 days for unused apparel with tags intact. Collectibles and figurines cannot be returned once unboxed.
+                </p>
+              </div>
+            </details>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="badges-container">
+        <div class="badge-item">
+          <div class="badge-icon">🚚</div>
+          <div class="badge-title">Ntinda Pickup & Delivery</div>
+          <div class="badge-text">Free in-store pickup at Reed Complex Ntinda. Same/next-day shipping across Kampala.</div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon">🔒</div>
+          <div class="badge-title">Secure Payments</div>
+          <div class="badge-text">Pay securely using MTN/Airtel Mobile Money, Cash on Delivery, or In-Store.</div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon">⭐</div>
+          <div class="badge-title">Premium Geek Merch</div>
+          <div class="badge-text">High-density apparel prints, metal alloy collectibles, and handpainted figurines.</div>
+        </div>
+      </div>
+
+      <!-- Related Products Grid -->
+      <div class="mt-3" style="border-top: 1px solid var(--border); padding-top: 40px;">
+        <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 0.05em; text-align: center; margin-bottom: 24px;">You Might Also Like</h3>
+        <div class="products-grid" id="relatedProductsGrid">
+          <!-- Dynamic related product cards -->
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <script src="../main.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const initProductPage = () => {
+          if (!window.productsDB) {
+            // Check back in a bit if productsDB has not loaded yet
+            setTimeout(initProductPage, 50);
+            return;
+          }
+
+          // Parse URL search params
+          const params = new URLSearchParams(window.location.search);
+          const productId = params.get('id');
+
+          if (!productId || !window.productsDB[productId]) {
+            document.getElementById('productBreadcrumbs').style.display = 'none';
+            document.getElementById('productLayout').innerHTML = `
+              <div style="grid-column: span 2; text-align: center; padding: 100px 0; width: 100%;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em;">🏴‍☠️ Product Not Found</h2>
+                <p style="color: var(--muted); margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">The treasure you are looking for has sailed away or does not exist in the Kaizoku database.</p>
+                <a href="shop.html" class="btn-primary">Return to Shop</a>
+              </div>
+            `;
+            return;
+          }
+
+          const product = window.productsDB[productId];
+
+          // Apply Realm theme color aura
+          if (product.category === 'clothing') {
+            document.body.classList.add('theme-aesthetic-nerds');
+          } else if (product.category === 'alloy-collectibles') {
+            document.body.classList.add('theme-alloy-collection');
+          } else {
+            const animeSeries = ['one piece', 'naruto', 'demon slayer', 'attack on titan', 'dragon ball'];
+            const seriesLower = (product.series || '').toLowerCase();
+            if (animeSeries.indexOf(seriesLower) === -1 || 
+                seriesLower === 'marvel' || 
+                seriesLower === 'dc' || 
+                seriesLower === 'harry potter') {
+              document.body.classList.add('theme-fandom');
+            }
+          }
+
+          // Title Tag
+          document.title = `${product.name} | Kaizoku Realm`;
+
+          // Breadcrumbs
+          const catName = product.category.charAt(0).toUpperCase() + product.category.slice(1);
+          document.getElementById('breadcrumbCategory').textContent = catName;
+          document.getElementById('breadcrumbCategoryLink').setAttribute('href', `shop.html?category=${product.category}`);
+          document.getElementById('breadcrumbName').textContent = product.name;
+
+          // Details Sidebar Info
+          document.getElementById('productSeries').textContent = product.series;
+          document.getElementById('productTitle').textContent = product.name;
+          document.getElementById('productDescription').textContent = product.description;
+
+          // Price Rendering
+          const priceContainer = document.getElementById('priceContainer');
+          if (product.price === null) {
+            priceContainer.innerHTML = `
+              <span class="current-price">Contact for Price</span>
+              <span class="discount-badge">${product.discount || 'Exclusive'}</span>
+            `;
+            // Hide quantity selector since it's WhatsApp direct order
+            document.getElementById('qtySection').style.display = 'none';
+          } else {
+            let discountHTML = '';
+            if (product.originalPriceStr) {
+              discountHTML = `
+                <span class="original-price">${product.originalPriceStr}</span>
+                <span class="discount-badge">${product.discount || 'Sale'}</span>
+              `;
+            }
+            priceContainer.innerHTML = `
+              <span class="current-price">${product.priceStr}</span>
+              ${discountHTML}
+            `;
+          }
+
+          // Gallery Switcher Setup
+          const thumbStack = document.getElementById('thumbStack');
+          const mainActiveImage = document.getElementById('mainActiveImage');
+
+          // Ensure we have an array of image strings
+          const imgs = product.images && product.images.length ? product.images : [
+            'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
+          ];
+          
+          mainActiveImage.src = imgs[0];
+          mainActiveImage.alt = product.name;
+
+          // Render thumbnails
+          thumbStack.innerHTML = imgs.map((imgUrl, idx) => `
+            <div class="thumb-item ${idx === 0 ? 'active' : ''}" data-index="${idx}">
+              <img src="${imgUrl}" alt="${product.name} Thumbnail ${idx + 1}" />
+            </div>
+          `).join('');
+
+          // Bind click and hover interactions to thumbnails
+          const thumbs = document.querySelectorAll('.thumb-item');
+          thumbs.forEach(thumb => {
+            const index = thumb.getAttribute('data-index');
+            const imgUrl = imgs[index];
+
+            const switchImage = () => {
+              mainActiveImage.src = imgUrl;
+              thumbs.forEach(t => t.classList.remove('active'));
+              thumb.classList.add('active');
+            };
+
+            thumb.addEventListener('click', switchImage);
+            thumb.addEventListener('mouseenter', switchImage);
+          });
+
+          // Size Selection Configuration
+          let selectedSize = '';
+          const sizeSection = document.getElementById('sizeSection');
+          if (product.sizes && product.sizes.length > 0) {
+            sizeSection.style.display = 'block';
+            const sizePills = document.getElementById('sizePills');
+            const sizeDisplay = document.getElementById('selectedSizeDisplay');
+            
+            // Set initial selected size
+            selectedSize = product.sizes[0];
+            sizeDisplay.textContent = selectedSize;
+
+            sizePills.innerHTML = product.sizes.map(size => `
+              <button class="size-pill ${size === selectedSize ? 'active' : ''}" data-size="${size}">${size}</button>
+            `).join('');
+
+            // Click listener for size selection
+            const pills = document.querySelectorAll('.size-pill');
+            pills.forEach(pill => {
+              pill.addEventListener('click', () => {
+                selectedSize = pill.getAttribute('data-size');
+                sizeDisplay.textContent = selectedSize;
+                pills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+              });
+            });
+          }
+
+          // Specifications list
+          const specsList = document.getElementById('specsList');
+          if (product.specs && product.specs.length > 0) {
+            specsList.innerHTML = product.specs.map(spec => `
+              <li>${spec}</li>
+            `).join('');
+          } else {
+            specsList.innerHTML = `
+              <li>Premium grade materials and craft details</li>
+              <li>Authentic fandom representation</li>
+              <li>Official Kaizoku Realm collection item</li>
+            `;
+          }
+
+
+
+          // Quantity adjustments
+          let qty = 1;
+          const qtyValue = document.getElementById('qtyValue');
+          document.getElementById('qtyMinusBtn').addEventListener('click', () => {
+            if (qty > 1) {
+              qty--;
+              qtyValue.textContent = qty;
+            }
+          });
+          document.getElementById('qtyPlusBtn').addEventListener('click', () => {
+            qty++;
+            qtyValue.textContent = qty;
+          });
+
+          // Action Button Setup
+          const actionBtn = document.getElementById('productActionBtn');
+          if (product.price === null) {
+            actionBtn.textContent = 'WhatsApp to Order';
+            actionBtn.style.background = '#22c55e';
+            actionBtn.addEventListener('click', () => {
+              const message = `Hi! I'm interested in ordering the "${product.name}" from Kaizoku Realm. Could you please provide details on pricing and availability?`;
+              window.open(`https://wa.me/256703765398?text=${encodeURIComponent(message)}`, '_blank');
+            });
+          } else {
+            actionBtn.textContent = 'Add to Bag';
+            actionBtn.addEventListener('click', () => {
+              if (window.addToCart) {
+                const displayName = selectedSize ? `${product.name} (${selectedSize})` : product.name;
+                window.addToCart(displayName, product.price, imgs[0], qty);
+              }
+            });
+          }
+
+          // Populate Related Products
+          renderRelated(productId, product.category, product.series);
+        };
+
+        const renderRelated = (currentId, category, series) => {
+          const grid = document.getElementById('relatedProductsGrid');
+          
+          // Match same category or same series
+          let keys = Object.keys(window.productsDB).filter(k => {
+            if (k === currentId) return false;
+            const item = window.productsDB[k];
+            return item.category === category || item.series === series;
+          });
+
+          // Backfill with other items if we have less than 5
+          if (keys.length < 5) {
+            const others = Object.keys(window.productsDB).filter(k => k !== currentId && !keys.includes(k));
+            keys = keys.concat(others);
+          }
+
+          // Limit to 5 related products
+          const finalKeys = keys.slice(0, 5);
+
+          grid.innerHTML = finalKeys.map(k => {
+            const item = window.productsDB[k];
+            let badgeHTML = '';
+            if (item.discount && item.price !== null) {
+              badgeHTML = `<span class="product-badge discount">${item.discount}</span>`;
+            } else if (item.discount) {
+              badgeHTML = `<span class="product-badge">${item.discount}</span>`;
+            }
+
+            return `
+              <div class="product-card" onclick="window.openProduct('${k}')" style="position: relative;">
+                ${badgeHTML}
+                <div class="product-img">
+                  <img src="${item.images[0]}" alt="${item.name}">
+                </div>
+                <div class="product-info">
+                  <div class="product-series">${item.series}</div>
+                  <h3 class="product-name">${item.name}</h3>
+                  <div class="product-price-row">
+                    <span class="product-price">${item.priceStr}</span>
+                    ${item.originalPriceStr && item.price !== null ? `<span class="product-original-price" style="text-decoration: line-through; font-size: 13px; color: var(--muted); margin-left: 8px;">${item.originalPriceStr}</span>` : ''}
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          // Sync wishlists indicators
+          if (window.updateWishlistUI) {
+            window.updateWishlistUI();
+          }
+        };
+
+        // Try load product information
+        initProductPage();
+      });
+    </script>
+  </body>
+</html>

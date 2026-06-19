@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Kaizoku Realm</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="icon" type="image/png" href="../public/kaizoku.png" />
+  </head>
+  <body>
+    <!-- Shared Navbar -->
+    <div id="shared-header"></div>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <div class="text-center mb-3">
+        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 0.05em;">The Treasure Vault</h1>
+        <p style="color: var(--muted); font-size: 15px;">Explore our entire collection of geeky merch.</p>
+      </div>
+
+      <div class="flex" style="gap: 30px; flex-wrap: wrap;">
+        <!-- Filter Sidebar -->
+        <aside style="flex: 1; min-width: 260px;">
+          <div class="glass-card" style="display: flex; flex-direction: column; gap: 24px; padding: 24px;">
+            <!-- Search field -->
+            <div>
+              <h3 style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; color: var(--white);">Search Vault</h3>
+              <input type="text" id="shopSearchInput" placeholder="Search merch..." class="form-input" style="width: 100%;" />
+            </div>
+
+            <!-- Categories -->
+            <div>
+              <h3 style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; color: var(--white);">Categories</h3>
+              <ul id="categoryList" style="list-style: none; display: flex; flex-direction: column; gap: 8px; padding-left: 0;">
+                <li><a href="#" class="category-link active" data-category="all" style="color: var(--green); text-decoration: none; font-weight: 600; font-size: 14px; display: block;">All Loot</a></li>
+                <li><a href="#" class="category-link" data-category="clothing" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Clothing</a></li>
+                <li><a href="#" class="category-link" data-category="figurines" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Figurines</a></li>
+                <li><a href="#" class="category-link" data-category="accessories" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Accessories</a></li>
+                <li><a href="#" class="category-link" data-category="decor" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Decor</a></li>
+                <li><a href="#" class="category-link" data-category="alloy-collectibles" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Alloy Collectibles</a></li>
+              </ul>
+            </div>
+
+            <!-- Price Slider -->
+            <div>
+              <h3 style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; color: var(--white);">Price Range</h3>
+              <input type="range" id="priceRange" min="0" max="200000" step="5000" value="200000" style="width: 100%; accent-color: var(--green); margin-bottom: 8px; cursor: pointer;" />
+              <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-weight: 600;">
+                <span>0 UGX</span>
+                <span id="priceRangeDisplay" style="color: var(--green);">Max: UGX 200,000</span>
+              </div>
+            </div>
+
+            <!-- Fandom Filter Checkboxes -->
+            <div>
+              <h3 style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; color: var(--white);">Filter By Fandom</h3>
+              <div id="fandomCheckboxes" style="display: flex; flex-direction: column; gap: 10px;">
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                  <input type="checkbox" value="One Piece" class="fandom-checkbox" style="accent-color: var(--green); width: 16px; height: 16px;" /> One Piece
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                  <input type="checkbox" value="Naruto" class="fandom-checkbox" style="accent-color: var(--green); width: 16px; height: 16px;" /> Naruto
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                  <input type="checkbox" value="Demon Slayer" class="fandom-checkbox" style="accent-color: var(--green); width: 16px; height: 16px;" /> Demon Slayer
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                  <input type="checkbox" value="Attack on Titan" class="fandom-checkbox" style="accent-color: var(--green); width: 16px; height: 16px;" /> Attack on Titan
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                  <input type="checkbox" value="Dragon Ball" class="fandom-checkbox" style="accent-color: var(--green); width: 16px; height: 16px;" /> Dragon Ball
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                  <input type="checkbox" value="Marvel" class="fandom-checkbox" style="accent-color: var(--green); width: 16px; height: 16px;" /> Marvel
+                </label>
+              </div>
+            </div>
+
+            <!-- Figurines request filter -->
+            <div>
+              <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none;">
+                <input type="checkbox" id="includeUnpriced" checked style="accent-color: var(--green); width: 16px; height: 16px;" /> Include Figurine Requests
+              </label>
+            </div>
+
+            <!-- Sort option -->
+            <div>
+              <h3 style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; color: var(--white);">Sort By</h3>
+              <select id="sortBy" class="form-control" style="width: 100%; background: var(--ink3); border: 1px solid var(--border); color: var(--white); border-radius: 6px; padding: 10px; cursor: pointer; outline: none; font-family: inherit; font-size: 14px;">
+                <option value="featured">Featured Loot</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="name-asc">Alphabetical: A-Z</option>
+              </select>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section style="flex: 3; min-width: 300px;">
+          <div class="products-grid" id="shopProductsGrid" style="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));">
+            <!-- Dynamic cards rendered by JS -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <script src="../main.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const renderShop = () => {
+          if (!window.productsDB) {
+            // Wait for productsDB to be initialized
+            setTimeout(renderShop, 50);
+            return;
+          }
+
+          const searchInput = document.getElementById('shopSearchInput');
+          const priceRange = document.getElementById('priceRange');
+          const priceDisplay = document.getElementById('priceRangeDisplay');
+          const includeUnpriced = document.getElementById('includeUnpriced');
+          const sortBy = document.getElementById('sortBy');
+          const categoryLinks = document.querySelectorAll('.category-link');
+          const fandomCheckboxes = document.querySelectorAll('.fandom-checkbox');
+          const grid = document.getElementById('shopProductsGrid');
+
+          let currentCategory = 'all';
+
+          const getSelectedFandoms = () => {
+            const selected = [];
+            fandomCheckboxes.forEach(cb => {
+              if (cb.checked) selected.push(cb.value);
+            });
+            return selected;
+          };
+
+          const updateProducts = () => {
+            const query = searchInput.value.toLowerCase().trim();
+            const maxPrice = Number(priceRange.value);
+            const incUnpriced = includeUnpriced.checked;
+            const selectedFandoms = getSelectedFandoms();
+            const sortVal = sortBy.value;
+
+            priceDisplay.textContent = `Max: UGX ${maxPrice.toLocaleString()}`;
+
+            // Map database keys to objects
+            let items = Object.keys(window.productsDB).map(key => ({
+              id: key,
+              ...window.productsDB[key]
+            }));
+
+            // Filter by category
+            if (currentCategory !== 'all') {
+              items = items.filter(item => item.category === currentCategory);
+            }
+
+            // Filter by search query
+            if (query) {
+              items = items.filter(item => 
+                item.name.toLowerCase().includes(query) || 
+                item.series.toLowerCase().includes(query) || 
+                item.description.toLowerCase().includes(query)
+              );
+            }
+
+            // Filter by price / availability
+            items = items.filter(item => {
+              if (item.price === null) {
+                return incUnpriced;
+              }
+              return item.price <= maxPrice;
+            });
+
+            // Filter by fandoms
+            if (selectedFandoms.length > 0) {
+              items = items.filter(item => selectedFandoms.includes(item.series));
+            }
+
+            // Sort items
+            if (sortVal === 'price-low-high') {
+              items.sort((a, b) => {
+                if (a.price === null) return 1;
+                if (b.price === null) return -1;
+                return a.price - b.price;
+              });
+            } else if (sortVal === 'price-high-low') {
+              items.sort((a, b) => {
+                if (a.price === null) return 1;
+                if (b.price === null) return -1;
+                return b.price - a.price;
+              });
+            } else if (sortVal === 'name-asc') {
+              items.sort((a, b) => a.name.localeCompare(b.name));
+            }
+
+            // Render
+            if (items.length === 0) {
+              grid.innerHTML = `
+                <div style="grid-column: span 3; text-align: center; padding: 60px 0; width: 100%;">
+                  <p style="color: var(--muted); font-size: 16px;">🏴‍☠️ No items match your filters.</p>
+                </div>
+              `;
+              return;
+            }
+
+            grid.innerHTML = items.map(item => {
+              let badgeHTML = '';
+              if (item.discount && item.price !== null) {
+                badgeHTML = `<span class="product-badge discount">${item.discount}</span>`;
+              } else if (item.discount) {
+                badgeHTML = `<span class="product-badge">${item.discount}</span>`;
+              }
+
+              let actionBtnHTML = '';
+              if (item.price === null) {
+                actionBtnHTML = `
+                  <button class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 10px; font-size: 12px; background: #22c55e;" onclick="event.stopPropagation(); window.open('https://wa.me/256703765398?text=Hi! I\\'m interested in: ' + encodeURIComponent('${item.name}'), '_blank')">
+                    WhatsApp to Order
+                  </button>
+                `;
+              } else {
+                actionBtnHTML = `
+                  <button class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 10px; font-size: 12px;" onclick="event.stopPropagation(); addToCart('${item.name}', ${item.price}, '${item.images[0]}')">
+                    Add to Cart
+                  </button>
+                `;
+              }
+
+              return `
+                <div class="product-card" onclick="window.openProduct('${item.id}')" style="position: relative;">
+                  ${badgeHTML}
+                  <div class="product-img">
+                    <img src="${item.images[0]}" alt="${item.name}" loading="lazy"/>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-series">${item.series}</div>
+                    <h4 class="product-name">${item.name}</h4>
+                    <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 12px;">
+                      <span class="product-price">${item.priceStr}</span>
+                      ${item.originalPriceStr && item.price !== null ? `<span style="font-size: 12px; text-decoration: line-through; color: var(--muted);">${item.originalPriceStr}</span>` : ''}
+                    </div>
+                    ${actionBtnHTML}
+                  </div>
+                </div>
+              `;
+            }).join('');
+
+            // Sync wishlists UI
+            if (window.updateWishlistUI) {
+              window.updateWishlistUI();
+            }
+          };
+
+          // Event Listeners
+          searchInput.addEventListener('input', updateProducts);
+          priceRange.addEventListener('input', updateProducts);
+          includeUnpriced.addEventListener('change', updateProducts);
+          sortBy.addEventListener('change', updateProducts);
+
+          fandomCheckboxes.forEach(cb => {
+            cb.addEventListener('change', updateProducts);
+          });
+
+          categoryLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+              e.preventDefault();
+              categoryLinks.forEach(l => {
+                l.classList.remove('active');
+                l.style.color = 'var(--muted)';
+                l.style.fontWeight = '400';
+              });
+              link.classList.add('active');
+              link.style.color = 'var(--green)';
+              link.style.fontWeight = '600';
+
+              currentCategory = link.getAttribute('data-category');
+              updateProducts();
+            });
+          });
+
+          // Check URL query params for category selection on loading
+          const urlParams = new URLSearchParams(window.location.search);
+          const categoryParam = urlParams.get('category');
+          if (categoryParam) {
+            categoryLinks.forEach(link => {
+              if (link.getAttribute('data-category') === categoryParam) {
+                link.click();
+              }
+            });
+          } else {
+            // Initial call to update
+            updateProducts();
+          }
+        };
+
+        renderShop();
+      });
+    </script>
+  </body>
+</html>

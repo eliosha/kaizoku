@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fandom Hub | Kaizoku Realm</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="icon" type="image/png" href="../public/kaizoku.png" />
+  </head>
+  <body class="theme-fandom">
+    <!-- Shared Navbar -->
+    <div id="shared-header"></div>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <!-- Realm Hero -->
+      <div class="text-center mb-3">
+        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 56px; letter-spacing: 0.05em; color: var(--green);">Fandom Hub</h1>
+        <p style="color: var(--muted); font-size: 16px; max-width: 600px; margin: 0 auto;">Beyond anime boundaries. Discover premium, authentic collectibles and merchandise from Marvel, DC Comics, Harry Potter, and pop culture universes.</p>
+      </div>
+
+      <!-- Search & Sort Row -->
+      <div class="glass-card mb-2" style="display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 16px 24px;">
+        <div style="flex: 1; min-width: 200px;">
+          <input type="text" id="realmSearch" placeholder="Search fandoms..." class="form-input" style="width: 100%;" />
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span style="font-size: 14px; color: var(--muted); font-weight: 600;">Sort By</span>
+          <select id="realmSort" class="form-control" style="background: var(--ink3); border: 1px solid var(--border); color: var(--white); border-radius: 6px; padding: 10px; cursor: pointer; outline: none; font-family: inherit;">
+            <option value="featured">Featured</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="realmProductsGrid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px;">
+        <!-- Dynamic products -->
+      </div>
+
+      <!-- Realm Switcher (Bottom) -->
+      <section class="realm-switcher-section">
+        <div class="section-label" style="text-align: center;">Continue Your Journey</div>
+        <h3 class="text-center" style="font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 0.05em; margin-bottom: 24px;">Explore Other Realms</h3>
+        <div class="switcher-grid">
+          <!-- Switch to Aesthetic Nerds -->
+          <a href="aesthetic-nerds.html" class="switcher-card switch-purple">
+            <div class="switcher-icon">🔮</div>
+            <div class="switcher-info">
+              <span class="switcher-label">Next Destination</span>
+              <span class="switcher-title">Aesthetic Nerds</span>
+              <span class="switcher-desc">Heavyweight hoodies and premium apparel.</span>
+            </div>
+          </a>
+          <!-- Switch to Alloy Collection -->
+          <a href="alloy-collection.html" class="switcher-card switch-blue">
+            <div class="switcher-icon">🏎️</div>
+            <div class="switcher-info">
+              <span class="switcher-label">Next Destination</span>
+              <span class="switcher-title">Alloy Collection</span>
+              <span class="switcher-desc">Precision die-cast models and weapons.</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <script src="../main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const grid = document.getElementById('realmProductsGrid');
+        const searchInput = document.getElementById('realmSearch');
+        const sortSelect = document.getElementById('realmSort');
+
+        function renderProducts() {
+          if (!window.productsDB) return;
+          const searchVal = searchInput.value.toLowerCase().trim();
+          const sortVal = sortSelect.value;
+
+          const animeSeries = ['one piece', 'naruto', 'demon slayer', 'attack on titan', 'dragon ball'];
+
+          // Filter by non-anime series (like Marvel, DC, Harry Potter, etc.)
+          let items = Object.keys(window.productsDB).map(key => ({
+            id: key,
+            ...window.productsDB[key]
+          })).filter(item => {
+            const seriesLower = (item.series || '').toLowerCase();
+            return animeSeries.indexOf(seriesLower) === -1 || 
+                   seriesLower === 'marvel' || 
+                   seriesLower === 'dc' || 
+                   seriesLower === 'harry potter';
+          });
+
+          // Search
+          if (searchVal) {
+            items = items.filter(item => item.name.toLowerCase().includes(searchVal) || item.series.toLowerCase().includes(searchVal));
+          }
+
+          // Sort
+          if (sortVal === 'price-low-high') {
+            items.sort((a, b) => {
+              if (a.price === null) return 1;
+              if (b.price === null) return -1;
+              return a.price - b.price;
+            });
+          } else if (sortVal === 'price-high-low') {
+            items.sort((a, b) => {
+              if (a.price === null) return 1;
+              if (b.price === null) return -1;
+              return b.price - a.price;
+            });
+          }
+
+          if (items.length === 0) {
+            grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">No products found in this realm.</div>`;
+            return;
+          }
+
+          grid.innerHTML = items.map(item => {
+            let badgeHTML = item.discount ? `<span class="product-badge">${item.discount}</span>` : '';
+            let actionBtnHTML = '';
+            if (item.price === null) {
+              actionBtnHTML = `
+                <button class="btn-primary" style="width:100%; border:none; padding:10px; font-size:12px; background:#22c55e;" onclick="event.stopPropagation(); window.open('https://wa.me/256703765398?text=Hi! I\\'m interested in: ' + encodeURIComponent('${item.name}'), '_blank')">
+                  WhatsApp to Order
+                </button>
+              `;
+            } else {
+              actionBtnHTML = `
+                <button class="btn-primary" style="width:100%; border:none; padding:10px; font-size:12px;" onclick="event.stopPropagation(); addToCart('${item.name}', ${item.price}, '${item.images[0]}')">
+                  Add to Cart
+                </button>
+              `;
+            }
+
+            return `
+              <div class="product-card" onclick="window.openProduct('${item.id}')">
+                ${badgeHTML}
+                <div class="product-img">
+                  <img src="${item.images[0]}" alt="${item.name}" loading="lazy"/>
+                </div>
+                <div class="product-info">
+                  <div class="product-series">${item.series}</div>
+                  <h4 class="product-name">${item.name}</h4>
+                  <div class="product-price-row" style="margin-bottom: 12px;">
+                    <span class="product-price">${item.priceStr}</span>
+                  </div>
+                  ${actionBtnHTML}
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+
+        searchInput.addEventListener('input', renderProducts);
+        sortSelect.addEventListener('change', renderProducts);
+
+        // Initial render
+        renderProducts();
+      });
+    </script>
+  </body>
+</html>
