@@ -43,26 +43,23 @@ window.productsDB = {
       'Size: Approx. 4.5cm x 3.0cm'
     ]
   },
-  'akatsuki-red-cloud-cloth-bag': {
-    name: 'Akatsuki Red Cloud Cloth Bag',
-    price: 20000,
-    priceStr: 'UGX 20,000',
-    originalPriceStr: 'UGX 25,000',
-    discount: '20% OFF',
-    series: 'Naruto',
+  'jjk-nobara-tote-bag': {
+    name: 'JJK Nobara Tote Bag',
+    price: 25000,
+    priceStr: 'UGX 25,000',
+    originalPriceStr: 'UGX 30,000',
+    discount: '17% OFF',
+    series: 'Jujutsu Kaisen',
     category: 'accessories',
-    description: 'A classic Akatsuki-themed drawstring bag with signature red cloud prints. Perfect for gym, school, or conventions.',
+    description: 'Premium maroon cotton canvas tote bag featuring a high-quality print of Nobara Kugisaki with detailed resonance graphic. Sturdy and spacious for everyday use.',
     images: [
-      'https://kaizoq.com/wp-content/uploads/2026/02/Bags-21.jpg',
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80'
+      'img/JJK-bag.jpg'
     ],
     specs: [
-      'Material: Heavy-duty Canvas Cotton',
-      'Sturdy cotton drawstring cords',
-      'Washable and long-lasting fabric prints',
-      'Dimensions: Approx. 40cm x 35cm'
+      'Material: Heavy-duty 100% Canvas Cotton',
+      'Design: High-density Nobara Kugisaki resonance graphic print',
+      'Dimensions: Approx. 40cm x 35cm with long shoulder straps',
+      'Color: Rich Maroon'
     ]
   },
   'akatsuki-rings-red-and-white': {
@@ -249,7 +246,7 @@ window.productsDB = {
     originalPriceStr: 'UGX 150,000',
     discount: '20% OFF',
     series: 'One Piece',
-    category: 'alloy-collectibles',
+    category: 'cosplay-kits',
     description: 'Accurate ornamental metal replica sword of Roronoa Zoro\'s Wado Ichimonji katana. Made of high carbon steel alloy (non-sharp for safety).',
     images: [
       'https://images.unsplash.com/photo-1615172282427-bc9e5217a112?auto=format&fit=crop&w=600&q=80',
@@ -483,8 +480,176 @@ window.productsDB = {
       'Snitch Width: Approx. 4cm (wingtip to wingtip)',
       'Officially inspired by the Wizarding World'
     ]
+  },
+  'demon-slayer-manga-vol-1': {
+    name: 'Demon Slayer Manga Vol. 1',
+    price: 35000,
+    priceStr: 'UGX 35,000',
+    originalPriceStr: 'UGX 40,000',
+    discount: '12% OFF',
+    series: 'Demon Slayer',
+    category: 'manga',
+    description: 'Start your journey with Tanjiro and Nezuko in the first volume of the hit series Demon Slayer: Kimetsu no Yaiba.',
+    images: [
+      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Author: Koyoharu Gotouge',
+      'Format: Paperback | 192 pages',
+      'Language: English',
+      'Publisher: VIZ Media'
+    ]
+  },
+  'one-piece-manga-box-set-1': {
+    name: 'One Piece Box Set 1',
+    price: 180000,
+    priceStr: 'UGX 180,000',
+    originalPriceStr: 'UGX 220,000',
+    discount: '18% OFF',
+    series: 'One Piece',
+    category: 'manga',
+    description: 'The first premium box set of One Piece, containing volumes 1-23, covering the East Blue and Baroque Works arcs.',
+    images: [
+      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Author: Eiichiro Oda',
+      'Includes volumes 1-23',
+      'Bonus: 48-page mini-comic and double-sided poster',
+      'Housed in a premium collector-grade display box'
+    ]
+  },
+  'naruto-manga-vol-72': {
+    name: 'Naruto Manga Vol. 72',
+    price: 35000,
+    priceStr: 'UGX 35,000',
+    originalPriceStr: 'UGX 40,000',
+    discount: '12% OFF',
+    series: 'Naruto',
+    category: 'manga',
+    description: 'The epic conclusion of the Naruto series. See the final showdown and the dawn of a new era.',
+    images: [
+      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Author: Masashi Kishimoto',
+      'Format: Paperback | 208 pages',
+      'Language: English',
+      'Publisher: VIZ Media'
+    ]
+  },
+  'attack-on-titan-manga-vol-1': {
+    name: 'Attack on Titan Manga Vol. 1',
+    price: 35000,
+    priceStr: 'UGX 35,000',
+    originalPriceStr: 'UGX 40,000',
+    discount: '12% OFF',
+    series: 'Attack on Titan',
+    category: 'manga',
+    description: 'The mega-hit Attack on Titan manga series starts here! Humanity lives behind massive walls, but for how long?',
+    images: [
+      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Author: Hajime Isayama',
+      'Format: Paperback | 208 pages',
+      'Language: English',
+      'Publisher: Kodansha Comics'
+    ]
+  },
+  'akatsuki-cloak-cosplay': {
+    name: 'Akatsuki Cosplay Cloak',
+    price: 75000,
+    priceStr: 'UGX 75,000',
+    originalPriceStr: 'UGX 90,000',
+    discount: '16% OFF',
+    series: 'Naruto',
+    category: 'cosplay-kits',
+    description: 'Premium quality Akatsuki cloak with hand-stitched red clouds and a high-collared neck zip. Perfect for cosplay conventions.',
+    images: [
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Material: High-quality uniform polyester fiber',
+      'Design: High collar zip with embroidered red cloud patches',
+      'Sizing: S, M, L, XL available',
+      'Authentic lining inside'
+    ]
+  },
+  'demon-slayer-tanjiro-haori': {
+    name: 'Tanjiro Kamado Cosplay Haori',
+    price: 65000,
+    priceStr: 'UGX 65,000',
+    originalPriceStr: 'UGX 80,000',
+    discount: '18% OFF',
+    series: 'Demon Slayer',
+    category: 'cosplay-kits',
+    description: 'Black and green checkered haori jacket as worn by Tanjiro Kamado in Demon Slayer. Lightweight and perfect for daily wear or cosplay.',
+    images: [
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Material: Breathable Chiffon/Polyester Blend',
+      'Pattern: Traditional green and black checkers',
+      'Cut: Loose fit, open front, wide sleeves',
+      'Sizes: Free size (unisex)'
+    ]
+  },
+  'naruto-leaf-village-headband': {
+    name: 'Leaf Village Cosplay Headband',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Naruto',
+    category: 'cosplay-kits',
+    description: 'Become a ninja of the Hidden Leaf. Features an engraved metal plate attached to a long, flexible black fabric band.',
+    images: [
+      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Plate Material: Stainless Steel with Leaf Village engraving',
+      'Band Material: Comfortable cotton-poly blend',
+      'Band Length: Approx 95cm',
+      'Authentic size and fit'
+    ]
+  },
+  'tanjiro-hanafuda-earrings': {
+    name: 'Tanjiro Hanafuda Earrings',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 18,000',
+    discount: '16% OFF',
+    series: 'Demon Slayer',
+    category: 'accessories',
+    description: 'Anime-accurate Tanjiro Kamado Hanafuda cosplay earrings. Lightweight acrylic with comfortable hypoallergenic posts.',
+    images: [
+      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
+    ],
+    specs: [
+      'Material: Eco-friendly Acrylic + Zinc Alloy hooks',
+      'Design: Accurate Hanafuda card sunrise print',
+      'Hypoallergenic post design suitable for sensitive ears',
+      'Dimensions: Approx 7cm x 2.5cm'
+    ]
   }
 };
+
+// Adjust local image paths relative to current page location
+(function adjustLocalImagePaths() {
+  const prefix = window.location.pathname.includes('/pages/') || window.location.href.includes('/pages/') ? '../' : '';
+  for (let key in window.productsDB) {
+    const item = window.productsDB[key];
+    if (item.images) {
+      item.images = item.images.map(img => {
+        if (img && !img.startsWith('http') && !img.startsWith('data:') && !img.startsWith('../')) {
+          return prefix + img;
+        }
+        return img;
+      });
+    }
+  }
+})();
 
 // Initialize Cart State
 let cart = JSON.parse(localStorage.getItem('kaizoku_cart')) || [];
@@ -846,6 +1011,7 @@ const getNavbarHTML = () => `
     <div class="nav-inner">
       <a href="${homePrefix}" class="nav-logo">
         <img src="${logoPrefix}public/kaizoku.png" alt="Kaizoku Realm Logo" onerror="this.src='${logoPrefix}kaizoku.png'" style="height: 40px; object-fit: contain;"/>
+        KAIZOKU<span>REALM</span>
       </a>
       <ul class="nav-links">
         <li><a href="${pathPrefix}shop.html">Explore</a></li>
@@ -974,7 +1140,10 @@ const cartSidebarHTML = `
 // Render elements on load
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById('shared-header');
-  if (header) header.innerHTML = getNavbarHTML();
+  if (header) {
+    header.innerHTML = getNavbarHTML();
+    updateThemeIcon();
+  }
 
   const footer = document.getElementById('shared-footer');
   if (footer) footer.innerHTML = getFooterHTML();
@@ -1015,6 +1184,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize Hero Carousel
   initHeroCarousel();
+
+  // Initialize Product Sliders
+  initProductSliders();
 });
 
 // ── HERO CAROUSEL CONTROLLER ──
@@ -1202,3 +1374,87 @@ function initHeroCarousel() {
   updateCarousel(true);
   startAutoplay();
 }
+
+// ── PRODUCT CAROUSEL / SLIDER (HOMEPAGE) ──
+function initProductSliders() {
+  const containers = document.querySelectorAll('.products-slider-container');
+  containers.forEach(container => {
+    const track = container.querySelector('.products-grid');
+    const prevBtn = container.querySelector('.arrow-prev');
+    const nextBtn = container.querySelector('.arrow-next');
+    
+    if (!track || !prevBtn || !nextBtn) return;
+    
+    // Scroll amount is roughly 80% of the visible container width
+    const getScrollAmount = () => track.clientWidth * 0.8;
+    
+    prevBtn.addEventListener('click', () => {
+      track.scrollBy({
+        left: -getScrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      track.scrollBy({
+        left: getScrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+
+    // Hide/show arrows based on scroll position
+    const toggleArrows = () => {
+      const scrollLeft = track.scrollLeft;
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      
+      // If scroll is near start, hide/fade out prev button
+      prevBtn.style.opacity = scrollLeft <= 10 ? '0' : '1';
+      prevBtn.style.pointerEvents = scrollLeft <= 10 ? 'none' : 'auto';
+      
+      // If scroll is near end, hide/fade out next button
+      nextBtn.style.opacity = scrollLeft >= maxScroll - 10 ? '0' : '1';
+      nextBtn.style.pointerEvents = scrollLeft >= maxScroll - 10 ? 'none' : 'auto';
+    };
+
+    track.addEventListener('scroll', toggleArrows);
+    // Initial call after elements render
+    setTimeout(toggleArrows, 200);
+    window.addEventListener('resize', toggleArrows);
+    
+    // Also re-run toggleArrows when filter changes (items might hide/show)
+    const filterSelects = document.querySelectorAll('.filter-select');
+    filterSelects.forEach(select => {
+      select.addEventListener('change', () => {
+        // Wait for DOM display changes to apply, then reset scroll and update arrows
+        setTimeout(() => {
+          track.scrollLeft = 0;
+          toggleArrows();
+        }, 50);
+      });
+    });
+  });
+}
+
+// ── THEME SWITCHER LOGIC ──
+
+(function initTheme() {
+  document.documentElement.classList.remove('cosmic-theme');
+})();
+
+function toggleTheme() {
+  const isCosmic = document.documentElement.classList.toggle('cosmic-theme');
+  localStorage.setItem('kaizoku-theme', isCosmic ? 'cosmic' : 'black');
+  updateThemeIcon();
+}
+
+function updateThemeIcon() {
+  const toggleBtn = document.querySelector('.theme-toggle-btn');
+  if (toggleBtn) {
+    const isCosmic = document.documentElement.classList.contains('cosmic-theme');
+    // If cosmic is active, show moon icon to switch to plain black; if black is active, show galaxy icon to switch to cosmic
+    toggleBtn.innerHTML = isCosmic ? '🌑' : '🌌';
+    toggleBtn.title = isCosmic ? 'Switch to Plain Black' : 'Switch to Cosmic Theme';
+  }
+}
+
+

@@ -1,23 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;600;700&family=Outfit:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;600;700&family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Green & Purple Cosmic Theme Variables */
-  --ink: #07030c;        /* Deep purple-black background fallback */
-  --ink2: #12091c;       /* Card/section backing */
-  --ink3: #1a0f29;       /* Input/indicator backing */
+  /* Default Colors: Plain Black Background + Green Theme Glows */
+  --ink: #000000;        /* Solid plain black background */
+  --ink2: #050505;       /* Card backing */
+  --ink3: #0f0f10;       /* Input/indicator backing */
   --purple: #9333ea;     /* Main purple accent */
   --purple-hover: #a855f7;
-  --purple-glow: rgba(147, 51, 234, 0.4);
+  --purple-glow: rgba(147, 51, 234, 0.2);
+  --purple-glow-strong: rgba(147, 51, 234, 0.4);
   --green: #10b981;      /* Main green accent */
-  --green-hover: #34d399;
-  --green-glow: rgba(16, 185, 129, 0.4);
-  --gold: #34d399;       /* Mint/gold accent for prices and badges */
-  --blue: #00e5ff;
-  --white: #f8fafc;
-  --muted: #94a3b8;
-  --border: rgba(240, 238, 234, 0.08);
-  --card-bg: rgba(18, 9, 28, 0.94); /* Deep purple-black card overlay */
-  --glass-border: rgba(147, 51, 234, 0.2);
+  --green-hover: #059669;
+  --green-glow: rgba(16, 185, 129, 0.2);
+  --green-glow-strong: rgba(16, 185, 129, 0.4);
+  --gold: #f59e0b;       /* Fandom accent (Gold) */
+  --gold-hover: #d97706;
+  --gold-glow: rgba(245, 158, 11, 0.18);
+  --gold-glow-strong: rgba(245, 158, 11, 0.38);
+  --blue: #0ea5e9;       /* Alloy collections accent (Blue) */
+  --blue-hover: #38bdf8;
+  --blue-glow: rgba(14, 165, 233, 0.2);
+  --blue-glow-strong: rgba(14, 165, 233, 0.4);
+  --white: #ffffff;      /* Crisp white text for visibility on black */
+  --muted: #a1a1aa;      /* Highly readable zinc gray text */
+  --border: rgba(255, 255, 255, 0.08); /* Transparent white border */
+  --card-bg: #070708;    /* Dark card background */
+  --glass-border: var(--theme-glow-strong);
+
+  /* Default Active Theme (Homepage: Green Theme) */
+  --theme-color: var(--green);
+  --theme-color-hover: var(--green-hover);
+  --theme-glow: var(--green-glow);
+  --theme-glow-strong: var(--green-glow-strong);
 
   /* Legacy & Subpage variables mapping */
   --clr-text: var(--white);
@@ -28,7 +42,64 @@
   --clr-green-glow: var(--green-glow);
   --clr-purple-dark: #2a1147;
   --clr-green-dark: #064e3b;
-  --glass-bg: rgba(18, 9, 28, 0.75);
+  --glass-bg: rgba(7, 7, 8, 0.85);
+
+  /* Premium Font System */
+  --font-primary: 'Space Grotesk', sans-serif;
+}
+
+/* Page Specific Theme Overrides (using body classes) */
+body.theme-aesthetic-nerds {
+  --theme-color: var(--purple);
+  --theme-color-hover: var(--purple-hover);
+  --theme-glow: var(--purple-glow);
+  --theme-glow-strong: var(--purple-glow-strong);
+}
+
+body.theme-alloy-collection {
+  --theme-color: var(--blue);
+  --theme-color-hover: var(--blue-hover);
+  --theme-glow: var(--blue-glow);
+  --theme-glow-strong: var(--blue-glow-strong);
+}
+
+body.theme-fandom {
+  --theme-color: var(--gold);
+  --theme-color-hover: var(--gold-hover);
+  --theme-glow: var(--gold-glow);
+  --theme-glow-strong: var(--gold-glow-strong);
+}
+
+/* Cosmic Theme Variable Overrides (Original Style) */
+:root.cosmic-theme {
+  --ink: #07030c;
+  --ink2: #12091c;
+  --ink3: #1a0f29;
+  --card-bg: rgba(18, 9, 28, 0.94);
+  --border: rgba(240, 238, 234, 0.08);
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-btn {
+  background: var(--ink3);
+  border: 1px solid var(--border);
+  color: var(--white);
+  border-radius: 6px;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  padding: 0;
+  outline: none;
+}
+.theme-toggle-btn:hover {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 8px var(--theme-glow);
+  transform: scale(1.05);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,16 +108,19 @@ html { scroll-behavior: smooth; }
 body {
   background-color: var(--ink);
   color: var(--white);
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-primary);
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
   position: relative;
+  transition: background-color 0.3s;
 }
 
+/* Pseudo-element background image (Disabled by default, enabled in Cosmic Theme) */
 body::before {
-  content: '';
+  content: none;
+  display: none;
   position: fixed;
   inset: 0;
   background-image: url('img/green_realm_bg.png');
@@ -60,6 +134,140 @@ body::before {
   -webkit-transform: translate3d(0, 0, 0);
   will-change: transform, filter;
 }
+
+/* Enable background image back in Cosmic Theme */
+:root.cosmic-theme body::before {
+  content: '' !important;
+  display: block !important;
+}
+
+/* ── SUGGESTIVE EDGES & GLOW OVERRIDES ── */
+nav {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-bottom: 1px solid var(--theme-color) !important;
+  box-shadow: 0 4px 20px -5px var(--theme-glow) !important;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s !important;
+}
+:root.cosmic-theme nav {
+  background: rgba(7, 3, 12, 0.94) !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: none !important;
+}
+
+.product-card {
+  border: 1px solid var(--theme-glow-strong) !important;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s !important;
+}
+.product-card:hover {
+  border-color: var(--theme-color) !important;
+  box-shadow: 0 0 15px var(--theme-glow) !important;
+}
+:root.cosmic-theme .product-card {
+  border: 1px solid var(--border) !important;
+}
+:root.cosmic-theme .product-card:hover {
+  border-color: var(--purple-glow) !important;
+  box-shadow: none !important;
+}
+
+.glass-card {
+  background: rgba(10, 10, 10, 0.85) !important;
+  border: 1px solid var(--theme-glow-strong) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8), 0 0 15px var(--theme-glow) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+.glass-card:hover {
+  border-color: var(--theme-color) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8), 0 0 20px var(--theme-glow) !important;
+}
+:root.cosmic-theme .glass-card {
+  background: rgba(18, 9, 28, 0.85) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+}
+
+.btn-primary {
+  background: var(--theme-color) !important;
+  color: #000000 !important;
+  box-shadow: 0 4px 15px var(--theme-glow) !important;
+}
+.btn-primary:hover {
+  background: var(--theme-color-hover) !important;
+  box-shadow: 0 6px 20px var(--theme-glow-strong) !important;
+}
+:root.cosmic-theme .btn-primary {
+  background: var(--purple) !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+:root.cosmic-theme .btn-primary:hover {
+  background: var(--purple-hover) !important;
+  box-shadow: none !important;
+}
+
+.btn-outline {
+  border: 1.5px solid var(--theme-color) !important;
+  color: var(--theme-color) !important;
+}
+.btn-outline:hover {
+  border-color: var(--theme-color) !important;
+  background: var(--theme-color) !important;
+  color: #000000 !important;
+  box-shadow: 0 0 15px var(--theme-glow) !important;
+}
+:root.cosmic-theme .btn-outline {
+  border: 1.5px solid rgba(240, 238, 234, 0.25) !important;
+  color: var(--white) !important;
+}
+:root.cosmic-theme .btn-outline:hover {
+  border-color: var(--white) !important;
+  background: rgba(240, 238, 234, 0.05) !important;
+  color: var(--white) !important;
+  box-shadow: none !important;
+}
+
+.cart-sidebar {
+  background: #050505 !important;
+  border-left: 1px solid var(--theme-color) !important;
+  box-shadow: -5px 0 25px var(--theme-glow) !important;
+}
+:root.cosmic-theme .cart-sidebar {
+  background: var(--ink2) !important;
+  border-left: 1px solid var(--border) !important;
+  box-shadow: none !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.form-control:focus {
+  border-color: var(--theme-color) !important;
+  box-shadow: 0 0 12px var(--theme-glow) !important;
+}
+
+/* Custom Overrides for Checkout Form Controls */
+.form-control {
+  background: var(--ink3) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--white) !important;
+  font-family: var(--font-primary) !important;
+}
+
+/* Custom Category Hover Edge-Glow */
+.cat-card {
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s !important;
+}
+.cat-card:hover {
+  border-color: var(--theme-color) !important;
+  box-shadow: 0 0 15px var(--theme-glow) !important;
+}
+
+/* ── PREMIUM FONT OVERRIDES ── */
+body, input, button, select, textarea, .form-control, .nav-search, .cart-btn, .btn-primary, .btn-outline, .hero-slide-btn, .announce, .nav-links a, .cat-name, .cat-desc, .footer-brand-desc, .footer-links a, .footer-brand-name, .product-card, .product-title, .product-price, .cart-sidebar, .checkout-summary, .checkout-btn, .payment-method {
+  font-family: var(--font-primary) !important;
+}
+
 
 /* ── ANNOUNCEMENT BAR ── */
 .announce {
@@ -83,12 +291,13 @@ nav {
 .nav-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 24px 0 12px;
   height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  flex-wrap: nowrap;
 }
 .nav-logo {
   font-family: 'Bebas Neue', sans-serif;
@@ -98,15 +307,16 @@ nav {
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap;
 }
 .nav-logo span { color: var(--green); }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 .nav-links a {
   color: rgba(240,238,234,0.75);
@@ -118,6 +328,7 @@ nav {
   padding: 6px 12px;
   border-radius: 4px;
   transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--white); background: var(--border); }
 .nav-actions {
@@ -351,7 +562,7 @@ nav {
 
 /* Specific background slides using product/category motifs */
 .hero-slide.slide-1 {
-  background-image: url('https://kaizoq.com/wp-content/uploads/2026/02/Bags-21.jpg');
+  background-image: url('img/JJK-bag.jpg');
 }
 .hero-slide.slide-2 {
   background-image: url('img/aesthetic.jpeg');
@@ -2106,7 +2317,8 @@ body.theme-aesthetic-nerds {
   --gold: #d8b4fe;
 }
 body.theme-aesthetic-nerds::before {
-  filter: hue-rotate(280deg) brightness(0.65) saturate(1.2);
+  background-image: url('img/background.jpeg');
+  filter: brightness(0.65);
 }
 
 body.theme-alloy-collection {
@@ -2118,7 +2330,8 @@ body.theme-alloy-collection {
   --gold: #7dd3fc;
 }
 body.theme-alloy-collection::before {
-  filter: hue-rotate(140deg) brightness(0.7) saturate(1.2);
+  background-image: url('img/alloy_page_bg.png');
+  filter: brightness(0.65);
 }
 
 body.theme-fandom {
@@ -2130,7 +2343,8 @@ body.theme-fandom {
   --gold: #fef08a;
 }
 body.theme-fandom::before {
-  filter: hue-rotate(210deg) brightness(0.65) saturate(1.2);
+  background-image: url('img/fandom_page_bg.png');
+  filter: brightness(0.65);
 }
 
 /* ── NAVBAR HIGHLIGHTS ── */
@@ -2538,9 +2752,9 @@ body.theme-fandom::before {
 }
 
 /* Compact layout for desktop navbar on small laptops/landscape tablets */
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1300px) {
   .nav-inner {
-    padding: 0 16px;
+    padding: 0 16px 0 8px;
     gap: 12px;
   }
   .nav-logo img {
@@ -2581,6 +2795,88 @@ body.theme-fandom::before {
 }
 @media (max-width: 480px) {
   .page-shop .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+/* ── PRODUCT CAROUSEL / SLIDER (HOMEPAGE) ── */
+.products-slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.products-slider-container .products-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+  scroll-behavior: smooth !important;
+  gap: 20px !important;
+  padding: 10px 4px 20px 4px !important;
+  scrollbar-width: none !important; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none !important; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.products-slider-container .products-grid::-webkit-scrollbar {
+  display: none !important;
+}
+
+.products-slider-container .product-card {
+  flex: 0 0 240px !important; /* fixed width on desktop/tablet */
+  scroll-snap-align: start !important;
+  display: block; /* Ensure it stays visible */
+}
+
+@media (max-width: 768px) {
+  .products-slider-container .product-card {
+    flex: 0 0 200px !important; /* slightly smaller cards on mobile */
+  }
+}
+
+/* Slider Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #110e26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease, opacity 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+.slider-arrow:hover {
+  background: var(--white);
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  color: var(--purple);
+}
+
+.slider-arrow.arrow-prev {
+  left: -22px;
+}
+
+.slider-arrow.arrow-next {
+  right: -22px;
+}
+
+/* Hide arrows on mobile/tablet since swiping is native and preferred */
+@media (max-width: 1024px) {
+  .slider-arrow {
+    display: none !important;
+  }
+  .products-slider-container .products-grid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 
