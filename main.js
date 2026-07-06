@@ -6,13 +6,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 12,000',
     discount: '17% OFF',
     series: 'One Piece',
-    category: 'accessories',
+    category: 'jewelry',
     description: 'High quality, anime-accurate Portgas D. Ace-inspired earrings. Perfect for cosplay or daily wear.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/hanafuda-earrings2.jpg'
     ],
     specs: [
       'Material: Premium Zinc Alloy (Hypoallergenic)',
@@ -28,13 +25,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 25,000',
     discount: '20% OFF',
     series: 'Naruto',
-    category: 'accessories',
+    category: 'gifts',
     description: 'Vibrant red cloud Akatsuki keychain. Made from thick, high-grade metal alloy with premium red enamel filling.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/stickers.jpg'
     ],
     specs: [
       'Material: Zinc Alloy with Red Enamel Fill',
@@ -69,13 +63,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 35,000',
     discount: '14% OFF',
     series: 'Naruto',
-    category: 'accessories',
+    category: 'jewelry',
     description: 'Premium metal rings featuring the red and white Akatsuki cloud emblem. Ring sizes are adjustable.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/rings.jpg'
     ],
     specs: [
       'Material: Sturdy Stainless Steel',
@@ -91,13 +82,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
     series: 'Attack on Titan',
-    category: 'accessories',
+    category: 'jewelry',
     description: 'Beautiful Attack on Titan cosplay bracelet featuring the metal Wings of Freedom charm on a braided leather cord.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/bracelet.jpg'
     ],
     specs: [
       'Material: Faux Braided Leather and Zinc Alloy',
@@ -116,10 +104,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Premium, high-detail Akaza figurine depicting the Upper Moon Three demon in his signature battle stance.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/demonslayer-figure.jpg'
     ],
     specs: [
       'Scale: 1/8 Scale Collectible Figure',
@@ -138,10 +123,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Epic custom figurine of Upper Moon Three Akaza during the final Infinity Castle confrontation. Super high density detailing.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/demonslayer-figure.jpg'
     ],
     specs: [
       'Scale: 1/7 Scale Diorama Figure',
@@ -160,15 +142,12 @@ window.productsDB = {
     category: 'figurines',
     description: 'Colossal Armored Titan figurine capturing Reiner Braun in a dynamic charging battle pose. Extra muscular definition sculpting.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/bleach-figures.jpg'
     ],
     specs: [
       'Dimensions: Approx. 28cm height',
       'Material: Reinforced ABS and PVC',
-      'Textured armor detailing and dynamic steam clouds',
+      'Textured armor detailing and steam clouds',
       'Individually numbered box'
     ]
   },
@@ -182,10 +161,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Detailed Annie Leonhart Female Titan scale model figurine in fighting stance. Premium skin texture painting.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/onepiece-figure.jpg'
     ],
     specs: [
       'Height: Approx. 25cm',
@@ -204,10 +180,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Awesome Gear 5 Monkey D. Luffy figurine representing the Sun God Nika with glow-in-the-dark cloud halo effects.',
     images: [
-      'https://kaizoq.com/wp-content/uploads/2026/02/Bags-21.jpg',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/onepiece-figure.jpg'
     ],
     specs: [
       'Scale: 1/8 scale anime action pose',
@@ -217,23 +190,20 @@ window.productsDB = {
     ]
   },
   'akatsuki-premium-hoodie': {
-    name: 'Akatsuki Premium Hoodie',
+    name: 'AOT Hoodie',
     price: 85000,
     priceStr: 'UGX 85,000',
     originalPriceStr: 'UGX 110,000',
     discount: '22% OFF',
-    series: 'Naruto',
+    series: 'Attack on Titan',
     category: 'clothing',
-    description: 'Step into the Naruto realm with this premium Akatsuki Cloud Hoodie. Made with soft fleece interior and high-density red cloud embroidery.',
+    description: 'Premium heavyweight fleece hoodie with Attack on Titan Scout Regiment design. Built for comfort and daily wear.',
     images: [
-      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/AOT-hoodie.jpg'
     ],
     specs: [
       'Material: 80% Organic Cotton, 20% Polyester Heavyweight Fleece',
-      'Premium thick red embroidered cloud design',
+      'Premium thick embroidered green/white wings design',
       'Unisex sizing, regular fit',
       'Double-lined hood with adjustable drawstrings'
     ],
@@ -249,10 +219,7 @@ window.productsDB = {
     category: 'cosplay-kits',
     description: 'Accurate ornamental metal replica sword of Roronoa Zoro\'s Wado Ichimonji katana. Made of high carbon steel alloy (non-sharp for safety).',
     images: [
-      'https://images.unsplash.com/photo-1615172282427-bc9e5217a112?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/katanas.jpg'
     ],
     specs: [
       'Total Length: Approx. 104cm',
@@ -271,10 +238,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Detailed Ultra Instinct Son Goku figure. Dynamic muscular sculpting capturing silver hair glow and battle damaged uniform.',
     images: [
-      'https://images.unsplash.com/photo-1608889175123-8ec330b86f84?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/figures.jpg'
     ],
     specs: [
       'Height: Approx. 28cm scale figure',
@@ -290,13 +254,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 30,000',
     discount: '17% OFF',
     series: 'Naruto',
-    category: 'accessories',
+    category: 'jewelry',
     description: 'Detailed cosplay replica of Itachi Uchiha\'s Akatsuki ring with the "Shu" kanji symbol. Includes adjustable sizing.',
     images: [
-      'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/rings.jpg'
     ],
     specs: [
       'Material: Heavy Alloy Metal base with Red Kanji glass seal',
@@ -315,10 +276,7 @@ window.productsDB = {
     category: 'decor',
     description: 'High quality print of the Scout Regiment Wall Battle. Rendered in full color on heavy density photo paper.',
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1501472312651-726afd116ff1?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/stickers.jpg'
     ],
     specs: [
       'Size: Standard A3 dimensions (29.7cm x 42cm)',
@@ -328,24 +286,21 @@ window.productsDB = {
     ]
   },
   'deadpool-keychain': {
-    name: 'Deadpool Keychain',
-    price: 10000,
-    priceStr: 'UGX 10,000',
-    originalPriceStr: 'UGX 12,000',
-    discount: '17% OFF',
-    series: 'Marvel',
-    category: 'accessories',
-    description: 'Cute chibi Merc with a Mouth metal keychain. Sturdy split ring and lobster claws buckle.',
+    name: 'Phantom Troupe Cap',
+    price: 40000,
+    priceStr: 'UGX 40,000',
+    originalPriceStr: 'UGX 50,000',
+    discount: '20% OFF',
+    series: 'Hunter x Hunter',
+    category: 'clothing',
+    description: 'Premium black snapback cap featuring the Phantom Troupe spider embroidery. Perfect for streetwear styling.',
     images: [
-      'https://images.unsplash.com/photo-1608889175123-8ec330b86f84?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/phantomtroupe-cap.jpg'
     ],
     specs: [
-      'Material: Soft Rubberized PVC body + Heavy Metal chain',
-      'Chibi Merc Accurate Suit detailing',
-      'Keyring Diameter: Approx 3cm',
+      'Material: Premium cotton canvas body',
+      'Detailed Phantom Troupe spider embroidery',
+      'Adjustable snapback strap fits all sizes',
       'Highly flexible and durable'
     ]
   },
@@ -359,10 +314,7 @@ window.productsDB = {
     category: 'alloy-collectibles',
     description: 'Highly detailed 1:24 scale die-cast metal model of the Bugatti Chiron. Features openable doors, hood, steering wheel links, and premium paint finish.',
     images: [
-      'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1600706432502-75a0e286b92b?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80'
+      'img/alloy_collection_bg.jpg'
     ],
     specs: [
       'Scale: 1:24 Precision Die-cast',
@@ -381,10 +333,7 @@ window.productsDB = {
     category: 'alloy-collectibles',
     description: 'Collector-grade 1:24 scale die-cast Porsche 911 GT3. Realistic interior details, sports racing decals, steerable rubber tires.',
     images: [
-      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1600706432502-75a0e286b92b?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80'
+      'img/alloy_collection_bg.jpg'
     ],
     specs: [
       'Scale: 1:24 Precision Die-cast',
@@ -403,10 +352,7 @@ window.productsDB = {
     category: 'alloy-collectibles',
     description: 'Scale replica of the iconic AMG G63 SUV. Detailed body design, detailed engine bay, opening back door and bonnet, working sound and light effects.',
     images: [
-      'https://images.unsplash.com/photo-1520050206274-a1ae446cb3cc?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80'
+      'img/alloy_collection_bg.jpg'
     ],
     specs: [
       'Scale: 1:24 Die-cast G-Wagon SUV',
@@ -425,10 +371,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Heavy metal alloy collective Batman action figure from The Dark Knight trilogy. Features multiple articulation joints and display base.',
     images: [
-      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1608889175123-8ec330b86f84?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/naruto-figure3.jpg'
     ],
     specs: [
       'Height: Approx. 18cm',
@@ -447,10 +390,7 @@ window.productsDB = {
     category: 'figurines',
     description: 'Premium Marvel Avengers Endgame Iron Man Mark LXXXV collectible figure. Detailed nano-tech suit sculpting and high-gloss metallic paint finish.',
     images: [
-      'https://images.unsplash.com/photo-1608889174653-81f1b20a2a3c?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1608889175123-8ec330b86f84?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1559074098-d510d277c9cf?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/dandanda-figure.jpg'
     ],
     specs: [
       'Scale: 1/10 scale action figure',
@@ -466,13 +406,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
     series: 'Harry Potter',
-    category: 'accessories',
+    category: 'jewelry',
     description: 'Magical Golden Snitch pendant on a silver-plated chain. Features intricate wing detailing and a brilliant gold orb.',
     images: [
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/bracelet.jpg'
     ],
     specs: [
       'Material: Gold-plated alloy orb, Silver-plated wings',
@@ -491,7 +428,7 @@ window.productsDB = {
     category: 'manga',
     description: 'Start your journey with Tanjiro and Nezuko in the first volume of the hit series Demon Slayer: Kimetsu no Yaiba.',
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/demonslayer-manga.jpg'
     ],
     specs: [
       'Author: Koyoharu Gotouge',
@@ -510,7 +447,7 @@ window.productsDB = {
     category: 'manga',
     description: 'The first premium box set of One Piece, containing volumes 1-23, covering the East Blue and Baroque Works arcs.',
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/jjk-manga.jpg'
     ],
     specs: [
       'Author: Eiichiro Oda',
@@ -529,7 +466,7 @@ window.productsDB = {
     category: 'manga',
     description: 'The epic conclusion of the Naruto series. See the final showdown and the dawn of a new era.',
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/jjk-manga.jpg'
     ],
     specs: [
       'Author: Masashi Kishimoto',
@@ -548,7 +485,7 @@ window.productsDB = {
     category: 'manga',
     description: 'The mega-hit Attack on Titan manga series starts here! Humanity lives behind massive walls, but for how long?',
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/demonslayer-manga.jpg'
     ],
     specs: [
       'Author: Hajime Isayama',
@@ -567,7 +504,7 @@ window.productsDB = {
     category: 'cosplay-kits',
     description: 'Premium quality Akatsuki cloak with hand-stitched red clouds and a high-collared neck zip. Perfect for cosplay conventions.',
     images: [
-      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/AOT-hoodie.jpg'
     ],
     specs: [
       'Material: High-quality uniform polyester fiber',
@@ -586,7 +523,7 @@ window.productsDB = {
     category: 'cosplay-kits',
     description: 'Black and green checkered haori jacket as worn by Tanjiro Kamado in Demon Slayer. Lightweight and perfect for daily wear or cosplay.',
     images: [
-      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/demonslayer-shirt.jpg'
     ],
     specs: [
       'Material: Breathable Chiffon/Polyester Blend',
@@ -605,7 +542,7 @@ window.productsDB = {
     category: 'cosplay-kits',
     description: 'Become a ninja of the Hidden Leaf. Features an engraved metal plate attached to a long, flexible black fabric band.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/bracelet.jpg'
     ],
     specs: [
       'Plate Material: Stainless Steel with Leaf Village engraving',
@@ -621,10 +558,10 @@ window.productsDB = {
     originalPriceStr: 'UGX 18,000',
     discount: '16% OFF',
     series: 'Demon Slayer',
-    category: 'accessories',
+    category: 'jewelry',
     description: 'Anime-accurate Tanjiro Kamado Hanafuda cosplay earrings. Lightweight acrylic with comfortable hypoallergenic posts.',
     images: [
-      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
+      'img/products/Anime Merch/hanafuda-earrings1.jpg'
     ],
     specs: [
       'Material: Eco-friendly Acrylic + Zinc Alloy hooks',
@@ -632,6 +569,28 @@ window.productsDB = {
       'Hypoallergenic post design suitable for sensitive ears',
       'Dimensions: Approx 7cm x 2.5cm'
     ]
+  },
+  'anime-jersey': {
+    name: 'Anime Jersey',
+    price: 45000,
+    priceStr: 'UGX 45,000',
+    originalPriceStr: 'UGX 55,000',
+    discount: '18% OFF',
+    series: 'Anime',
+    category: 'clothing',
+    description: 'High quality anime-inspired graphic jersey. Breathable mesh fabric, perfect for activewear or casual daily style.',
+    images: [
+      'img/products/anime-jersys/jersy1.jpeg',
+      'img/products/anime-jersys/jersy2.jpeg',
+      'img/products/anime-jersys/jersy3.jpeg'
+    ],
+    specs: [
+      'Material: Breathable Mesh Polyester',
+      'Design: Full sublimation character graphic prints',
+      'Fit: Unisex standard athletic fit',
+      'Sizes: SM, MD, LG, XL, XXL'
+    ],
+    sizes: ['SM', 'MD', 'LG', 'XL', 'XXL']
   }
 };
 
@@ -1015,29 +974,35 @@ const getNavbarHTML = () => `
       </a>
       <ul class="nav-links">
         <li><a href="${pathPrefix}shop.html">Explore</a></li>
-        <li><a href="${pathPrefix}aesthetic-nerds.html" class="nav-realm-link realm-purple">Aesthetic Nerds</a></li>
         <li class="dropdown">
-          <a href="#">Accessories <span class="arrow">&#9662;</span></a>
+          <a href="${pathPrefix}aesthetic-nerds.html" class="nav-realm-link realm-purple">Clothing <span class="arrow">&#9662;</span></a>
           <ul class="dropdown-menu">
-            <li><a href="${pathPrefix}shop.html?category=bracelets">Bracelets</a></li>
-            <li><a href="${pathPrefix}shop.html?category=bags">Bags</a></li>
-            <li><a href="${pathPrefix}shop.html?category=earrings">Earrings</a></li>
-            <li><a href="${pathPrefix}shop.html?category=key-chains">Key Chains</a></li>
-            <li><a href="${pathPrefix}shop.html?category=necklaces">Necklaces + Chains</a></li>
-            <li><a href="${pathPrefix}shop.html?category=phone-cases">Phone Cases</a></li>
-            <li><a href="${pathPrefix}shop.html?category=rings">Rings</a></li>
-            <li><a href="${pathPrefix}shop.html?category=swords">Swords</a></li>
-            <li><a href="${pathPrefix}shop.html?category=wallets">Wallets</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=hoodie">Hoodies</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=shirt">T-Shirts</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=shorts">Shorts</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=sweatpants">Sweatpants</a></li>
           </ul>
         </li>
-        <li><a href="${pathPrefix}alloy-collection.html" class="nav-realm-link realm-blue">Alloy collections</a></li>
-        <li><a href="${pathPrefix}shop.html?category=figurines">Figurines</a></li>
-        <li><a href="${pathPrefix}fandom.html" class="nav-realm-link realm-yellow">Fandom</a></li>
         <li class="dropdown">
-          <a href="#">Decor <span class="arrow">&#9662;</span></a>
+          <a href="${pathPrefix}shop.html?category=accessories">Accessories <span class="arrow">&#9662;</span></a>
           <ul class="dropdown-menu">
-            <li><a href="${pathPrefix}shop.html?category=posters">Posters <span class="chevron">&gt;</span></a></li>
-            <li><a href="${pathPrefix}shop.html?category=stickers">Stickers <span class="chevron">&gt;</span></a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=bracelets">Bracelets</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=bag">Bags</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=earrings">Earrings</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=keychain">Key Chains</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=necklace">Necklaces</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=ring">Rings</a></li>
+          </ul>
+        </li>
+        <li><a href="${pathPrefix}shop.html?category=cosplay-kits">Cosplay</a></li>
+        <li><a href="${pathPrefix}shop.html?category=gifts">Gifts</a></li>
+        <li><a href="${pathPrefix}shop.html?category=jewelry">Jewelry</a></li>
+        <li><a href="${pathPrefix}shop.html?category=figurines">Figurines</a></li>
+        <li class="dropdown">
+          <a href="${pathPrefix}shop.html?category=decor">Decor <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="${pathPrefix}shop.html?category=decor&q=poster">Posters</a></li>
+            <li><a href="${pathPrefix}shop.html?category=decor&q=sticker">Stickers</a></li>
           </ul>
         </li>
       </ul>

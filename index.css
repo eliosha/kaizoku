@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;600;700&family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@400;600;700&family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   /* Default Colors: Plain Black Background + Green Theme Glows */
@@ -45,7 +45,7 @@
   --glass-bg: rgba(7, 7, 8, 0.85);
 
   /* Premium Font System */
-  --font-primary: 'Space Grotesk', sans-serif;
+  --font-primary: 'Inter', sans-serif;
 }
 
 /* Page Specific Theme Overrides (using body classes) */
@@ -291,7 +291,7 @@ nav {
 .nav-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px 0 12px;
+  padding: 0 24px 0 4px;
   height: 68px;
   display: flex;
   align-items: center;
@@ -565,8 +565,8 @@ nav {
   background-image: url('img/JJK-bag.jpg');
 }
 .hero-slide.slide-2 {
-  background-image: url('img/aesthetic.jpeg');
-  background-position: center 25%;
+  background-image: url('img/products/anime-jersys/jersy1.jpeg');
+  background-position: center center;
 }
 .hero-slide.slide-3 {
   background-image: url('img/alloy_collection_bg.jpg');
@@ -575,7 +575,7 @@ nav {
   background-image: url('img/fandom.jpeg');
 }
 .hero-slide.slide-5 {
-  background-image: url('img/green_realm_bg.png');
+  background-image: url('img/products/Anime Merch/katanas.jpg');
 }
 .hero-slide.slide-6 {
   background-image: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80');
@@ -2539,202 +2539,177 @@ body.theme-fandom::before {
   color: var(--muted);
 }
 
-/* ── HORIZONTAL REALM BANNERS (DISCORD STYLE) ── */
+/* ── HORIZONTAL REALM BANNERS (DISNEY STYLE) ── */
 .realms-banners-list {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 0;
 }
 .realm-banner {
   width: 100%;
-  background: #110e26; /* Deep solid dark purple-navy matching the Discord banner */
-  border-top: 5px solid var(--realm-color);
-  padding: 60px 0;
-  border-radius: 0 !important;
-  margin-bottom: 0px !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+  height: 480px;
   position: relative;
   text-decoration: none;
-  display: block;
-  box-shadow: none !important;
-  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
   overflow: hidden;
+  border-radius: 0; /* Full bleed layout matches Disney Store */
+  border: none;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+  transition: border-color 0.4s ease;
 }
 .realm-banner:hover {
-  transform: translateY(-2px);
+  border-color: var(--realm-color);
 }
-.realm-banner-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
+.realm-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+.realm-banner:hover .realm-banner-bg {
+  transform: scale(1.02);
+}
+.realm-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Dark left overlay fading out towards the right to make left-aligned text perfectly readable */
+  background: linear-gradient(90deg, rgba(5, 5, 6, 0.9) 0%, rgba(5, 5, 6, 0.6) 40%, rgba(5, 5, 6, 0.1) 75%, rgba(5, 5, 6, 0) 100%);
   z-index: 2;
 }
-.realm-banner-brand-row {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.realm-banner-icon {
-  background: var(--realm-color);
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  box-shadow: 0 0 15px var(--realm-glow);
-  flex-shrink: 0;
-}
-.realm-banner-brand-text {
+.realm-banner-inner {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  z-index: 3;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
-.realm-banner-brand-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  color: var(--white);
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.realm-banner-brand-subtitle {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--realm-color);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 4px;
-}
-.realm-banner-eyebrow {
-  font-family: 'Space Mono', monospace;
+.realm-banner-badge {
+  display: inline-block;
+  background: var(--realm-color);
+  color: #000;
+  font-family: var(--font-primary);
   font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+.realm-banner-title {
+  font-family: var(--font-primary);
+  font-size: clamp(32px, 3.5vw, 48px);
   font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--realm-color);
-}
-.realm-banner-heading {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(38px, 5.5vw, 56px);
-  line-height: 0.95;
   color: var(--white);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  margin: 8px 0;
-}
-.realm-banner-heading span {
-  color: var(--realm-color);
-  text-shadow: 0 0 12px var(--realm-glow);
+  line-height: 1.1;
+  margin: 0;
+  max-width: 600px;
 }
 .realm-banner-desc {
-  font-size: 15px;
-  color: #a1a1aa; /* High contrast clean grey like Discord */
-  line-height: 1.6;
-  max-width: 750px;
+  font-family: var(--font-primary);
+  font-size: clamp(14px, 1.4vw, 15px);
+  color: #d1d5db;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 500px;
 }
-.realm-banner-buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 8px;
-}
-.realm-banner-btn-primary {
+.realm-banner-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--realm-color);
-  color: var(--realm-btn-text-color, #000) !important;
-  font-family: 'Barlow Condensed', sans-serif;
+  background: var(--white);
+  color: #000 !important;
+  font-family: var(--font-primary);
   font-weight: 700;
-  padding: 14px 28px;
-  border-radius: 4px;
+  padding: 12px 28px;
+  border-radius: 4px; /* Clean rectangular corners with minor rounding like Disney Store buttons */
   text-decoration: none;
+  font-size: 13px;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  transition: opacity 0.2s, transform 0.2s;
-  box-shadow: 0 4px 12px var(--realm-glow);
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
 }
-.realm-banner-btn-primary:hover {
-  opacity: 0.9;
-  transform: scale(1.03);
-}
-.realm-banner-btn-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #25d366;
-  color: #ffffff !important;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  padding: 14px 28px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  transition: opacity 0.2s, transform 0.2s;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
-}
-.realm-banner-btn-whatsapp:hover {
-  opacity: 0.9;
-  transform: scale(1.03);
-}
-
-.realm-banner.banner-purple {
-  background-image: linear-gradient(90deg, #110e26 35%, rgba(17, 14, 38, 0.8) 65%, rgba(17, 14, 38, 0.2) 100%), url('img/aesthetic.jpeg');
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-}
-
-.realm-banner.banner-blue {
-  background-image: linear-gradient(90deg, #110e26 35%, rgba(17, 14, 38, 0.8) 65%, rgba(17, 14, 38, 0.2) 100%), url('img/alloy_collection_bg.jpg');
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-}
-
-.realm-banner.banner-yellow {
-  background-image: linear-gradient(90deg, #110e26 35%, rgba(17, 14, 38, 0.8) 65%, rgba(17, 14, 38, 0.2) 100%), url('img/fandom.jpeg');
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
+.realm-banner-btn:hover {
+  background: #e5e7eb;
+  transform: scale(1.02);
 }
 
 @media (max-width: 768px) {
   .realm-banner {
-    padding: 40px 0;
+    height: 400px;
   }
-  .realm-banner.banner-purple {
-    background-image: linear-gradient(180deg, rgba(17, 14, 38, 0.85) 45%, #110e26 100%), url('img/aesthetic.jpeg');
-    background-position: center;
+  .realm-banner-overlay {
+    background: linear-gradient(180deg, rgba(5, 5, 6, 0.4) 0%, rgba(5, 5, 6, 0.85) 60%, rgba(5, 5, 6, 0.95) 100%);
   }
-  .realm-banner.banner-blue {
-    background-image: linear-gradient(180deg, rgba(17, 14, 38, 0.85) 45%, #110e26 100%), url('img/alloy_collection_bg.jpg');
-    background-position: center;
+  .realm-banner-inner {
+    padding: 0 24px;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 40px;
+    gap: 12px;
   }
-  .realm-banner.banner-yellow {
-    background-image: linear-gradient(180deg, rgba(17, 14, 38, 0.85) 45%, #110e26 100%), url('img/fandom.jpeg');
-    background-position: center;
-  }
-  .realm-banner-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-  .realm-banner-btn-primary,
-  .realm-banner-btn-whatsapp {
+  .realm-banner-btn {
     width: 100%;
     text-align: center;
   }
+}
+
+/* ── REVIEWS SECTION (INFINITE MARQUEE) ── */
+.reviews-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.reviews-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+  padding-right: 24px;
+}
+.reviews-track:hover {
+  animation-play-state: paused;
+}
+.review-card {
+  width: 350px;
+  background: var(--ink3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: border-color 0.3s ease;
+}
+.review-card:hover {
+  border-color: var(--green);
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 /* ── ADDITIONAL MOBILE RESPONSIVENESS OVERRIDES ── */
@@ -2754,7 +2729,7 @@ body.theme-fandom::before {
 /* Compact layout for desktop navbar on small laptops/landscape tablets */
 @media (min-width: 1025px) and (max-width: 1300px) {
   .nav-inner {
-    padding: 0 16px 0 8px;
+    padding: 0 16px 0 0px;
     gap: 12px;
   }
   .nav-logo img {

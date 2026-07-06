@@ -39,6 +39,8 @@
                 <li><a href="#" class="category-link" data-category="manga" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Manga &amp; Comics</a></li>
                 <li><a href="#" class="category-link" data-category="cosplay-kits" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Cosplay Kits</a></li>
                 <li><a href="#" class="category-link" data-category="alloy-collectibles" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Alloy Collectibles</a></li>
+                <li><a href="#" class="category-link" data-category="jewelry" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Jewelry</a></li>
+                <li><a href="#" class="category-link" data-category="gifts" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Gifts</a></li>
               </ul>
             </div>
 
@@ -282,9 +284,15 @@
             });
           });
 
-          // Check URL query params for category selection on loading
+          // Check URL query params for category selection and search query on loading
           const urlParams = new URLSearchParams(window.location.search);
           const categoryParam = urlParams.get('category');
+          const searchQueryParam = urlParams.get('search') || urlParams.get('q');
+          
+          if (searchQueryParam) {
+            searchInput.value = searchQueryParam;
+          }
+          
           if (categoryParam) {
             categoryLinks.forEach(link => {
               if (link.getAttribute('data-category') === categoryParam) {
