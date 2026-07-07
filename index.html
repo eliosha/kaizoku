@@ -37,12 +37,12 @@
         </div>
       </a>
       
-      <!-- Slide 2: Anime Jersey -->
-      <a href="pages/shop.html?category=clothing&q=jersey" class="hero-slide slide-2">
+      <!-- Slide 2: Community Merch -->
+      <a href="pages/shop.html?category=clothing" class="hero-slide slide-2">
         <div class="hero-slide-content">
           <div class="hero-slide-text-group">
-            <div class="hero-slide-brand">Apparel Realm</div>
-            <h2 class="hero-slide-title">Anime Jersey <span>Premium breathable mesh graphic jerseys inspired by your favorite characters</span></h2>
+            <div class="hero-slide-brand">Community Merch</div>
+            <h2 class="hero-slide-title">Community Merch <span>Official custom anime merchandise voted and designed by the community</span></h2>
           </div>
           <div class="hero-slide-btn">Shop Now</div>
         </div>
@@ -167,22 +167,22 @@
 </section>
 
 <!-- BESTSELLERS -->
-<section class="section" id="shop" style="padding-top:0">
-  <div class="section-label">Top Picks</div>
-  <div class="section-header">
-    <div>
-      <h2 class="section-title">Bestsellers</h2>
-      <p class="section-sub">Our most-loved pieces, hand-picked by the community.</p>
-    </div>
-    <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-      <select class="filter-select" onchange="filterBestsellers(this.value)" style="padding: 0.75rem 1.5rem; background: var(--ink3); border: 1px solid var(--border); color: var(--white); border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; outline: none; cursor: pointer; text-transform: uppercase;">
-        <option value="all">All Accessories</option>
-        <option value="earrings">Earrings</option>
-        <option value="keychains">Keychains</option>
-        <option value="bags">Bags & Wallets</option>
-        <option value="rings">Rings & Bracelets</option>
-      </select>
-      <a href="pages/shop.html?category=accessories" class="btn-outline" style="white-space:nowrap">View All Accessories</a>
+<section class="section" id="shop" style="padding-top:0; padding-bottom:0">
+  <div class="bestsellers-banner">
+    <div class="bestsellers-banner-content">
+      <span class="bestsellers-banner-tag">Top Picks</span>
+      <h2 class="bestsellers-banner-title">Bestsellers</h2>
+      <p class="bestsellers-banner-desc">Our most-loved pieces, hand-picked by the community.</p>
+      <div class="bestsellers-banner-actions">
+        <select class="filter-select" onchange="filterBestsellers(this.value)">
+          <option value="all">All Accessories</option>
+          <option value="earrings">Earrings</option>
+          <option value="keychains">Keychains</option>
+          <option value="bags">Bags & Wallets</option>
+          <option value="rings">Rings & Bracelets</option>
+        </select>
+        <a href="pages/shop.html?category=accessories" class="btn-outline">View All Accessories</a>
+      </div>
     </div>
   </div>
   <div class="products-slider-container">
@@ -306,24 +306,23 @@
 </section>
 
 
-<!-- RECOMMENDED PRODUCTS -->
-<section class="section" id="recommended-products" style="padding-top:100px">
-  <div class="section-label">Staff Picks</div>
-  <div class="section-header">
-    <div>
-      <h2 class="section-title">Recommended Products</h2>
-      <p class="section-sub">Hand-picked favourites from our collection this season.</p>
-    </div>
-    <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-      <select class="filter-select" onchange="filterRecommended(this.value)" style="padding: 0.75rem 1.5rem; background: var(--ink3); border: 1px solid var(--border); color: var(--white); border-radius: 6px; font-family: inherit; font-size: 13px; font-weight: 600; outline: none; cursor: pointer; text-transform: uppercase;">
-        <option value="all">All Categories</option>
-        <option value="clothing">Clothing</option>
-        <option value="alloy">Alloy Collection</option>
-        <option value="accessories">Accessories</option>
-        <option value="decor">Decor</option>
-        <option value="figurines">Figurines</option>
-      </select>
-      <a href="pages/shop.html" class="btn-outline" style="white-space:nowrap">View All Products</a>
+<section class="section" id="recommended-products" style="padding-top:0">
+  <div class="recommended-banner">
+    <div class="recommended-banner-content">
+      <span class="recommended-banner-tag">Staff Picks</span>
+      <h2 class="recommended-banner-title">Recommended Products</h2>
+      <p class="recommended-banner-desc">Hand-picked favourites from our collection this season.</p>
+      <div class="recommended-banner-actions">
+        <select class="filter-select" onchange="filterRecommended(this.value)">
+          <option value="all">All Categories</option>
+          <option value="clothing">Clothing</option>
+          <option value="alloy">Alloy Collection</option>
+          <option value="accessories">Accessories</option>
+          <option value="decor">Decor</option>
+          <option value="figurines">Figurines</option>
+        </select>
+        <a href="pages/shop.html" class="btn-outline">View All Products</a>
+      </div>
     </div>
   </div>
   <div class="products-slider-container">
@@ -460,48 +459,60 @@
 
 
 <!-- THE THREE REALMS OF KAIZOKU -->
-<section class="realms-section" style="padding: 4rem 0;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 40px; text-align: center;">
-    <div class="section-label" style="text-align: center; margin-bottom: 10px;">Explore the Realms</div>
-    <h2 class="section-title text-center" style="margin-bottom: 0;">Choose Your Destination</h2>
-  </div>
+<section class="realms-section" style="padding: 5rem 0;">
+  <div class="realms-bg-layer bg-purple" style="background-image: url('img/aeshetic1.jpg');"></div>
+  <div class="realms-bg-layer bg-blue" style="background-image: url('img/alloy.jpg');"></div>
+  <div class="realms-bg-layer bg-yellow" style="background-image: url('img/fandom1.jpeg');"></div>
 
-  <div class="realms-banners-list">
-    <!-- Aesthetic Nerds -->
-    <a href="pages/aesthetic-nerds.html" class="realm-banner banner-purple" style="--realm-color: #a855f7;">
-      <div class="realm-banner-bg" style="background-image: url('img/aeshetic1.jpg');"></div>
-      <div class="realm-banner-overlay"></div>
-      <div class="realm-banner-inner">
-        <div class="realm-banner-badge">Aura &amp; Style</div>
-        <h3 class="realm-banner-title">Aesthetic Nerds</h3>
-        <p class="realm-banner-desc">Elevate your streetwear. Premium heavyweight hoodies, custom tees, and high-density anime gear designed for true style enthusiasts.</p>
-        <div class="realm-banner-btn">Shop Apparel</div>
-      </div>
-    </a>
+  <div style="position: relative; z-index: 10; width: 100%;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 40px; text-align: center;">
+      <div class="section-label" style="text-align: center; margin-bottom: 10px;">Explore the Realms</div>
+      <h2 class="section-title text-center" style="margin-bottom: 0;">Choose Your Destination</h2>
+    </div>
 
-    <!-- Alloy Collection -->
-    <a href="pages/alloy-collection.html" class="realm-banner banner-blue" style="--realm-color: #0ea5e9;">
-      <div class="realm-banner-bg" style="background-image: url('img/alloy.jpg');"></div>
-      <div class="realm-banner-overlay"></div>
-      <div class="realm-banner-inner">
-        <div class="realm-banner-badge">Precision Metal</div>
-        <h3 class="realm-banner-title">Alloy Collection</h3>
-        <p class="realm-banner-desc">For the ultimate collector. Highly detailed 1:24 &amp; 1:32 scale die-cast model cars and heavy carbon-steel weapons.</p>
-        <div class="realm-banner-btn">Shop Collectibles</div>
-      </div>
-    </a>
+    <div class="realms-grid">
+      <!-- Aesthetic Nerds -->
+      <a href="pages/aesthetic-nerds.html" class="realm-card card-purple" style="--realm-color: #a855f7; --realm-glow: rgba(168, 85, 247, 0.15);">
+        <img src="img/aesthetic2.jpeg" alt="Aesthetic Nerds" class="realm-card-bg-img" />
+        <div class="realm-card-overlay"></div>
+        <div class="realm-card-content">
+          <div>
+            <div class="realm-card-badge" style="background: var(--realm-color);">Aura &amp; Style</div>
+            <h3 class="realm-card-title">Aesthetic Nerds</h3>
+            <p class="realm-card-desc">Elevate your streetwear. Premium heavyweight hoodies, custom tees, and high-density anime gear designed for true style enthusiasts.</p>
+          </div>
+          <div class="realm-card-btn">Shop Apparel</div>
+        </div>
+      </a>
 
-    <!-- Fandom Hub -->
-    <a href="pages/fandom.html" class="realm-banner banner-yellow" style="--realm-color: #eab308;">
-      <div class="realm-banner-bg" style="background-image: url('img/fandom1.jpeg');"></div>
-      <div class="realm-banner-overlay"></div>
-      <div class="realm-banner-inner">
-        <div class="realm-banner-badge">Pop Culture</div>
-        <h3 class="realm-banner-title">Fandom Hub</h3>
-        <p class="realm-banner-desc">Explore outer realms. Discover authentic action figures, collectibles, and official merchandise from pop culture multiverse classics.</p>
-        <div class="realm-banner-btn">Shop Fandom</div>
-      </div>
-    </a>
+      <!-- Alloy Collection -->
+      <a href="pages/alloy-collection.html" class="realm-card card-blue" style="--realm-color: #0ea5e9; --realm-glow: rgba(14, 165, 233, 0.15);">
+        <img src="img/alloycollection.jpg" alt="Alloy Collection" class="realm-card-bg-img" />
+        <div class="realm-card-overlay"></div>
+        <div class="realm-card-content">
+          <div>
+            <div class="realm-card-badge" style="background: var(--realm-color);">Precision Metal</div>
+            <h3 class="realm-card-title">Alloy Collection</h3>
+            <p class="realm-card-desc">For the ultimate collector. Highly detailed 1:24 &amp; 1:32 scale die-cast model cars and heavy carbon-steel weapons.</p>
+          </div>
+          <div class="realm-card-btn">Shop Collectibles</div>
+        </div>
+      </a>
+
+      <!-- Fandom Hub -->
+      <a href="pages/fandom.html" class="realm-card card-yellow" style="--realm-color: #eab308; --realm-glow: rgba(234, 179, 8, 0.15);">
+        <img src="img/fandom.jpeg" alt="Fandom Hub" class="realm-card-bg-img" />
+        <div class="realm-card-overlay"></div>
+        <div class="realm-card-content">
+          <div>
+            <div class="realm-card-badge" style="background: var(--realm-color);">Pop Culture</div>
+            <h3 class="realm-card-title">Fandom Hub</h3>
+            <p class="realm-card-desc">Explore outer realms. Discover authentic action figures, collectibles, and official merchandise from pop culture multiverse classics.</p>
+          </div>
+          <div class="realm-card-btn">Shop Fandom</div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 

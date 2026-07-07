@@ -146,7 +146,7 @@ nav {
   background: rgba(0, 0, 0, 0.95) !important;
   border-bottom: 1px solid var(--theme-color) !important;
   box-shadow: 0 4px 20px -5px var(--theme-glow) !important;
-  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s !important;
+  transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s, background 0.3s !important;
 }
 :root.cosmic-theme nav {
   background: rgba(7, 3, 12, 0.94) !important;
@@ -287,6 +287,10 @@ nav {
   z-index: 100;
   background: rgba(7, 3, 12, 0.94);
   border-bottom: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+nav.nav-hidden {
+  transform: translateY(-100%) !important;
 }
 .nav-inner {
   max-width: 1280px;
@@ -2374,106 +2378,40 @@ body.theme-fandom::before {
 
 /* ── HOME SECTION: THE THREE REALMS ── */
 .realms-section {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   max-width: none !important;
   margin: 0 auto !important;
-  padding: 60px 0 0 0 !important;
+  padding: 60px 0 50px 0 !important;
+  background: var(--ink1);
 }
-.realms-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-@media (max-width: 992px) {
-  .realms-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-}
-.realm-card {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+.realms-bg-layer {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   z-index: 1;
+  pointer-events: none;
+  filter: blur(2px); /* reduced blur for better clarity */
 }
-.realm-card::before {
+.realms-bg-layer::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(7, 3, 12, 0.95) 90%);
-  transition: opacity 0.3s ease;
-  z-index: -1;
+  background: rgba(7, 3, 12, 0.2); /* softened overlay tint */
 }
-.realm-card.card-purple {
-  background-image: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(7, 3, 12, 0.8)), url('img/green_realm_bg.png');
+/* Trigger bg layer display when cards are hovered */
+.realms-section:has(.card-purple:hover) .realms-bg-layer.bg-purple {
+  opacity: 0.45; /* increased opacity from 0.15 */
 }
-.realm-card.card-blue {
-  background-image: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(7, 3, 12, 0.8)), url('img/green_realm_bg.png');
+.realms-section:has(.card-blue:hover) .realms-bg-layer.bg-blue {
+  opacity: 0.45; /* increased opacity from 0.15 */
 }
-.realm-card.card-yellow {
-  background-image: linear-gradient(135deg, rgba(217, 119, 6, 0.2), rgba(7, 3, 12, 0.8)), url('img/green_realm_bg.png');
-}
-.realm-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--card-hover-border);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--card-hover-glow);
-}
-.realm-card.card-purple:hover {
-  --card-hover-border: #a855f7;
-  --card-hover-glow: rgba(168, 85, 247, 0.3);
-}
-.realm-card.card-blue:hover {
-  --card-hover-border: #0ea5e9;
-  --card-hover-glow: rgba(14, 165, 233, 0.3);
-}
-.realm-card.card-yellow:hover {
-  --card-hover-border: #eab308;
-  --card-hover-glow: rgba(234, 179, 8, 0.3);
-}
-.realm-card-icon {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-.realm-card-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 32px;
-  letter-spacing: 0.05em;
-  color: var(--white);
-  margin-bottom: 8px;
-}
-.realm-card-desc {
-  font-size: 14px;
-  color: var(--muted);
-  margin-bottom: 20px;
-  line-height: 1.4;
-}
-.realm-card-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--theme-color);
-  transition: gap 0.2s ease;
-}
-.realm-card.card-purple .realm-card-btn { --theme-color: #c084fc; }
-.realm-card.card-blue .realm-card-btn { --theme-color: #38bdf8; }
-.realm-card.card-yellow .realm-card-btn { --theme-color: #facc15; }
-.realm-card:hover .realm-card-btn {
-  gap: 12px;
+.realms-section:has(.card-yellow:hover) .realms-bg-layer.bg-yellow {
+  opacity: 0.45; /* increased opacity from 0.15 */
 }
 
 /* ── REALM SWITCHER FOOTER AT SUBPAGES ── */
@@ -2539,97 +2477,91 @@ body.theme-fandom::before {
   color: var(--muted);
 }
 
-/* ── HORIZONTAL REALM BANNERS (DISNEY STYLE) ── */
-.realms-banners-list {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 0;
-}
-.realm-banner {
-  width: 100%;
-  height: 480px;
-  position: relative;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 0; /* Full bleed layout matches Disney Store */
-  border: none;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  box-shadow: none;
-  transition: border-color 0.4s ease;
-}
-.realm-banner:hover {
-  border-color: var(--realm-color);
-}
-.realm-banner-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  z-index: 1;
-}
-.realm-banner:hover .realm-banner-bg {
-  transform: scale(1.02);
-}
-.realm-banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Dark left overlay fading out towards the right to make left-aligned text perfectly readable */
-  background: linear-gradient(90deg, rgba(5, 5, 6, 0.9) 0%, rgba(5, 5, 6, 0.6) 40%, rgba(5, 5, 6, 0.1) 75%, rgba(5, 5, 6, 0) 100%);
-  z-index: 2;
-}
-.realm-banner-inner {
-  position: relative;
-  max-width: 1200px;
-  width: 100%;
+/* ── VERTICAL REALM CARDS (OVERLAID IMAGE STYLE) ── */
+.realms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 60px;
-  z-index: 3;
+  padding: 0 24px;
+}
+.realm-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  justify-content: flex-end;
+  height: 700px; /* Tall and premium layout matching shared image */
+  border-radius: 20px; /* Soft rounded corners matching the shared image */
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+  background: #000;
 }
-.realm-banner-badge {
+.realm-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--realm-color);
+  box-shadow: 0 12px 30px var(--realm-glow);
+}
+.realm-card-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.realm-card:hover .realm-card-bg-img {
+  transform: scale(1.04);
+}
+.realm-card-overlay {
+  position: absolute;
+  inset: 0;
+  /* Soft dark gradient from the bottom covering ~70% of height for high readability of text */
+  background: linear-gradient(180deg, rgba(5, 5, 6, 0) 30%, rgba(5, 5, 6, 0.4) 55%, rgba(5, 5, 6, 0.88) 80%, rgba(5, 5, 6, 0.98) 100%);
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+.realm-card-content {
+  position: relative;
+  z-index: 3;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.realm-card-badge {
   display: inline-block;
-  background: var(--realm-color);
+  align-self: flex-start;
   color: #000;
   font-family: var(--font-primary);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 4px;
+  margin-bottom: 4px;
 }
-.realm-banner-title {
+.realm-card-title {
   font-family: var(--font-primary);
-  font-size: clamp(32px, 3.5vw, 48px);
+  font-size: 34px;
   font-weight: 700;
   color: var(--white);
   line-height: 1.1;
   margin: 0;
-  max-width: 600px;
 }
-.realm-banner-desc {
+.realm-card-desc {
   font-family: var(--font-primary);
-  font-size: clamp(14px, 1.4vw, 15px);
+  font-size: 15px;
   color: #d1d5db;
   line-height: 1.5;
   margin: 0;
-  max-width: 500px;
 }
-.realm-banner-btn {
+.realm-card-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2637,38 +2569,31 @@ body.theme-fandom::before {
   color: #000 !important;
   font-family: var(--font-primary);
   font-weight: 700;
-  padding: 12px 28px;
+  padding: 12px 24px;
   border-radius: 4px; /* Clean rectangular corners with minor rounding like Disney Store buttons */
-  text-decoration: none;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: background-color 0.2s, transform 0.2s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-.realm-banner-btn:hover {
+.realm-card-btn:hover {
   background: #e5e7eb;
   transform: scale(1.02);
 }
 
+@media (max-width: 1024px) {
+  .realms-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
 @media (max-width: 768px) {
-  .realm-banner {
-    height: 400px;
-  }
-  .realm-banner-overlay {
-    background: linear-gradient(180deg, rgba(5, 5, 6, 0.4) 0%, rgba(5, 5, 6, 0.85) 60%, rgba(5, 5, 6, 0.95) 100%);
-  }
-  .realm-banner-inner {
-    padding: 0 24px;
-    justify-content: flex-end;
-    height: 100%;
-    padding-bottom: 40px;
-    gap: 12px;
-  }
-  .realm-banner-btn {
-    width: 100%;
-    text-align: center;
+  .realms-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
@@ -2772,6 +2697,151 @@ body.theme-fandom::before {
   .page-shop .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
 
+/* ── PROMO BANNER HEADERS (EDGE-TO-EDGE FULL BACKGROUND) ── */
+.bestsellers-banner,
+.recommended-banner {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0; /* Full bleed layout matches Disney Store */
+  height: 480px; /* consistent banner height */
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+}
+.bestsellers-banner {
+  background-image: url('img/bestsellers_banner.jpg');
+}
+.recommended-banner {
+  background-image: url('img/recommended_banner.jpg');
+}
+.bestsellers-banner::before,
+.recommended-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(7, 3, 12, 0.98) 0%, rgba(7, 3, 12, 0.8) 45%, rgba(7, 3, 12, 0.2) 75%, rgba(7, 3, 12, 0.05) 100%);
+  z-index: 1;
+}
+.bestsellers-banner-content,
+.recommended-banner-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 550px; /* keeps text box constrained to the left side */
+  margin: 0; /* left-align container instead of centering it */
+  padding: 60px 24px;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px)); /* aligns text with grid content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.bestsellers-banner-tag,
+.recommended-banner-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.bestsellers-banner-title,
+.recommended-banner-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(38px, 5vw, 60px);
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+.bestsellers-banner-desc,
+.recommended-banner-desc {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0;
+}
+.bestsellers-banner-actions,
+.recommended-banner-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.bestsellers-banner-actions .filter-select,
+.recommended-banner-actions .filter-select {
+  padding: 12px 20px;
+  background: var(--ink3);
+  border: 1px solid var(--border);
+  color: var(--white);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: border-color 0.2s;
+}
+.bestsellers-banner-actions .filter-select:hover,
+.recommended-banner-actions .filter-select:hover {
+  border-color: var(--green);
+}
+.bestsellers-banner-actions .btn-outline,
+.recommended-banner-actions .btn-outline {
+  padding: 12px 24px;
+  border: 1px solid var(--border);
+  color: var(--white);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.bestsellers-banner-actions .btn-outline:hover,
+.recommended-banner-actions .btn-outline:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: rgba(34, 197, 94, 0.04);
+}
+
+@media (max-width: 992px) {
+  .bestsellers-banner,
+  .recommended-banner {
+    height: auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 60px 0;
+  }
+  .bestsellers-banner::before,
+  .recommended-banner::before {
+    background: rgba(7, 3, 12, 0.85); /* slightly darker overlay on mobile for high readability */
+  }
+  .bestsellers-banner-content,
+  .recommended-banner-content {
+    padding: 24px;
+  }
+}
+
 /* ── PRODUCT CAROUSEL / SLIDER (HOMEPAGE) ── */
 .products-slider-container {
   position: relative;
@@ -2843,15 +2913,32 @@ body.theme-fandom::before {
   right: -22px;
 }
 
-/* Hide arrows on mobile/tablet since swiping is native and preferred */
+/* Show arrows on mobile/tablet, positioned inside the container and made smaller */
 @media (max-width: 1024px) {
   .slider-arrow {
-    display: none !important;
+    display: flex !important; /* Force show arrows */
+    width: 36px;
+    height: 36px;
+    top: 35%; /* position relative to card images */
+  }
+  .slider-arrow.arrow-prev {
+    left: 8px;
+  }
+  .slider-arrow.arrow-next {
+    right: 8px;
   }
   .products-slider-container .products-grid {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
+}
+
+/* Specific padding overrides to break the global .section !important padding spacing */
+#shop.section {
+  padding-bottom: 50px !important;
+}
+#recommended-products.section {
+  padding-top: 0 !important;
 }
 
 

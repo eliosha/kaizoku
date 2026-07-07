@@ -33,12 +33,11 @@
               <ul id="categoryList" style="list-style: none; display: flex; flex-direction: column; gap: 8px; padding-left: 0;">
                 <li><a href="#" class="category-link active" data-category="all" style="color: var(--green); text-decoration: none; font-weight: 600; font-size: 14px; display: block;">All Loot</a></li>
                 <li><a href="#" class="category-link" data-category="clothing" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Clothing</a></li>
-                <li><a href="#" class="category-link" data-category="figurines" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Figurines</a></li>
+                <li><a href="#" class="category-link" data-category="collectibles" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Collectibles</a></li>
                 <li><a href="#" class="category-link" data-category="accessories" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Accessories</a></li>
                 <li><a href="#" class="category-link" data-category="decor" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Decor</a></li>
                 <li><a href="#" class="category-link" data-category="manga" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Manga &amp; Comics</a></li>
                 <li><a href="#" class="category-link" data-category="cosplay-kits" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Cosplay Kits</a></li>
-                <li><a href="#" class="category-link" data-category="alloy-collectibles" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Alloy Collectibles</a></li>
                 <li><a href="#" class="category-link" data-category="jewelry" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Jewelry</a></li>
                 <li><a href="#" class="category-link" data-category="gifts" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; display: block;">Gifts</a></li>
               </ul>
@@ -157,7 +156,11 @@
 
             // Filter by category
             if (currentCategory !== 'all') {
-              items = items.filter(item => item.category === currentCategory);
+              if (currentCategory === 'collectibles') {
+                items = items.filter(item => item.category === 'figurines' || item.category === 'alloy-collectibles');
+              } else {
+                items = items.filter(item => item.category === currentCategory);
+              }
             }
 
             // Filter by search query

@@ -977,39 +977,85 @@ const getNavbarHTML = () => `
         <li class="dropdown">
           <a href="${pathPrefix}aesthetic-nerds.html" class="nav-realm-link realm-purple">Clothing <span class="arrow">&#9662;</span></a>
           <ul class="dropdown-menu">
-            <li><a href="${pathPrefix}shop.html?category=clothing&q=hoodie">Hoodies</a></li>
             <li><a href="${pathPrefix}shop.html?category=clothing&q=shirt">T-Shirts</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=hoodie">Hoodies</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=sweater">Sweater shirts</a></li>
             <li><a href="${pathPrefix}shop.html?category=clothing&q=shorts">Shorts</a></li>
-            <li><a href="${pathPrefix}shop.html?category=clothing&q=sweatpants">Sweatpants</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=tank">Tank Tops</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=sweatpants">Bottoms</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=jeans">Jeans</a></li>
+            <li><a href="${pathPrefix}shop.html?category=clothing&q=jersey">Jerseys</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="${pathPrefix}shop.html?category=accessories">Accessories <span class="arrow">&#9662;</span></a>
           <ul class="dropdown-menu">
-            <li><a href="${pathPrefix}shop.html?category=accessories&q=bracelets">Bracelets</a></li>
-            <li><a href="${pathPrefix}shop.html?category=accessories&q=bag">Bags</a></li>
-            <li><a href="${pathPrefix}shop.html?category=accessories&q=earrings">Earrings</a></li>
-            <li><a href="${pathPrefix}shop.html?category=accessories&q=keychain">Key Chains</a></li>
-            <li><a href="${pathPrefix}shop.html?category=accessories&q=necklace">Necklaces</a></li>
-            <li><a href="${pathPrefix}shop.html?category=accessories&q=ring">Rings</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=tech">Tech: Phone cases/Mouse pads</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=wearable">Wearable: Socks/Tote Bags/Bags/Backpacks/Wallets</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=home">Home: Pillows/Mugs</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=headwear">Headwear: Beanies/Hats/Baseball Caps</a></li>
+            <li><a href="${pathPrefix}shop.html?category=accessories&q=scholastic">Scholastic: Notebooks/Manga</a></li>
           </ul>
         </li>
-        <li><a href="${pathPrefix}shop.html?category=cosplay-kits">Cosplay</a></li>
-        <li><a href="${pathPrefix}shop.html?category=gifts">Gifts</a></li>
-        <li><a href="${pathPrefix}shop.html?category=jewelry">Jewelry</a></li>
-        <li><a href="${pathPrefix}shop.html?category=figurines">Figurines</a></li>
+        <li class="dropdown">
+          <a href="${pathPrefix}shop.html?category=jewelry">Jewelry <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=keychain">Keychains</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=necklace">Necklaces</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=bracelet">Bracelets</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=earring">Earrings</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=ring">Rings</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=pin">Pins</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="${pathPrefix}shop.html?category=cosplay-kits">Cosplay <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="${pathPrefix}shop.html?category=cosplay-kits&q=sword">Swords</a></li>
+            <li><a href="${pathPrefix}shop.html?category=cosplay-kits&q=costume">Costumes</a></li>
+            <li><a href="${pathPrefix}shop.html?category=cosplay-kits&q=manga">Manga</a></li>
+            <li><a href="${pathPrefix}shop.html?category=cosplay-kits&q=chachki">Chachkis</a></li>
+            <li><a href="${pathPrefix}shop.html?category=cosplay-kits&q=mask">Masks</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="${pathPrefix}shop.html?category=decor">Decor <span class="arrow">&#9662;</span></a>
           <ul class="dropdown-menu">
+            <li><a href="${pathPrefix}shop.html?category=decor&q=wall">Wall Hangings</a></li>
             <li><a href="${pathPrefix}shop.html?category=decor&q=poster">Posters</a></li>
             <li><a href="${pathPrefix}shop.html?category=decor&q=sticker">Stickers</a></li>
+            <li><a href="${pathPrefix}shop.html?category=decor&q=framed">Framed prints</a></li>
+            <li><a href="${pathPrefix}shop.html?category=decor&q=canvas">Canvas prints</a></li>
+            <li><a href="${pathPrefix}shop.html?category=decor&q=board">Art board prints</a></li>
+            <li><a href="${pathPrefix}shop.html?category=decor&q=lamp">Lamps</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="${pathPrefix}shop.html?category=gifts">Gifts <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=card">Anime Birthday Cards</a></li>
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=pack">Gift Pack</a></li>
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=him">Gift Guide: For Him</a></li>
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=her">Gift Guide: For Her</a></li>
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=kids">Gift Guide: For Kids</a></li>
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=birthday">Gift Guide: Birthday</a></li>
+            <li><a href="${pathPrefix}shop.html?category=gifts&q=special">Gift Guide: Anniversary/Special Occasion</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="${pathPrefix}shop.html?category=collectibles">Collectibles <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="${pathPrefix}shop.html?category=collectibles&q=car">Car Collectibles</a></li>
+            <li><a href="${pathPrefix}shop.html?category=collectibles&q=action">Action Figures</a></li>
+            <li><a href="${pathPrefix}shop.html?category=collectibles&q=plush">Plushies</a></li>
+            <li><a href="${pathPrefix}shop.html?category=collectibles&q=acrylic">Acrylic Figurines</a></li>
           </ul>
         </li>
       </ul>
       <div class="nav-actions">
         <input class="nav-search" type="text" placeholder="Search merch…"/>
         <button class="cart-btn" onclick="openCart()">
-          🛒 Cart <span class="cart-count" id="cartCount">0</span>
+          Cart <span class="cart-count" id="cartCount">0</span>
         </button>
         <button class="mobile-menu-btn">☰</button>
       </div>
@@ -1038,7 +1084,7 @@ const getFooterHTML = () => `
           <li><a href="${pathPrefix}shop.html">All Products</a></li>
           <li><a href="${pathPrefix}shop.html?category=clothing">Clothing</a></li>
           <li><a href="${pathPrefix}shop.html?category=accessories">Accessories</a></li>
-          <li><a href="${pathPrefix}shop.html?category=figurines">Figurines</a></li>
+          <li><a href="${pathPrefix}shop.html?category=collectibles">Collectibles</a></li>
           <li><a href="${pathPrefix}shop.html?category=manga">Manga & Comics</a></li>
           <li><a href="${pathPrefix}shop.html?category=cosplay-kits">Cosplay Kits</a></li>
           <li><a href="${pathPrefix}shop.html">Collections</a></li>
@@ -1108,6 +1154,41 @@ document.addEventListener("DOMContentLoaded", () => {
   if (header) {
     header.innerHTML = getNavbarHTML();
     updateThemeIcon();
+
+    // Smart Reveal Header Reveal on Scroll Up
+    const nav = header.querySelector('nav');
+    if (nav) {
+      let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollThreshold = 5; // Low threshold for high sensitivity and immediate response
+
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+        
+        // Prevent boundary bounce issue
+        if (currentScrollY < 0 || currentScrollY > maxScrollY) return;
+
+        const scrollDiff = currentScrollY - lastScrollY;
+
+        // Always show if scrolled near top
+        if (currentScrollY <= 50) {
+          nav.classList.remove('nav-hidden');
+          lastScrollY = currentScrollY;
+          return;
+        }
+
+        if (Math.abs(scrollDiff) > scrollThreshold) {
+          if (scrollDiff > 0) {
+            // Scrolling down -> hide navbar
+            nav.classList.add('nav-hidden');
+          } else {
+            // Scrolling up -> show navbar
+            nav.classList.remove('nav-hidden');
+          }
+          lastScrollY = currentScrollY;
+        }
+      }, { passive: true });
+    }
   }
 
   const footer = document.getElementById('shared-footer');
