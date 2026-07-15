@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Kaizoku Realm</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="icon" type="image/png" href="../public/kaizoku.png" />
+    <meta name="description" content="Find answers to frequently asked questions about shipping, Ntinda pickup, custom orders, and payments at Kaizoku Realm." />
+    <style>
+      .faq-group {
+        margin-bottom: 40px;
+      }
+      .faq-group-title {
+        font-family: 'Space Mono', monospace;
+        font-size: 14px;
+        color: var(--clr-green-light);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        padding-left: 8px;
+        border-left: 3px solid var(--clr-green-light);
+      }
+      .faq-item {
+        background: rgba(18, 9, 28, 0.45);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        transition: all 0.25s ease;
+      }
+      .faq-item:hover {
+        border-color: var(--clr-purple-glow);
+        box-shadow: 0 4px 16px rgba(168, 85, 247, 0.1);
+      }
+      .faq-question {
+        padding: 20px 24px;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        color: var(--white);
+        outline: none;
+      }
+      .faq-question::-webkit-details-marker {
+        display: none;
+      }
+      .faq-question::after {
+        content: '+';
+        font-size: 20px;
+        color: var(--clr-purple-light);
+        transition: transform 0.25s ease;
+      }
+      details[open] .faq-question::after {
+        content: '−';
+        transform: rotate(180deg);
+        color: var(--clr-green-light);
+      }
+      .faq-answer {
+        padding: 0 24px 20px 24px;
+        color: var(--clr-text-muted);
+        line-height: 1.7;
+        font-size: 14px;
+        border-top: 1px solid transparent;
+      }
+      details[open] .faq-answer {
+        border-top: 1px solid var(--border);
+        padding-top: 16px;
+      }
+      details[open] {
+        border-color: var(--clr-purple-glow);
+        background: rgba(18, 9, 28, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Shared Navbar -->
+    <div id="shared-header"></div>
+
+    <main class="container" style="padding-top: 120px; padding-bottom: 80px; max-width: 900px; margin: 0 auto; padding-left: 24px; padding-right: 24px;">
+      <!-- Page Header -->
+      <div class="text-center mb-5" style="margin-bottom: 50px;">
+        <span class="section-label" style="color: var(--clr-purple-light); font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase;">Otaku Help Desk</span>
+        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 6vw, 64px); letter-spacing: 0.05em; line-height: 1.1; margin-top: 10px; margin-bottom: 20px;">
+          FREQUENTLY ASKED <span style="color: var(--clr-purple-light)">QUESTIONS</span>
+        </h1>
+        <p style="color: var(--clr-text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+          Everything you need to know about deliveries, payment methods, Ntinda local pick-up, and custom orders.
+        </p>
+      </div>
+
+      <!-- FAQ Container -->
+      <div style="margin-top: 40px;">
+        
+        <!-- Category 1: Orders & Custom Prints -->
+        <div class="faq-group">
+          <h3 class="faq-group-title">Orders & Custom Prints</h3>
+          
+          <details class="faq-item">
+            <summary class="faq-question">How do I place a custom order or custom print request?</summary>
+            <div class="faq-answer">
+              You can submit a custom order request through our <a href="about.html#contact-section" style="color: var(--clr-green-light); text-decoration: underline;">Contact Form</a> under the "Custom Order / Custom Print" subject, or simply <a href="https://wa.me/256703765398" target="_blank" style="color: var(--clr-green-light); text-decoration: underline;">WhatsApp us directly</a> with your images, high-res posters, or design files!
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What sizes are available for apparel?</summary>
+            <div class="faq-answer">
+              Our standard size guide ranges from S to XXL for most hoodies, t-shirts, and sweaters. If you require oversized fittings, customized lengths, or specific dimensions, you can WhatsApp us immediately after checkout and we will configure your gear accordingly.
+            </div>
+          </details>
+        </div>
+
+        <!-- Category 2: Shipping & Ntinda Pickup -->
+        <div class="faq-group">
+          <h3 class="faq-group-title">Shipping & Store Pick-up</h3>
+          
+          <details class="faq-item">
+            <summary class="faq-question">Can I pick up my order directly from the store?</summary>
+            <div class="faq-answer">
+              Yes, absolutely! You can choose the **Pay In-Store** option during checkout and collect your order. Our physical location is: <strong>Reed Complex, Ntinda - Old Kiira Road, Shop C-08, Kampala, Uganda</strong>. We are open Monday to Saturday from 9:00 AM to 7:00 PM.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How long does shipping take and how much does it cost?</summary>
+            <div class="faq-answer">
+              We deliver Kampala-wide. Ntinda and nearby locations standard deliveries are usually completed within 24 hours. Other regions around Kampala take 1 to 2 business days. Delivery rates vary from UGX 5,000 to UGX 15,000 depending on your exact address.
+            </div>
+          </details>
+        </div>
+
+        <!-- Category 3: Payments & Confirmation -->
+        <div class="faq-group">
+          <h3 class="faq-group-title">Payments & Security</h3>
+          
+          <details class="faq-item">
+            <summary class="faq-question">What payment options do you support?</summary>
+            <div class="faq-answer">
+              We support three secure channels:
+              <br><br>
+              1. 📱 <strong>Mobile Money:</strong> Pay directly to MTN MoMo number <strong>0703 765398</strong> (Kaizoku Realm) and share your transaction confirm on WhatsApp.
+              <br>
+              2. 💵 <strong>Cash on Delivery:</strong> Pay our dispatch rider directly upon receiving your order.
+              <br>
+              3. 🏪 <strong>Pay In-Store:</strong> Cash or Mobile Money transfers at our Ntinda branch.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Do you confirm orders via WhatsApp?</summary>
+            <div class="faq-answer">
+              Yes, we confirm every single web order. Once you place an order on our site, our customer care crew will send a text notification to your phone or WhatsApp within 1–2 hours to finalize details and schedule your dispatch.
+            </div>
+          </details>
+        </div>
+
+        <!-- Category 4: Returns & Refunds -->
+        <div class="faq-group">
+          <h3 class="faq-group-title">Returns & Exchanges</h3>
+          
+          <details class="faq-item">
+            <summary class="faq-question">What is your returns/exchange policy?</summary>
+            <div class="faq-answer">
+              We allow returns or exchanges within 7 days of purchase for unworn apparel items and unopened/undamaged collectibles. Please note that **custom prints or custom-designed orders** are final sale and cannot be returned unless they arrive defective.
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <!-- Quick contact box -->
+      <div class="glass-card text-center" style="margin-top: 60px; padding: 40px; border-color: var(--border); background: rgba(18, 9, 28, 0.455);">
+        <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.05em; margin-bottom: 12px; color: var(--white);">
+          STILL HAVE QUESTIONS?
+        </h3>
+        <p style="color: var(--clr-text-muted); margin-bottom: 24px; font-size: 14px;">
+          Send us a message directly and our crew will get back to you!
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="about.html#contact-section" class="btn btn-primary" style="text-decoration: none; padding: 12px 24px;">Contact Us</a>
+          <a href="https://wa.me/256703765398" target="_blank" class="btn btn-outline" style="text-decoration: none; padding: 12px 24px; color: var(--clr-green-light); border-color: var(--clr-green-light);">WhatsApp Chat</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>

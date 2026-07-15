@@ -59,6 +59,17 @@
             </div>
           </div>
 
+          <!-- Color Picker (if applicable) -->
+          <div class="size-section" id="colorSection" style="display: none; margin-top: 16px; margin-bottom: 24px;">
+            <div class="size-label">
+              <span>Select Color:</span>
+              <span id="selectedColorDisplay" style="color: var(--green); font-weight: 700;"></span>
+            </div>
+            <div class="size-pills" id="colorPills">
+              <!-- Dynamic color pills -->
+            </div>
+          </div>
+
           <!-- Quantity Section -->
           <div class="qty-section" id="qtySection">
             <span style="font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Quantity:</span>
@@ -223,35 +234,216 @@
           const thumbStack = document.getElementById('thumbStack');
           const mainActiveImage = document.getElementById('mainActiveImage');
 
-          // Ensure we have an array of image strings
-          const imgs = product.images && product.images.length ? product.images : [
-            'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
-          ];
-          
-          mainActiveImage.src = imgs[0];
-          mainActiveImage.alt = product.name;
+          let activeFilteredImages = [];
 
-          // Render thumbnails
-          thumbStack.innerHTML = imgs.map((imgUrl, idx) => `
-            <div class="thumb-item ${idx === 0 ? 'active' : ''}" data-index="${idx}">
-              <img src="${imgUrl}" alt="${product.name} Thumbnail ${idx + 1}" />
-            </div>
-          `).join('');
+          const renderGallery = (imgsList) => {
+            activeFilteredImages = imgsList && imgsList.length ? imgsList : [
+              'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80'
+            ];
+            
+            mainActiveImage.src = window.resolveImagePath(activeFilteredImages[0]);
+            mainActiveImage.alt = product.name;
 
-          // Bind click and hover interactions to thumbnails
-          const thumbs = document.querySelectorAll('.thumb-item');
-          thumbs.forEach(thumb => {
-            const index = thumb.getAttribute('data-index');
-            const imgUrl = imgs[index];
+            // Render thumbnails
+            thumbStack.innerHTML = activeFilteredImages.map((imgUrl, idx) => `
+              <div class="thumb-item ${idx === 0 ? 'active' : ''}" data-index="${idx}">
+                <img src="${window.resolveImagePath(imgUrl)}" alt="${product.name} Thumbnail ${idx + 1}" />
+              </div>
+            `).join('');
 
-            const switchImage = () => {
-              mainActiveImage.src = imgUrl;
-              thumbs.forEach(t => t.classList.remove('active'));
-              thumb.classList.add('active');
-            };
+            // Bind click and hover interactions to thumbnails
+            const thumbs = document.querySelectorAll('.thumb-item');
+            thumbs.forEach(thumb => {
+              const index = Number(thumb.getAttribute('data-index'));
+              const imgUrl = activeFilteredImages[index];
 
-            thumb.addEventListener('click', switchImage);
-            thumb.addEventListener('mouseenter', switchImage);
+              const switchImage = () => {
+                mainActiveImage.src = window.resolveImagePath(imgUrl);
+                thumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+              };
+
+              thumb.addEventListener('click', switchImage);
+              thumb.addEventListener('mouseenter', switchImage);
+            });
+          };
+
+          const getFilteredImages = (colorName) => {
+            if (!colorName || colorName === 'Default') return product.images || [];
+            
+            const colorSlug = colorName.toLowerCase().replace(/[^a-z0-9]/g, '-');
+            const otherColorsSlugs = (product.colors || [])
+              .filter(c => c !== colorName)
+              .map(c => c.toLowerCase().replace(/[^a-z0-9]/g, '-'));
+              
+            const filtered = (product.images || []).filter(imgUrl => {
+              const imgLower = imgUrl.toLowerCase();
+              const cleanColorName = colorName.toLowerCase();
+              
+              if (imgLower.includes(`_${colorSlug}_`) || imgLower.includes(`/${colorSlug}_`) || imgLower.includes(cleanColorName)) {
+                return true;
+              }
+              
+              for (const otherSlug of otherColorsSlugs) {
+                if (imgLower.includes(`_${otherSlug}_`) || imgLower.includes(`/${otherSlug}_`)) {
+                  return false;
+                }
+              }
+              
+              return true;
+            });
+            
+            return filtered.length > 0 ? filtered : product.images || [];
+          };
+
+          // Initial gallery render
+          renderGallery(product.images);
+
+          // Lightbox & Image Zoom Functionality
+          let lightboxModal = document.getElementById('lightboxModal');
+          if (!lightboxModal) {
+            lightboxModal = document.createElement('div');
+            lightboxModal.id = 'lightboxModal';
+            lightboxModal.className = 'lightbox-modal';
+            lightboxModal.innerHTML = `
+              <button class="lightbox-close-btn" id="lightboxCloseBtn">✕</button>
+              <div class="lightbox-content-wrapper" id="lightboxWrapper">
+                <img class="lightbox-img" id="lightboxImage" src="" alt="Zoomed Product Image" />
+              </div>
+              <div class="lightbox-controls">
+                <button class="lightbox-btn" id="lightboxZoomOutBtn">−</button>
+                <span class="lightbox-zoom-indicator" id="lightboxZoomIndicator">100%</span>
+                <button class="lightbox-btn" id="lightboxZoomInBtn">+</button>
+                <button class="lightbox-btn" id="lightboxResetBtn" style="font-size: 14px; font-weight: bold;">FIT</button>
+              </div>
+            `;
+            document.body.appendChild(lightboxModal);
+          }
+
+          const lightboxImage = document.getElementById('lightboxImage');
+          const lightboxWrapper = document.getElementById('lightboxWrapper');
+          const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+          const zoomInBtn = document.getElementById('lightboxZoomInBtn');
+          const zoomOutBtn = document.getElementById('lightboxZoomOutBtn');
+          const resetBtn = document.getElementById('lightboxResetBtn');
+          const zoomIndicator = document.getElementById('lightboxZoomIndicator');
+
+          let scale = 1.0;
+          let isDragging = false;
+          let startX = 0, startY = 0;
+          let translateX = 0, translateY = 0;
+
+          const updateImageTransform = () => {
+            lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            zoomIndicator.textContent = `${Math.round(scale * 100)}%`;
+          };
+
+          const resetZoom = () => {
+            scale = 1.0;
+            translateX = 0;
+            translateY = 0;
+            updateImageTransform();
+          };
+
+          // Open Lightbox on Main Image click
+          mainActiveImage.addEventListener('click', () => {
+            lightboxImage.src = mainActiveImage.src;
+            resetZoom();
+            lightboxModal.classList.add('open');
+            document.body.style.overflow = 'hidden'; // Prevent page scrolling
+          });
+
+          // Close Lightbox
+          const closeLightbox = () => {
+            lightboxModal.classList.remove('open');
+            document.body.style.overflow = '';
+          };
+          lightboxCloseBtn.addEventListener('click', closeLightbox);
+          lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal || e.target === lightboxWrapper) {
+              closeLightbox();
+            }
+          });
+
+          // Keyboard listeners
+          document.addEventListener('keydown', (e) => {
+            if (lightboxModal.classList.contains('open')) {
+              if (e.key === 'Escape') closeLightbox();
+              if (e.key === '=' || e.key === '+') zoomIn();
+              if (e.key === '-') zoomOut();
+            }
+          });
+
+          // Zoom In
+          const zoomIn = () => {
+            if (scale < 4.0) {
+              scale = Math.min(scale + 0.25, 4.0);
+              updateImageTransform();
+            }
+          };
+          zoomInBtn.addEventListener('click', zoomIn);
+
+          // Zoom Out
+          const zoomOut = () => {
+            if (scale > 0.5) {
+              scale = Math.max(scale - 0.25, 0.5);
+              updateImageTransform();
+            }
+          };
+          zoomOutBtn.addEventListener('click', zoomOut);
+
+          // Reset Zoom Button
+          resetBtn.addEventListener('click', resetZoom);
+
+          // Mouse Wheel Zoom
+          lightboxWrapper.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const zoomSpeed = 0.05;
+            if (e.deltaY < 0) {
+              scale = Math.min(scale + zoomSpeed, 4.0);
+            } else {
+              scale = Math.max(scale - zoomSpeed, 0.5);
+            }
+            updateImageTransform();
+          }, { passive: false });
+
+          // Mouse Panning / Dragging
+          lightboxWrapper.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            isDragging = true;
+            startX = e.clientX - translateX;
+            startY = e.clientY - translateY;
+          });
+
+          window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            translateX = e.clientX - startX;
+            translateY = e.clientY - startY;
+            updateImageTransform();
+          });
+
+          window.addEventListener('mouseup', () => {
+            isDragging = false;
+          });
+
+          // Touch Gestures for Mobile Panning
+          lightboxWrapper.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+              isDragging = true;
+              startX = e.touches[0].clientX - translateX;
+              startY = e.touches[0].clientY - translateY;
+            }
+          });
+
+          lightboxWrapper.addEventListener('touchmove', (e) => {
+            if (!isDragging || e.touches.length !== 1) return;
+            translateX = e.touches[0].clientX - startX;
+            translateY = e.touches[0].clientY - translateY;
+            updateImageTransform();
+          });
+
+          lightboxWrapper.addEventListener('touchend', () => {
+            isDragging = false;
           });
 
           // Size Selection Configuration
@@ -271,7 +463,7 @@
             `).join('');
 
             // Click listener for size selection
-            const pills = document.querySelectorAll('.size-pill');
+            const pills = sizePills.querySelectorAll('.size-pill');
             pills.forEach(pill => {
               pill.addEventListener('click', () => {
                 selectedSize = pill.getAttribute('data-size');
@@ -280,6 +472,41 @@
                 pill.classList.add('active');
               });
             });
+          }
+
+          // Color Selection Configuration
+          let selectedColor = '';
+          const colorSection = document.getElementById('colorSection');
+          if (product.colors && product.colors.length > 0) {
+            colorSection.style.display = 'block';
+            const colorPills = document.getElementById('colorPills');
+            const colorDisplay = document.getElementById('selectedColorDisplay');
+            
+            selectedColor = product.colors[0];
+            colorDisplay.textContent = selectedColor;
+
+            colorPills.innerHTML = product.colors.map(color => `
+              <button class="size-pill ${color === selectedColor ? 'active' : ''}" data-color="${color}">${color}</button>
+            `).join('');
+
+            // Click listener for color selection
+            const pills = colorPills.querySelectorAll('.size-pill');
+            pills.forEach(pill => {
+              pill.addEventListener('click', () => {
+                selectedColor = pill.getAttribute('data-color');
+                colorDisplay.textContent = selectedColor;
+                pills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                
+                // Re-render gallery
+                const filteredImgs = getFilteredImages(selectedColor);
+                renderGallery(filteredImgs);
+              });
+            });
+
+            // Trigger initial gallery filter for first color
+            const initialFiltered = getFilteredImages(selectedColor);
+            renderGallery(initialFiltered);
           }
 
           // Specifications list
@@ -295,8 +522,6 @@
               <li>Official Kaizoku Realm collection item</li>
             `;
           }
-
-
 
           // Quantity adjustments
           let qty = 1;
@@ -318,15 +543,26 @@
             actionBtn.textContent = 'WhatsApp to Order';
             actionBtn.style.background = '#22c55e';
             actionBtn.addEventListener('click', () => {
-              const message = `Hi! I'm interested in ordering the "${product.name}" from Kaizoku Realm. Could you please provide details on pricing and availability?`;
+              let optionsStr = '';
+              if (selectedSize || selectedColor) {
+                const parts = [];
+                if (selectedSize) parts.push(`Size: ${selectedSize}`);
+                if (selectedColor) parts.push(`Color: ${selectedColor}`);
+                optionsStr = ` (${parts.join(', ')})`;
+              }
+              const message = `Hi! I'm interested in ordering the "${product.name}${optionsStr}" from Kaizoku Realm. Could you please provide details on pricing and availability?`;
               window.open(`https://wa.me/256703765398?text=${encodeURIComponent(message)}`, '_blank');
             });
           } else {
             actionBtn.textContent = 'Add to Bag';
             actionBtn.addEventListener('click', () => {
               if (window.addToCart) {
-                const displayName = selectedSize ? `${product.name} (${selectedSize})` : product.name;
-                window.addToCart(displayName, product.price, imgs[0], qty);
+                const parts = [];
+                if (selectedSize) parts.push(selectedSize);
+                if (selectedColor) parts.push(selectedColor);
+                const displayName = parts.length > 0 ? `${product.name} (${parts.join(' - ')})` : product.name;
+                const activeImg = mainActiveImage.src;
+                window.addToCart(displayName, product.price, activeImg, qty);
               }
             });
           }
@@ -367,7 +603,7 @@
               <div class="product-card" onclick="window.openProduct('${k}')" style="position: relative;">
                 ${badgeHTML}
                 <div class="product-img">
-                  <img src="${item.images[0]}" alt="${item.name}">
+                  <img src="${window.resolveImagePath(item.images[0])}" alt="${item.name}">
                 </div>
                 <div class="product-info">
                   <div class="product-series">${item.series}</div>

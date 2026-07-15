@@ -103,6 +103,7 @@
           <div class="products-grid" id="shopProductsGrid">
             <!-- Dynamic cards rendered by JS -->
           </div>
+          <div class="pagination-container" id="shopPagination"></div>
         </section>
       </div>
     </main>
@@ -139,6 +140,9 @@
             return selected;
           };
 
+          let currentPage = 1;
+          const itemsPerPage = 16;
+
           const updateProducts = () => {
             const query = searchInput.value.toLowerCase().trim();
             const maxPrice = Number(priceRange.value);
@@ -157,7 +161,7 @@
             // Filter by category
             if (currentCategory !== 'all') {
               if (currentCategory === 'collectibles') {
-                items = items.filter(item => item.category === 'figurines' || item.category === 'alloy-collectibles');
+                items = items.filter(item => item.category === 'figurines' || item.category === 'alloy-collectibles' || item.category === 'collectibles');
               } else {
                 items = items.filter(item => item.category === currentCategory);
               }
@@ -165,11 +169,20 @@
 
             // Filter by search query
             if (query) {
-              items = items.filter(item => 
-                item.name.toLowerCase().includes(query) || 
-                item.series.toLowerCase().includes(query) || 
-                item.description.toLowerCase().includes(query)
-              );
+              items = items.filter(item => {
+                const name = item.name.toLowerCase();
+                const series = item.series.toLowerCase();
+                const desc = item.description.toLowerCase();
+                if (query === 'hat') {
+                  if (name.includes('wallet') || name.includes('tote') || name.includes('bag')) {
+                    return false;
+                  }
+                  return name.includes('hat') || name.includes('cap') || name.includes('beanie') ||
+                         desc.includes('hat') || desc.includes('cap') || desc.includes('beanie') ||
+                         series.includes(query);
+                }
+                return name.includes(query) || series.includes(query) || desc.includes(query);
+              });
             }
 
             // Filter by price / availability
@@ -202,17 +215,28 @@
               items.sort((a, b) => a.name.localeCompare(b.name));
             }
 
-            // Render
-            if (items.length === 0) {
+            // Pagination Calculations
+            const totalItems = items.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = items.slice(start, end);
+
+            // Render products
+            if (totalItems === 0) {
               grid.innerHTML = `
                 <div style="grid-column: span 3; text-align: center; padding: 60px 0; width: 100%;">
                   <p style="color: var(--muted); font-size: 16px;">🏴‍☠️ No items match your filters.</p>
                 </div>
               `;
+              const paginationContainer = document.getElementById('shopPagination');
+              if (paginationContainer) paginationContainer.innerHTML = '';
               return;
             }
 
-            grid.innerHTML = items.map(item => {
+            grid.innerHTML = pageItems.map(item => {
               let badgeHTML = '';
               if (item.discount && item.price !== null) {
                 badgeHTML = `<span class="product-badge discount">${item.discount}</span>`;
@@ -229,7 +253,7 @@
                 `;
               } else {
                 actionBtnHTML = `
-                  <button class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 10px; font-size: 12px;" onclick="event.stopPropagation(); addToCart('${item.name}', ${item.price}, '${item.images[0]}')">
+                  <button class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 10px; font-size: 12px;" onclick="event.stopPropagation(); addToCart('${item.name}', ${item.price}, '${window.resolveImagePath(item.images[0])}')">
                     Add to Cart
                   </button>
                 `;
@@ -239,7 +263,7 @@
                 <div class="product-card" onclick="window.openProduct('${item.id}')" style="position: relative;">
                   ${badgeHTML}
                   <div class="product-img">
-                    <img src="${item.images[0]}" alt="${item.name}" loading="lazy"/>
+                    <img src="${window.resolveImagePath(item.images[0])}" alt="${item.name}" loading="lazy"/>
                   </div>
                   <div class="product-info">
                     <div class="product-series">${item.series}</div>
@@ -254,20 +278,100 @@
               `;
             }).join('');
 
+            // Render Pagination
+            const paginationContainer = document.getElementById('shopPagination');
+            if (paginationContainer) {
+              if (totalPages <= 1) {
+                paginationContainer.innerHTML = '';
+              } else {
+                let buttonsHTML = '';
+                
+                // First button: |<
+                buttonsHTML += `
+                  <button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="window.setPage(1)">
+                    |&lt;
+                  </button>
+                `;
+                
+                // Prev button: <
+                buttonsHTML += `
+                  <button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="window.setPage(${currentPage - 1})">
+                    &lt;
+                  </button>
+                `;
+                
+                // Page numbers
+                const startPage = Math.max(1, currentPage - 1);
+                const endPage = Math.min(totalPages, currentPage + 1);
+                
+                if (startPage > 1) {
+                  buttonsHTML += `<button class="pagination-btn" onclick="window.setPage(1)">1</button>`;
+                  if (startPage > 2) {
+                    buttonsHTML += `<span style="color: var(--muted); margin: 0 4px;">...</span>`;
+                  }
+                }
+                
+                for (let p = startPage; p <= endPage; p++) {
+                  buttonsHTML += `
+                    <button class="pagination-btn ${p === currentPage ? 'active' : ''}" onclick="window.setPage(${p})">
+                      ${p}
+                    </button>
+                  `;
+                }
+                
+                if (endPage < totalPages) {
+                  if (endPage < totalPages - 1) {
+                    buttonsHTML += `<span style="color: var(--muted); margin: 0 4px;">...</span>`;
+                  }
+                  buttonsHTML += `<button class="pagination-btn" onclick="window.setPage(${totalPages})">${totalPages}</button>`;
+                }
+                
+                // Next button: >
+                buttonsHTML += `
+                  <button class="pagination-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="window.setPage(${currentPage + 1})">
+                    &gt;
+                  </button>
+                `;
+                
+                // Last button: >|
+                buttonsHTML += `
+                  <button class="pagination-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="window.setPage(${totalPages})">
+                    &gt;|
+                  </button>
+                `;
+                
+                paginationContainer.innerHTML = buttonsHTML;
+              }
+            }
+
             // Sync wishlists UI
             if (window.updateWishlistUI) {
               window.updateWishlistUI();
             }
           };
 
+          window.setPage = (page) => {
+            currentPage = page;
+            updateProducts();
+            const mainContent = document.getElementById('shopProductsGrid');
+            if (mainContent) {
+              mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          };
+
+          const handleFilterChange = () => {
+            currentPage = 1;
+            updateProducts();
+          };
+
           // Event Listeners
-          searchInput.addEventListener('input', updateProducts);
-          priceRange.addEventListener('input', updateProducts);
-          includeUnpriced.addEventListener('change', updateProducts);
-          sortBy.addEventListener('change', updateProducts);
+          searchInput.addEventListener('input', handleFilterChange);
+          priceRange.addEventListener('input', handleFilterChange);
+          includeUnpriced.addEventListener('change', handleFilterChange);
+          sortBy.addEventListener('change', handleFilterChange);
 
           fandomCheckboxes.forEach(cb => {
-            cb.addEventListener('change', updateProducts);
+            cb.addEventListener('change', handleFilterChange);
           });
 
           categoryLinks.forEach(link => {
@@ -283,6 +387,7 @@
               link.style.fontWeight = '600';
 
               currentCategory = link.getAttribute('data-category');
+              currentPage = 1;
               updateProducts();
             });
           });

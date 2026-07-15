@@ -1,0 +1,3858 @@
+{
+  "aot-figure-1": {
+    "id": "aot-figure-1",
+    "name": "Attack On Titan Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Attack On Titan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Attack On Titan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/aot-figure-1/aot-figure-1_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "aot-figure-2": {
+    "id": "aot-figure-2",
+    "name": "Attack On Titan Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Attack On Titan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Attack On Titan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/aot-figure-2/aot-figure-2_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "aot-figure-3": {
+    "id": "aot-figure-3",
+    "name": "Attack On Titan Action Figures Action Figure Figurine Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Attack On Titan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Attack On Titan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/aot-figure-3/aot-figure-3_01.jpg",
+      "img/products/aot-figure-3/aot-figure-3_02.jpg",
+      "img/products/aot-figure-3/aot-figure-3_03.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "aot-figure-4": {
+    "id": "aot-figure-4",
+    "name": "Attack On Titan Action Figures Action Figure Figurine Style 4",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Attack On Titan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Attack On Titan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/aot-figure-4/aot-figure-4_01.jpg",
+      "img/products/aot-figure-4/aot-figure-4_02.jpg",
+      "img/products/aot-figure-4/aot-figure-4_03.jpg",
+      "img/products/aot-figure-4/aot-figure-4_04.jpg",
+      "img/products/aot-figure-4/aot-figure-4_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "aot-figure-5": {
+    "id": "aot-figure-5",
+    "name": "Attack On Titan Action Figures Action Figure Figurine Style 5",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Attack On Titan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Attack On Titan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/aot-figure-5/aot-figure-5_01.jpg",
+      "img/products/aot-figure-5/aot-figure-5_02.jpg",
+      "img/products/aot-figure-5/aot-figure-5_03.jpg",
+      "img/products/aot-figure-5/aot-figure-5_04.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "aot-figure-6": {
+    "id": "aot-figure-6",
+    "name": "Attack On Titan Action Figures Action Figure Figurine Style 6",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Attack On Titan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Attack On Titan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/aot-figure-6/aot-figure-6_01.jpg",
+      "img/products/aot-figure-6/aot-figure-6_02.jpg",
+      "img/products/aot-figure-6/aot-figure-6_03.jpg",
+      "img/products/aot-figure-6/aot-figure-6_04.jpg",
+      "img/products/aot-figure-6/aot-figure-6_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "bleach-figure-1": {
+    "id": "bleach-figure-1",
+    "name": "Bleach Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Bleach Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Bleach Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/bleach-figure-1/bleach-figure-1_01.jpg",
+      "img/products/bleach-figure-1/bleach-figure-1_02.jpg",
+      "img/products/bleach-figure-1/bleach-figure-1_03.jpg",
+      "img/products/bleach-figure-1/bleach-figure-1_04.jpg",
+      "img/products/bleach-figure-1/bleach-figure-1_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "bleach-figure-2": {
+    "id": "bleach-figure-2",
+    "name": "Bleach Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Bleach Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Bleach Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/bleach-figure-2/bleach-figure-2_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "bleach-figure-3": {
+    "id": "bleach-figure-3",
+    "name": "Bleach Action Figures Action Figure Figurine Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Bleach Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Bleach Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/bleach-figure-3/bleach-figure-3_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "bleach-figure-4": {
+    "id": "bleach-figure-4",
+    "name": "Bleach Action Figures Action Figure Figurine Style 4",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Bleach Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Bleach Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/bleach-figure-4/bleach-figure-4_01.jpg",
+      "img/products/bleach-figure-4/bleach-figure-4_02.jpg",
+      "img/products/bleach-figure-4/bleach-figure-4_03.jpg",
+      "img/products/bleach-figure-4/bleach-figure-4_04.jpg",
+      "img/products/bleach-figure-4/bleach-figure-4_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "bleach-figure-5": {
+    "id": "bleach-figure-5",
+    "name": "Bleach Action Figures Action Figure Figurine Style 5",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Bleach Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Bleach Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/bleach-figure-5/bleach-figure-5_01.jpg",
+      "img/products/bleach-figure-5/bleach-figure-5_02.jpg",
+      "img/products/bleach-figure-5/bleach-figure-5_03.jpg",
+      "img/products/bleach-figure-5/bleach-figure-5_04.jpg",
+      "img/products/bleach-figure-5/bleach-figure-5_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "figure-1": {
+    "id": "figure-1",
+    "name": "Seven Deadly Sins Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Seven Deadly Sins Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Seven Deadly Sins Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/figure-1/figure-1_01.jpg",
+      "img/products/figure-1/figure-1_02.jpg",
+      "img/products/figure-1/figure-1_03.jpg",
+      "img/products/figure-1/figure-1_04.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "dc-figure-1": {
+    "id": "dc-figure-1",
+    "name": "Dc Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "DC Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from DC Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/dc-figure-1/dc-figure-1_01.jpg",
+      "img/products/dc-figure-1/dc-figure-1_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "dc-figure-2": {
+    "id": "dc-figure-2",
+    "name": "Dc Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "DC Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from DC Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/dc-figure-2/dc-figure-2_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "figure-2": {
+    "id": "figure-2",
+    "name": "Kaiju Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Kaiju Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Kaiju Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/figure-2/figure-2_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "figure-3": {
+    "id": "figure-3",
+    "name": "Dandadan Action Figures Action Figure Figurine Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "DanDaDan Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from DanDaDan Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/figure-3/figure-3_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "demon-slayer-figure-1": {
+    "id": "demon-slayer-figure-1",
+    "name": "Demon Slayaer Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Demon Slayaer Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Demon Slayaer Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/demon-slayer-figure-1/demon-slayer-figure-1_01.jpg",
+      "img/products/demon-slayer-figure-1/demon-slayer-figure-1_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "demon-slayer-figure-2": {
+    "id": "demon-slayer-figure-2",
+    "name": "Demon Slayaer Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Demon Slayaer Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Demon Slayaer Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/demon-slayer-figure-2/demon-slayer-figure-2_01.jpg",
+      "img/products/demon-slayer-figure-2/demon-slayer-figure-2_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "demon-slayer-figure-3": {
+    "id": "demon-slayer-figure-3",
+    "name": "Demon Slayaer Action Figures Action Figure Figurine Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Demon Slayaer Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Demon Slayaer Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/demon-slayer-figure-3/demon-slayer-figure-3_01.jpg",
+      "img/products/demon-slayer-figure-3/demon-slayer-figure-3_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "demon-slayer-figure-4": {
+    "id": "demon-slayer-figure-4",
+    "name": "Demon Slayaer Action Figures Action Figure Figurine Style 4",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Demon Slayaer Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Demon Slayaer Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/demon-slayer-figure-4/demon-slayer-figure-4_01.jpg",
+      "img/products/demon-slayer-figure-4/demon-slayer-figure-4_02.jpg",
+      "img/products/demon-slayer-figure-4/demon-slayer-figure-4_03.jpg",
+      "img/products/demon-slayer-figure-4/demon-slayer-figure-4_04.jpg",
+      "img/products/demon-slayer-figure-4/demon-slayer-figure-4_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "jjk-figure-1": {
+    "id": "jjk-figure-1",
+    "name": "Jujutsu Kaisen Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Jujutsu Kaisen Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Jujutsu Kaisen Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/jjk-figure-1/jjk-figure-1_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "jjk-figure-2": {
+    "id": "jjk-figure-2",
+    "name": "Jujutsu Kaisen Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Jujutsu Kaisen Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Jujutsu Kaisen Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/jjk-figure-2/jjk-figure-2_01.jpg",
+      "img/products/jjk-figure-2/jjk-figure-2_02.jpg",
+      "img/products/jjk-figure-2/jjk-figure-2_03.jpg",
+      "img/products/jjk-figure-2/jjk-figure-2_04.jpg",
+      "img/products/jjk-figure-2/jjk-figure-2_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-1": {
+    "id": "naruto-figure-1",
+    "name": "Naruto Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-1/naruto-figure-1_01.jpg",
+      "img/products/naruto-figure-1/naruto-figure-1_02.jpg",
+      "img/products/naruto-figure-1/naruto-figure-1_03.jpg",
+      "img/products/naruto-figure-1/naruto-figure-1_04.jpg",
+      "img/products/naruto-figure-1/naruto-figure-1_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-2": {
+    "id": "naruto-figure-2",
+    "name": "Naruto Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-2/naruto-figure-2_01.jpg",
+      "img/products/naruto-figure-2/naruto-figure-2_02.jpg",
+      "img/products/naruto-figure-2/naruto-figure-2_03.jpg",
+      "img/products/naruto-figure-2/naruto-figure-2_04.jpg",
+      "img/products/naruto-figure-2/naruto-figure-2_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-3": {
+    "id": "naruto-figure-3",
+    "name": "Naruto Action Figures Action Figure Figurine Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-3/naruto-figure-3_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-4": {
+    "id": "naruto-figure-4",
+    "name": "Naruto Action Figures Action Figure Figurine Style 4",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-4/naruto-figure-4_01.jpg",
+      "img/products/naruto-figure-4/naruto-figure-4_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-5": {
+    "id": "naruto-figure-5",
+    "name": "Naruto Action Figures Action Figure Figurine Style 5",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-5/naruto-figure-5_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-6": {
+    "id": "naruto-figure-6",
+    "name": "Naruto Action Figures Action Figure Figurine Style 6",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-6/naruto-figure-6_01.jpg",
+      "img/products/naruto-figure-6/naruto-figure-6_02.jpg",
+      "img/products/naruto-figure-6/naruto-figure-6_03.jpg",
+      "img/products/naruto-figure-6/naruto-figure-6_04.jpg",
+      "img/products/naruto-figure-6/naruto-figure-6_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-7": {
+    "id": "naruto-figure-7",
+    "name": "Naruto Action Figures Action Figure Figurine Style 7",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-7/naruto-figure-7_01.jpg",
+      "img/products/naruto-figure-7/naruto-figure-7_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "naruto-figure-8": {
+    "id": "naruto-figure-8",
+    "name": "Naruto Action Figures Action Figure Figurine Style 8",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Naruto Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Naruto Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/naruto-figure-8/naruto-figure-8_01.jpeg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "one-piece-figure-1": {
+    "id": "one-piece-figure-1",
+    "name": "One Piece Action Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "One Piece Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from One Piece Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/one-piece-figure-1/one-piece-figure-1_01.jpg",
+      "img/products/one-piece-figure-1/one-piece-figure-1_02.jpg",
+      "img/products/one-piece-figure-1/one-piece-figure-1_03.jpg",
+      "img/products/one-piece-figure-1/one-piece-figure-1_04.jpg",
+      "img/products/one-piece-figure-1/one-piece-figure-1_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "one-piece-figure-2": {
+    "id": "one-piece-figure-2",
+    "name": "One Piece Action Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "One Piece Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from One Piece Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/one-piece-figure-2/one-piece-figure-2_01.jpg",
+      "img/products/one-piece-figure-2/one-piece-figure-2_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "one-piece-figure-3": {
+    "id": "one-piece-figure-3",
+    "name": "One Piece Action Figures Action Figure Figurine Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "One Piece Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from One Piece Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/one-piece-figure-3/one-piece-figure-3_01.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "one-piece-figure-4": {
+    "id": "one-piece-figure-4",
+    "name": "One Piece Action Figures Action Figure Figurine Style 4",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "One Piece Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from One Piece Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/one-piece-figure-4/one-piece-figure-4_01.jpg",
+      "img/products/one-piece-figure-4/one-piece-figure-4_02.jpg",
+      "img/products/one-piece-figure-4/one-piece-figure-4_03.jpg",
+      "img/products/one-piece-figure-4/one-piece-figure-4_04.jpg",
+      "img/products/one-piece-figure-4/one-piece-figure-4_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "one-piece-figure-5": {
+    "id": "one-piece-figure-5",
+    "name": "One Piece Action Figures Action Figure Figurine Style 5",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "One Piece Action Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from One Piece Action Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/one-piece-figure-5/one-piece-figure-5_01.jpg",
+      "img/products/one-piece-figure-5/one-piece-figure-5_02.jpg",
+      "img/products/one-piece-figure-5/one-piece-figure-5_03.jpg",
+      "img/products/one-piece-figure-5/one-piece-figure-5_04.jpg",
+      "img/products/one-piece-figure-5/one-piece-figure-5_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "solo-leveling-figure-1": {
+    "id": "solo-leveling-figure-1",
+    "name": "Solo Leveling Acrylic Figures Action Figure Figurine Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Solo Leveling ACrylic Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Solo Leveling ACrylic Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/solo-leveling-figure-1/solo-leveling-figure-1_01.jpg",
+      "img/products/solo-leveling-figure-1/solo-leveling-figure-1_02.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "solo-leveling-figure-2": {
+    "id": "solo-leveling-figure-2",
+    "name": "Solo Leveling Acrylic Figures Action Figure Figurine Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Solo Leveling ACrylic Figures",
+    "category": "collectibles",
+    "description": "Detailed collectible display figure of a character from Solo Leveling ACrylic Figures. Includes structured base stand and highly detailed molded textures representing signature outfit details.",
+    "images": [
+      "img/products/solo-leveling-figure-2/solo-leveling-figure-2_01.jpg",
+      "img/products/solo-leveling-figure-2/solo-leveling-figure-2_02.jpg",
+      "img/products/solo-leveling-figure-2/solo-leveling-figure-2_03.jpg",
+      "img/products/solo-leveling-figure-2/solo-leveling-figure-2_04.jpg",
+      "img/products/solo-leveling-figure-2/solo-leveling-figure-2_05.jpg"
+    ],
+    "specs": [
+      "Molded collectible figure",
+      "Display base stand included",
+      "Detailed costume styling",
+      "Matte color finish"
+    ]
+  },
+  "alloy-car-1": {
+    "id": "alloy-car-1",
+    "name": "Alloy Model Car Collectible Style 1",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-1/alloy-car-1_01.jpg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "alloy-car-2": {
+    "id": "alloy-car-2",
+    "name": "Alloy Model Car Collectible Style 2",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-2/alloy-car-2_01.jpg",
+      "img/products/alloy-car-2/alloy-car-2_02.jpg",
+      "img/products/alloy-car-2/alloy-car-2_03.jpg",
+      "img/products/alloy-car-2/alloy-car-2_04.jpg",
+      "img/products/alloy-car-2/alloy-car-2_05.jpg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "alloy-car-3": {
+    "id": "alloy-car-3",
+    "name": "Alloy Model Car Collectible Style 3",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-3/alloy-car-3_01.jpg",
+      "img/products/alloy-car-3/alloy-car-3_02.jpg",
+      "img/products/alloy-car-3/alloy-car-3_03.jpg",
+      "img/products/alloy-car-3/alloy-car-3_04.jpg",
+      "img/products/alloy-car-3/alloy-car-3_05.jpg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "alloy-car-4": {
+    "id": "alloy-car-4",
+    "name": "Alloy Model Car Collectible Style 4",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-4/alloy-car-4_01.jpeg",
+      "img/products/alloy-car-4/alloy-car-4_02.jpeg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "alloy-car-5": {
+    "id": "alloy-car-5",
+    "name": "Alloy Model Car Collectible Style 5",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-5/alloy-car-5_01.jpg",
+      "img/products/alloy-car-5/alloy-car-5_02.jpg",
+      "img/products/alloy-car-5/alloy-car-5_03.jpg",
+      "img/products/alloy-car-5/alloy-car-5_04.jpg",
+      "img/products/alloy-car-5/alloy-car-5_05.jpg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "alloy-car-6": {
+    "id": "alloy-car-6",
+    "name": "Alloy Model Car Collectible Style 6",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-6/alloy-car-6_01.jpg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "alloy-car-7": {
+    "id": "alloy-car-7",
+    "name": "Alloy Model Car Collectible Style 7",
+    "price": 75000,
+    "priceStr": "UGX 75,000",
+    "originalPriceStr": "UGX 90,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "collectibles",
+    "description": "Detailed die-cast alloy metal model car collectible. Accurate model design with rubber tires, openable doors, and detailed interior styling.",
+    "images": [
+      "img/products/alloy-car-7/alloy-car-7_01.jpeg",
+      "img/products/alloy-car-7/alloy-car-7_02.jpeg",
+      "img/products/alloy-car-7/alloy-car-7_03.jpeg",
+      "img/products/alloy-car-7/alloy-car-7_04.jpeg",
+      "img/products/alloy-car-7/alloy-car-7_05.jpeg"
+    ],
+    "specs": [
+      "Diecast metal body construction",
+      "Rolling rubber tires",
+      "Openable side doors",
+      "Detailed scale interior"
+    ]
+  },
+  "woven-1": {
+    "id": "woven-1",
+    "name": "Woven Product Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Woven",
+    "category": "jewelry",
+    "description": "Premium Woven themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/woven-1/woven-1_01.jpg",
+      "img/products/woven-1/woven-1_02.jpg",
+      "img/products/woven-1/woven-1_03.jpg",
+      "img/products/woven-1/woven-1_04.jpg",
+      "img/products/woven-1/woven-1_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "buckethats-1": {
+    "id": "buckethats-1",
+    "name": "Product Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/buckethats-1/buckethats-1_01.jpg",
+      "img/products/buckethats-1/buckethats-1_02.jpg",
+      "img/products/buckethats-1/buckethats-1_03.jpg",
+      "img/products/buckethats-1/buckethats-1_04.jpg",
+      "img/products/buckethats-1/buckethats-1_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "buckethats-2": {
+    "id": "buckethats-2",
+    "name": "Product Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/buckethats-2/buckethats-2_01.jpg",
+      "img/products/buckethats-2/buckethats-2_02.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "buckethats-3": {
+    "id": "buckethats-3",
+    "name": "Product Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/buckethats-3/buckethats-3_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "comics-1": {
+    "id": "comics-1",
+    "name": "Product Style 1",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/comics-1/comics-1_01.jpg",
+      "img/products/comics-1/comics-1_02.jpg",
+      "img/products/comics-1/comics-1_03.jpg",
+      "img/products/comics-1/comics-1_04.jpg",
+      "img/products/comics-1/comics-1_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "earrings-1": {
+    "id": "earrings-1",
+    "name": "Cosplay Ring Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Anime",
+    "category": "jewelry",
+    "description": "Engraved metal cosplay ring styled after the iconic symbols in anime.",
+    "images": [
+      "img/products/earrings-1/earrings-1_01.jpg"
+    ],
+    "specs": [
+      "Polished metal band",
+      "Embossed symbol detail",
+      "Compact jewelry box included"
+    ]
+  },
+  "earrings-2": {
+    "id": "earrings-2",
+    "name": "Cosplay Ring Style 2",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Anime",
+    "category": "jewelry",
+    "description": "Engraved metal cosplay ring styled after the iconic symbols in anime.",
+    "images": [
+      "img/products/earrings-2/earrings-2_01.jpg",
+      "img/products/earrings-2/earrings-2_02.jpg",
+      "img/products/earrings-2/earrings-2_03.jpg",
+      "img/products/earrings-2/earrings-2_04.jpg",
+      "img/products/earrings-2/earrings-2_05.jpg"
+    ],
+    "specs": [
+      "Polished metal band",
+      "Embossed symbol detail",
+      "Compact jewelry box included"
+    ]
+  },
+  "earrings-3": {
+    "id": "earrings-3",
+    "name": "Cosplay Ring Style 3",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Anime",
+    "category": "jewelry",
+    "description": "Engraved metal cosplay ring styled after the iconic symbols in anime.",
+    "images": [
+      "img/products/earrings-3/earrings-3_01.jpeg"
+    ],
+    "specs": [
+      "Polished metal band",
+      "Embossed symbol detail",
+      "Compact jewelry box included"
+    ]
+  },
+  "hats-1": {
+    "id": "hats-1",
+    "name": "Product Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/hats-1/hats-1_01.jpg",
+      "img/products/hats-1/hats-1_02.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "hats-2": {
+    "id": "hats-2",
+    "name": "Product Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/hats-2/hats-2_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "hats-3": {
+    "id": "hats-3",
+    "name": "Product Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/hats-3/hats-3_01.jpg",
+      "img/products/hats-3/hats-3_02.jpg",
+      "img/products/hats-3/hats-3_03.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "hats-4": {
+    "id": "hats-4",
+    "name": "Product Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/hats-4/hats-4_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "aot-hoodie-1": {
+    "id": "aot-hoodie-1",
+    "name": "Attack On Titan Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Attack On Titan Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/aot-hoodie-1/aot-hoodie-1_01.jpg",
+      "img/products/aot-hoodie-1/aot-hoodie-1_02.jpg",
+      "img/products/aot-hoodie-1/aot-hoodie-1_03.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "aot-hoodie-2": {
+    "id": "aot-hoodie-2",
+    "name": "Attack On Titan Hoodies Cosplay Hoodie Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Attack On Titan Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/aot-hoodie-2/aot-hoodie-2_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "aot-hoodie-3": {
+    "id": "aot-hoodie-3",
+    "name": "Attack On Titan Hoodies Cosplay Hoodie Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Attack On Titan Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/aot-hoodie-3/aot-hoodie-3_01.jpg",
+      "img/products/aot-hoodie-3/aot-hoodie-3_02.jpg",
+      "img/products/aot-hoodie-3/aot-hoodie-3_03.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "aot-hoodie-4": {
+    "id": "aot-hoodie-4",
+    "name": "Attack On Titan Hoodies Cosplay Hoodie Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Attack On Titan Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/aot-hoodie-4/aot-hoodie-4_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "aot-hoodie-5": {
+    "id": "aot-hoodie-5",
+    "name": "Attack On Titan Hoodies Cosplay Hoodie Style 5",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Attack On Titan Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/aot-hoodie-5/aot-hoodie-5_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "bleach-hoodie-1": {
+    "id": "bleach-hoodie-1",
+    "name": "Bleach Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Bleach Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Bleach Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/bleach-hoodie-1/bleach-hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "breaking-bad-hoodie-1": {
+    "id": "breaking-bad-hoodie-1",
+    "name": "Breaking Bad Hoodie Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Breaking Bad hoodie",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Breaking Bad hoodie detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/breaking-bad-hoodie-1/breaking-bad-hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "hoodie-1": {
+    "id": "hoodie-1",
+    "name": "Death Note Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Death Note Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Death Note Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/hoodie-1/hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "hoodie-2": {
+    "id": "hoodie-2",
+    "name": "Death Note Hoodies Cosplay Hoodie Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Death Note Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Death Note Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/hoodie-2/hoodie-2_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "demon-slayer-hoodie-1": {
+    "id": "demon-slayer-hoodie-1",
+    "name": "Demon Slayer Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Demon Slayer Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/demon-slayer-hoodie-1/demon-slayer-hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "demon-slayer-hoodie-2": {
+    "id": "demon-slayer-hoodie-2",
+    "name": "Demon Slayer Hoodies Cosplay Hoodie Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Demon Slayer Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/demon-slayer-hoodie-2/demon-slayer-hoodie-2_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "demon-slayer-hoodie-3": {
+    "id": "demon-slayer-hoodie-3",
+    "name": "Demon Slayer Hoodies Cosplay Hoodie Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Demon Slayer Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/demon-slayer-hoodie-3/demon-slayer-hoodie-3_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "demon-slayer-hoodie-4": {
+    "id": "demon-slayer-hoodie-4",
+    "name": "Demon Slayer Hoodies Cosplay Hoodie Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Demon Slayer Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/demon-slayer-hoodie-4/demon-slayer-hoodie-4_01.jpg",
+      "img/products/demon-slayer-hoodie-4/demon-slayer-hoodie-4_02.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "jjk-hoodie-1": {
+    "id": "jjk-hoodie-1",
+    "name": "Jujutsu Kaisen Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Jujutsu Kaisen Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Jujutsu Kaisen Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/jjk-hoodie-1/jjk-hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "naruto-hoodie-1": {
+    "id": "naruto-hoodie-1",
+    "name": "Naruto Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Naruto Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Naruto Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/naruto-hoodie-1/naruto-hoodie-1_01.jpg",
+      "img/products/naruto-hoodie-1/naruto-hoodie-1_02.jpg",
+      "img/products/naruto-hoodie-1/naruto-hoodie-1_03.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "one-piece-hoodie-1": {
+    "id": "one-piece-hoodie-1",
+    "name": "One Piece Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring One Piece Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/one-piece-hoodie-1/one-piece-hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "one-piece-hoodie-2": {
+    "id": "one-piece-hoodie-2",
+    "name": "One Piece Hoodies Cosplay Hoodie Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring One Piece Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/one-piece-hoodie-2/one-piece-hoodie-2_01.jpg",
+      "img/products/one-piece-hoodie-2/one-piece-hoodie-2_02.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "one-piece-hoodie-3": {
+    "id": "one-piece-hoodie-3",
+    "name": "One Piece Hoodies Cosplay Hoodie Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring One Piece Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/one-piece-hoodie-3/one-piece-hoodie-3_01.jpg",
+      "img/products/one-piece-hoodie-3/one-piece-hoodie-3_02.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "one-piece-hoodie-4": {
+    "id": "one-piece-hoodie-4",
+    "name": "One Piece Hoodies Cosplay Hoodie Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring One Piece Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/one-piece-hoodie-4/one-piece-hoodie-4_01.jpg",
+      "img/products/one-piece-hoodie-4/one-piece-hoodie-4_02.jpg",
+      "img/products/one-piece-hoodie-4/one-piece-hoodie-4_03.jpg",
+      "img/products/one-piece-hoodie-4/one-piece-hoodie-4_04.jpg",
+      "img/products/one-piece-hoodie-4/one-piece-hoodie-4_05.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "one-piece-hoodie-5": {
+    "id": "one-piece-hoodie-5",
+    "name": "One Piece Hoodies Cosplay Hoodie Style 5",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring One Piece Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/one-piece-hoodie-5/one-piece-hoodie-5_01.jpg",
+      "img/products/one-piece-hoodie-5/one-piece-hoodie-5_02.jpg",
+      "img/products/one-piece-hoodie-5/one-piece-hoodie-5_03.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "stranger-things-hoodie-1": {
+    "id": "stranger-things-hoodie-1",
+    "name": "Stranger Things Hoodies Cosplay Hoodie Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Stranger Things Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Stranger Things Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/stranger-things-hoodie-1/stranger-things-hoodie-1_01.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "stranger-things-hoodie-2": {
+    "id": "stranger-things-hoodie-2",
+    "name": "Stranger Things Hoodies Cosplay Hoodie Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Stranger Things Hoodies",
+    "category": "clothing",
+    "description": "Cosmic anime-themed pullover hoodie featuring Stranger Things Hoodies detailing. Features adjustable drawstrings, front kangaroo pouch pockets, and elastic ribbed cuffs.",
+    "images": [
+      "img/products/stranger-things-hoodie-2/stranger-things-hoodie-2_01.jpg",
+      "img/products/stranger-things-hoodie-2/stranger-things-hoodie-2_02.jpg",
+      "img/products/stranger-things-hoodie-2/stranger-things-hoodie-2_03.jpg"
+    ],
+    "specs": [
+      "Pullover hood",
+      "Adjustable drawstrings",
+      "Front kangaroo pocket",
+      "Ribbed cuffs and waistband"
+    ]
+  },
+  "katana-1": {
+    "id": "katana-1",
+    "name": "Steel Katana Sword Style 1",
+    "price": 120000,
+    "priceStr": "UGX 120,000",
+    "originalPriceStr": "UGX 150,000",
+    "discount": "20% OFF",
+    "series": "Anime",
+    "category": "cosplay-kits",
+    "description": "Cosplay reproduction katana sword inspired by anime. Features detailed hilt wrapping, textured guard, and a protective matching scabbard.",
+    "images": [
+      "img/products/katana-1/katana-1_01.jpg"
+    ],
+    "specs": [
+      "Reproduction blade",
+      "Wrapped handle grip hilt",
+      "Ornate matching scabbard included",
+      "Cosplay safe display piece"
+    ]
+  },
+  "katana-2": {
+    "id": "katana-2",
+    "name": "Steel Katana Sword Style 2",
+    "price": 120000,
+    "priceStr": "UGX 120,000",
+    "originalPriceStr": "UGX 150,000",
+    "discount": "20% OFF",
+    "series": "Anime",
+    "category": "cosplay-kits",
+    "description": "Cosplay reproduction katana sword inspired by anime. Features detailed hilt wrapping, textured guard, and a protective matching scabbard.",
+    "images": [
+      "img/products/katana-2/katana-2_01.jpg"
+    ],
+    "specs": [
+      "Reproduction blade",
+      "Wrapped handle grip hilt",
+      "Ornate matching scabbard included",
+      "Cosplay safe display piece"
+    ]
+  },
+  "katana-3": {
+    "id": "katana-3",
+    "name": "Steel Katana Sword Style 3",
+    "price": 120000,
+    "priceStr": "UGX 120,000",
+    "originalPriceStr": "UGX 150,000",
+    "discount": "20% OFF",
+    "series": "Anime",
+    "category": "cosplay-kits",
+    "description": "Cosplay reproduction katana sword inspired by anime. Features detailed hilt wrapping, textured guard, and a protective matching scabbard.",
+    "images": [
+      "img/products/katana-3/katana-3_01.jpg",
+      "img/products/katana-3/katana-3_02.jpg",
+      "img/products/katana-3/katana-3_03.jpg"
+    ],
+    "specs": [
+      "Reproduction blade",
+      "Wrapped handle grip hilt",
+      "Ornate matching scabbard included",
+      "Cosplay safe display piece"
+    ]
+  },
+  "katana-4": {
+    "id": "katana-4",
+    "name": "Steel Katana Sword Style 4",
+    "price": 120000,
+    "priceStr": "UGX 120,000",
+    "originalPriceStr": "UGX 150,000",
+    "discount": "20% OFF",
+    "series": "Anime",
+    "category": "cosplay-kits",
+    "description": "Cosplay reproduction katana sword inspired by anime. Features detailed hilt wrapping, textured guard, and a protective matching scabbard.",
+    "images": [
+      "img/products/katana-4/katana-4_01.jpg"
+    ],
+    "specs": [
+      "Reproduction blade",
+      "Wrapped handle grip hilt",
+      "Ornate matching scabbard included",
+      "Cosplay safe display piece"
+    ]
+  },
+  "katana-5": {
+    "id": "katana-5",
+    "name": "Steel Katana Sword Style 5",
+    "price": 120000,
+    "priceStr": "UGX 120,000",
+    "originalPriceStr": "UGX 150,000",
+    "discount": "20% OFF",
+    "series": "Anime",
+    "category": "cosplay-kits",
+    "description": "Cosplay reproduction katana sword inspired by anime. Features detailed hilt wrapping, textured guard, and a protective matching scabbard.",
+    "images": [
+      "img/products/katana-5/katana-5_01.jpg",
+      "img/products/katana-5/katana-5_02.jpg",
+      "img/products/katana-5/katana-5_03.jpg",
+      "img/products/katana-5/katana-5_04.jpg",
+      "img/products/katana-5/katana-5_05.jpg"
+    ],
+    "specs": [
+      "Reproduction blade",
+      "Wrapped handle grip hilt",
+      "Ornate matching scabbard included",
+      "Cosplay safe display piece"
+    ]
+  },
+  "katana-6": {
+    "id": "katana-6",
+    "name": "Steel Katana Sword Style 6",
+    "price": 120000,
+    "priceStr": "UGX 120,000",
+    "originalPriceStr": "UGX 150,000",
+    "discount": "20% OFF",
+    "series": "Anime",
+    "category": "cosplay-kits",
+    "description": "Cosplay reproduction katana sword inspired by anime. Features detailed hilt wrapping, textured guard, and a protective matching scabbard.",
+    "images": [
+      "img/products/katana-6/katana-6_01.jpg",
+      "img/products/katana-6/katana-6_02.jpg",
+      "img/products/katana-6/katana-6_03.jpg",
+      "img/products/katana-6/katana-6_04.jpg",
+      "img/products/katana-6/katana-6_05.jpg"
+    ],
+    "specs": [
+      "Reproduction blade",
+      "Wrapped handle grip hilt",
+      "Ornate matching scabbard included",
+      "Cosplay safe display piece"
+    ]
+  },
+  "bleach-keychain-1": {
+    "id": "bleach-keychain-1",
+    "name": "Bleach Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Bleach Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Bleach Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/bleach-keychain-1/bleach-keychain-1_01.jpg",
+      "img/products/bleach-keychain-1/bleach-keychain-1_02.jpg",
+      "img/products/bleach-keychain-1/bleach-keychain-1_03.jpg",
+      "img/products/bleach-keychain-1/bleach-keychain-1_04.jpg",
+      "img/products/bleach-keychain-1/bleach-keychain-1_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "bleach-keychain-2": {
+    "id": "bleach-keychain-2",
+    "name": "Bleach Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Bleach Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Bleach Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/bleach-keychain-2/bleach-keychain-2_01.jpeg",
+      "img/products/bleach-keychain-2/bleach-keychain-2_02.jpeg",
+      "img/products/bleach-keychain-2/bleach-keychain-2_03.jpeg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "dc-keychain-1": {
+    "id": "dc-keychain-1",
+    "name": "Dc Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "DC Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from DC Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/dc-keychain-1/dc-keychain-1_01.jpg",
+      "img/products/dc-keychain-1/dc-keychain-1_02.jpg",
+      "img/products/dc-keychain-1/dc-keychain-1_03.jpg",
+      "img/products/dc-keychain-1/dc-keychain-1_04.jpg",
+      "img/products/dc-keychain-1/dc-keychain-1_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "dc-keychain-2": {
+    "id": "dc-keychain-2",
+    "name": "Dc Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "DC Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from DC Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/dc-keychain-2/dc-keychain-2_01.jpg",
+      "img/products/dc-keychain-2/dc-keychain-2_02.jpg",
+      "img/products/dc-keychain-2/dc-keychain-2_03.jpg",
+      "img/products/dc-keychain-2/dc-keychain-2_04.jpg",
+      "img/products/dc-keychain-2/dc-keychain-2_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "dc-keychain-3": {
+    "id": "dc-keychain-3",
+    "name": "Dc Keychains Metal Keychain Style 3",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "DC Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from DC Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/dc-keychain-3/dc-keychain-3_01.jpg",
+      "img/products/dc-keychain-3/dc-keychain-3_02.jpg",
+      "img/products/dc-keychain-3/dc-keychain-3_03.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "demon-slayer-keychain-1": {
+    "id": "demon-slayer-keychain-1",
+    "name": "Demon Slayer Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Demon Slayer Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Demon Slayer Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/demon-slayer-keychain-1/demon-slayer-keychain-1_01.jpg",
+      "img/products/demon-slayer-keychain-1/demon-slayer-keychain-1_02.jpg",
+      "img/products/demon-slayer-keychain-1/demon-slayer-keychain-1_03.jpg",
+      "img/products/demon-slayer-keychain-1/demon-slayer-keychain-1_04.jpg",
+      "img/products/demon-slayer-keychain-1/demon-slayer-keychain-1_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "got-keychain-1": {
+    "id": "got-keychain-1",
+    "name": "Game Of Thrones Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Game Of Thrones Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Game Of Thrones Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/got-keychain-1/got-keychain-1_01.jpg",
+      "img/products/got-keychain-1/got-keychain-1_02.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "got-keychain-2": {
+    "id": "got-keychain-2",
+    "name": "Game Of Thrones Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Game Of Thrones Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Game Of Thrones Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/got-keychain-2/got-keychain-2_01.jpg",
+      "img/products/got-keychain-2/got-keychain-2_02.jpg",
+      "img/products/got-keychain-2/got-keychain-2_03.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "keychain-1": {
+    "id": "keychain-1",
+    "name": "God Of War Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "God Of War Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from God Of War Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/keychain-1/keychain-1_01.jpg",
+      "img/products/keychain-1/keychain-1_02.jpg",
+      "img/products/keychain-1/keychain-1_03.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "keychain-2": {
+    "id": "keychain-2",
+    "name": "God Of War Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "God Of War Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from God Of War Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/keychain-2/keychain-2_01.jpg",
+      "img/products/keychain-2/keychain-2_02.jpg",
+      "img/products/keychain-2/keychain-2_03.jpg",
+      "img/products/keychain-2/keychain-2_04.jpg",
+      "img/products/keychain-2/keychain-2_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "jjk-keychain-1": {
+    "id": "jjk-keychain-1",
+    "name": "Jujutsu Kaisen Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Jujutsu Kaisen Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Jujutsu Kaisen Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/jjk-keychain-1/jjk-keychain-1_01.jpg",
+      "img/products/jjk-keychain-1/jjk-keychain-1_02.jpg",
+      "img/products/jjk-keychain-1/jjk-keychain-1_03.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "marvel-keychain-1": {
+    "id": "marvel-keychain-1",
+    "name": "Marvel Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "MARVEL Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from MARVEL Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/marvel-keychain-1/marvel-keychain-1_01.jpg",
+      "img/products/marvel-keychain-1/marvel-keychain-1_02.jpg",
+      "img/products/marvel-keychain-1/marvel-keychain-1_03.jpg",
+      "img/products/marvel-keychain-1/marvel-keychain-1_04.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "marvel-keychain-2": {
+    "id": "marvel-keychain-2",
+    "name": "Marvel Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "MARVEL Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from MARVEL Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/marvel-keychain-2/marvel-keychain-2_01.jpg",
+      "img/products/marvel-keychain-2/marvel-keychain-2_02.jpg",
+      "img/products/marvel-keychain-2/marvel-keychain-2_03.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "marvel-keychain-3": {
+    "id": "marvel-keychain-3",
+    "name": "Marvel Keychains Metal Keychain Style 3",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "MARVEL Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from MARVEL Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/marvel-keychain-3/marvel-keychain-3_01.jpg",
+      "img/products/marvel-keychain-3/marvel-keychain-3_02.jpg",
+      "img/products/marvel-keychain-3/marvel-keychain-3_03.jpg",
+      "img/products/marvel-keychain-3/marvel-keychain-3_04.jpg",
+      "img/products/marvel-keychain-3/marvel-keychain-3_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "marvel-keychain-4": {
+    "id": "marvel-keychain-4",
+    "name": "Marvel Keychains Metal Keychain Style 4",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "MARVEL Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from MARVEL Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/marvel-keychain-4/marvel-keychain-4_01.jpeg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "marvel-keychain-5": {
+    "id": "marvel-keychain-5",
+    "name": "Marvel Keychains Metal Keychain Style 5",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "MARVEL Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from MARVEL Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/marvel-keychain-5/marvel-keychain-5_01.jpeg",
+      "img/products/marvel-keychain-5/marvel-keychain-5_02.jpeg",
+      "img/products/marvel-keychain-5/marvel-keychain-5_03.jpeg",
+      "img/products/marvel-keychain-5/marvel-keychain-5_04.jpeg",
+      "img/products/marvel-keychain-5/marvel-keychain-5_05.jpeg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "naruto-keychain-1": {
+    "id": "naruto-keychain-1",
+    "name": "Naruto Keychain Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Naruto Keychain",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Naruto Keychain. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/naruto-keychain-1/naruto-keychain-1_01.jpg",
+      "img/products/naruto-keychain-1/naruto-keychain-1_02.jpg",
+      "img/products/naruto-keychain-1/naruto-keychain-1_03.jpg",
+      "img/products/naruto-keychain-1/naruto-keychain-1_04.jpg",
+      "img/products/naruto-keychain-1/naruto-keychain-1_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "naruto-keychain-2": {
+    "id": "naruto-keychain-2",
+    "name": "Naruto Keychain Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Naruto Keychain",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Naruto Keychain. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/naruto-keychain-2/naruto-keychain-2_01.jpeg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "one-piece-keychain-1": {
+    "id": "one-piece-keychain-1",
+    "name": "One Piece Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "One Piece Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from One Piece Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/one-piece-keychain-1/one-piece-keychain-1_01.jpg",
+      "img/products/one-piece-keychain-1/one-piece-keychain-1_02.jpg",
+      "img/products/one-piece-keychain-1/one-piece-keychain-1_03.jpg",
+      "img/products/one-piece-keychain-1/one-piece-keychain-1_04.jpg",
+      "img/products/one-piece-keychain-1/one-piece-keychain-1_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "one-piece-keychain-2": {
+    "id": "one-piece-keychain-2",
+    "name": "One Piece Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "One Piece Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from One Piece Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/one-piece-keychain-2/one-piece-keychain-2_01.jpg",
+      "img/products/one-piece-keychain-2/one-piece-keychain-2_02.jpg",
+      "img/products/one-piece-keychain-2/one-piece-keychain-2_03.jpg",
+      "img/products/one-piece-keychain-2/one-piece-keychain-2_04.jpg",
+      "img/products/one-piece-keychain-2/one-piece-keychain-2_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "one-piece-keychain-3": {
+    "id": "one-piece-keychain-3",
+    "name": "One Piece Keychains Metal Keychain Style 3",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "One Piece Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from One Piece Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/one-piece-keychain-3/one-piece-keychain-3_01.jpg",
+      "img/products/one-piece-keychain-3/one-piece-keychain-3_02.jpg",
+      "img/products/one-piece-keychain-3/one-piece-keychain-3_03.jpg",
+      "img/products/one-piece-keychain-3/one-piece-keychain-3_04.jpg",
+      "img/products/one-piece-keychain-3/one-piece-keychain-3_05.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "one-piece-keychain-4": {
+    "id": "one-piece-keychain-4",
+    "name": "One Piece Keychains Metal Keychain Style 4",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "One Piece Keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from One Piece Keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/one-piece-keychain-4/one-piece-keychain-4_01.jpg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "stranger-things-keychain-1": {
+    "id": "stranger-things-keychain-1",
+    "name": "Stranger Things Keychains Metal Keychain Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Stranger Things keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Stranger Things keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/stranger-things-keychain-1/stranger-things-keychain-1_01.jpeg",
+      "img/products/stranger-things-keychain-1/stranger-things-keychain-1_02.jpeg",
+      "img/products/stranger-things-keychain-1/stranger-things-keychain-1_03.jpeg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "stranger-things-keychain-2": {
+    "id": "stranger-things-keychain-2",
+    "name": "Stranger Things Keychains Metal Keychain Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "Stranger Things keychains",
+    "category": "gifts",
+    "description": "Premium metal alloy keychain featuring a detailed emblem from Stranger Things keychains. Comes with a secure split key ring and lobster clasp hanger attachment.",
+    "images": [
+      "img/products/stranger-things-keychain-2/stranger-things-keychain-2_01.jpeg",
+      "img/products/stranger-things-keychain-2/stranger-things-keychain-2_02.jpeg"
+    ],
+    "specs": [
+      "Zinc alloy construction",
+      "Split ring and secure clasp",
+      "Double-sided detail design",
+      "Glossy finish"
+    ]
+  },
+  "manga-1": {
+    "id": "manga-1",
+    "name": "Manga Volume Style 1",
+    "price": 35000,
+    "priceStr": "UGX 35,000",
+    "originalPriceStr": "UGX 40,000",
+    "discount": "12% OFF",
+    "series": "Anime",
+    "category": "manga",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/manga-1/manga-1_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "bleach-necklace-1": {
+    "id": "bleach-necklace-1",
+    "name": "Bleach Necklaces Pendant Necklace Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Bleach Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Bleach Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/bleach-necklace-1/bleach-necklace-1_01.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "bleach-necklace-2": {
+    "id": "bleach-necklace-2",
+    "name": "Bleach Necklaces Pendant Necklace Style 2",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Bleach Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Bleach Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/bleach-necklace-2/bleach-necklace-2_01.jpg",
+      "img/products/bleach-necklace-2/bleach-necklace-2_02.jpg",
+      "img/products/bleach-necklace-2/bleach-necklace-2_03.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "bleach-necklace-3": {
+    "id": "bleach-necklace-3",
+    "name": "Bleach Necklaces Pendant Necklace Style 3",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Bleach Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Bleach Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/bleach-necklace-3/bleach-necklace-3_01.jpg",
+      "img/products/bleach-necklace-3/bleach-necklace-3_02.jpg",
+      "img/products/bleach-necklace-3/bleach-necklace-3_03.jpg",
+      "img/products/bleach-necklace-3/bleach-necklace-3_04.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "demon-slayer-necklace-1": {
+    "id": "demon-slayer-necklace-1",
+    "name": "Demon Slayer Necklaces Pendant Necklace Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Demon Slayer Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Demon Slayer Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/demon-slayer-necklace-1/demon-slayer-necklace-1_01.jpg",
+      "img/products/demon-slayer-necklace-1/demon-slayer-necklace-1_02.jpg",
+      "img/products/demon-slayer-necklace-1/demon-slayer-necklace-1_03.jpg",
+      "img/products/demon-slayer-necklace-1/demon-slayer-necklace-1_04.jpg",
+      "img/products/demon-slayer-necklace-1/demon-slayer-necklace-1_05.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "naruto-necklace-1": {
+    "id": "naruto-necklace-1",
+    "name": "Naruto Necklaces Pendant Necklace Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Naruto Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Naruto Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/naruto-necklace-1/naruto-necklace-1_01.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "naruto-necklace-2": {
+    "id": "naruto-necklace-2",
+    "name": "Naruto Necklaces Pendant Necklace Style 2",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Naruto Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Naruto Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/naruto-necklace-2/naruto-necklace-2_01.jpg",
+      "img/products/naruto-necklace-2/naruto-necklace-2_02.jpg",
+      "img/products/naruto-necklace-2/naruto-necklace-2_03.jpg",
+      "img/products/naruto-necklace-2/naruto-necklace-2_04.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "naruto-necklace-3": {
+    "id": "naruto-necklace-3",
+    "name": "Naruto Necklaces Pendant Necklace Style 3",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Naruto Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Naruto Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/naruto-necklace-3/naruto-necklace-3_01.jpg",
+      "img/products/naruto-necklace-3/naruto-necklace-3_02.jpg",
+      "img/products/naruto-necklace-3/naruto-necklace-3_03.jpg",
+      "img/products/naruto-necklace-3/naruto-necklace-3_04.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "naruto-necklace-4": {
+    "id": "naruto-necklace-4",
+    "name": "Naruto Necklaces Pendant Necklace Style 4",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Naruto Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Naruto Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/naruto-necklace-4/naruto-necklace-4_01.jpg",
+      "img/products/naruto-necklace-4/naruto-necklace-4_02.jpg",
+      "img/products/naruto-necklace-4/naruto-necklace-4_03.jpg",
+      "img/products/naruto-necklace-4/naruto-necklace-4_04.jpg",
+      "img/products/naruto-necklace-4/naruto-necklace-4_05.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "naruto-necklace-5": {
+    "id": "naruto-necklace-5",
+    "name": "Naruto Necklaces Pendant Necklace Style 5",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Naruto Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature Naruto Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/naruto-necklace-5/naruto-necklace-5_01.jpg",
+      "img/products/naruto-necklace-5/naruto-necklace-5_02.jpg",
+      "img/products/naruto-necklace-5/naruto-necklace-5_03.jpg",
+      "img/products/naruto-necklace-5/naruto-necklace-5_04.jpg",
+      "img/products/naruto-necklace-5/naruto-necklace-5_05.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "one-piece-necklace-1": {
+    "id": "one-piece-necklace-1",
+    "name": "One Piece Necklaces Pendant Necklace Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "One Piece Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature One Piece Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/one-piece-necklace-1/one-piece-necklace-1_01.jpg",
+      "img/products/one-piece-necklace-1/one-piece-necklace-1_02.jpg",
+      "img/products/one-piece-necklace-1/one-piece-necklace-1_03.jpg",
+      "img/products/one-piece-necklace-1/one-piece-necklace-1_04.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "one-piece-necklace-2": {
+    "id": "one-piece-necklace-2",
+    "name": "One Piece Necklaces Pendant Necklace Style 2",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "One Piece Necklaces",
+    "category": "jewelry",
+    "description": "Elegant pendant necklace showcasing the signature One Piece Necklaces logo. Includes a matching link chain with a secure lobster claw clasp.",
+    "images": [
+      "img/products/one-piece-necklace-2/one-piece-necklace-2_01.jpg",
+      "img/products/one-piece-necklace-2/one-piece-necklace-2_02.jpg",
+      "img/products/one-piece-necklace-2/one-piece-necklace-2_03.jpg",
+      "img/products/one-piece-necklace-2/one-piece-necklace-2_04.jpg",
+      "img/products/one-piece-necklace-2/one-piece-necklace-2_05.jpg"
+    ],
+    "specs": [
+      "Metal pendant charm",
+      "Link chain link style",
+      "Lobster claw clasp closure",
+      "Silver or gold tone polish"
+    ]
+  },
+  "plushies-1": {
+    "id": "plushies-1",
+    "name": "Product Style 1",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/plushies-1/plushies-1_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "plushies-2": {
+    "id": "plushies-2",
+    "name": "Product Style 2",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/plushies-2/plushies-2_01.jpg",
+      "img/products/plushies-2/plushies-2_02.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-1": {
+    "id": "posters-1",
+    "name": "A3 Poster Style 1",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-1/posters-1_01.jpg",
+      "img/products/posters-1/posters-1_02.jpg",
+      "img/products/posters-1/posters-1_03.jpg",
+      "img/products/posters-1/posters-1_04.jpg",
+      "img/products/posters-1/posters-1_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-2": {
+    "id": "posters-2",
+    "name": "A3 Poster Style 2",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-2/posters-2_01.jpg",
+      "img/products/posters-2/posters-2_02.jpg",
+      "img/products/posters-2/posters-2_03.jpg",
+      "img/products/posters-2/posters-2_04.jpg",
+      "img/products/posters-2/posters-2_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-3": {
+    "id": "posters-3",
+    "name": "A3 Poster Style 3",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-3/posters-3_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-4": {
+    "id": "posters-4",
+    "name": "A3 Poster Style 4",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-4/posters-4_01.jpg",
+      "img/products/posters-4/posters-4_02.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-5": {
+    "id": "posters-5",
+    "name": "A3 Poster Style 5",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-5/posters-5_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-6": {
+    "id": "posters-6",
+    "name": "A3 Poster Style 6",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-6/posters-6_01.jpg",
+      "img/products/posters-6/posters-6_02.jpg",
+      "img/products/posters-6/posters-6_03.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-7": {
+    "id": "posters-7",
+    "name": "A3 Poster Style 7",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-7/posters-7_01.jpg",
+      "img/products/posters-7/posters-7_02.jpg",
+      "img/products/posters-7/posters-7_03.jpg",
+      "img/products/posters-7/posters-7_04.jpg",
+      "img/products/posters-7/posters-7_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "posters-8": {
+    "id": "posters-8",
+    "name": "A3 Poster Style 8",
+    "price": 10000,
+    "priceStr": "UGX 10,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "33% OFF",
+    "series": "Anime",
+    "category": "decor",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/posters-8/posters-8_01.png"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "rings-1": {
+    "id": "rings-1",
+    "name": "Cosplay Ring Style 1",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Anime",
+    "category": "jewelry",
+    "description": "Engraved metal cosplay ring styled after the iconic symbols in anime.",
+    "images": [
+      "img/products/rings-1/rings-1_01.jpg"
+    ],
+    "specs": [
+      "Polished metal band",
+      "Embossed symbol detail",
+      "Compact jewelry box included"
+    ]
+  },
+  "rings-2": {
+    "id": "rings-2",
+    "name": "Cosplay Ring Style 2",
+    "price": 15000,
+    "priceStr": "UGX 15,000",
+    "originalPriceStr": "UGX 20,000",
+    "discount": "25% OFF",
+    "series": "Anime",
+    "category": "jewelry",
+    "description": "Engraved metal cosplay ring styled after the iconic symbols in anime.",
+    "images": [
+      "img/products/rings-2/rings-2_01.jpg",
+      "img/products/rings-2/rings-2_02.jpg",
+      "img/products/rings-2/rings-2_03.jpg"
+    ],
+    "specs": [
+      "Polished metal band",
+      "Embossed symbol detail",
+      "Compact jewelry box included"
+    ]
+  },
+  "shorts-1": {
+    "id": "shorts-1",
+    "name": "Anime Shorts Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/shorts-1/shorts-1_01.jpg",
+      "img/products/shorts-1/shorts-1_02.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "shorts-2": {
+    "id": "shorts-2",
+    "name": "Anime Shorts Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/shorts-2/shorts-2_01.jpg",
+      "img/products/shorts-2/shorts-2_02.jpg",
+      "img/products/shorts-2/shorts-2_03.jpg",
+      "img/products/shorts-2/shorts-2_04.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "socks-1": {
+    "id": "socks-1",
+    "name": "Product Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Anime",
+    "category": "clothing",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/socks-1/socks-1_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "bleach-sticker-1": {
+    "id": "bleach-sticker-1",
+    "name": "Bleach Anime Sticker Pack Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "BLEACH",
+    "category": "gifts",
+    "description": "Premium BLEACH themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/bleach-sticker-1/bleach-sticker-1_01.jpeg",
+      "img/products/bleach-sticker-1/bleach-sticker-1_02.jpeg",
+      "img/products/bleach-sticker-1/bleach-sticker-1_03.jpeg",
+      "img/products/bleach-sticker-1/bleach-sticker-1_04.jpeg",
+      "img/products/bleach-sticker-1/bleach-sticker-1_05.jpeg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "sticker-1": {
+    "id": "sticker-1",
+    "name": "Tokyo Ghoul Anime Sticker Pack Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "TOKYO GHOUL",
+    "category": "gifts",
+    "description": "Premium TOKYO GHOUL themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/sticker-1/sticker-1_01.jpeg",
+      "img/products/sticker-1/sticker-1_02.jpeg",
+      "img/products/sticker-1/sticker-1_03.jpeg",
+      "img/products/sticker-1/sticker-1_04.jpeg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "jjk-sticker-1": {
+    "id": "jjk-sticker-1",
+    "name": "Jjk  Anime Sticker Pack Style 1",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "JJK ",
+    "category": "gifts",
+    "description": "Premium JJK  themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/jjk-sticker-1/jjk-sticker-1_01.jpeg",
+      "img/products/jjk-sticker-1/jjk-sticker-1_02.jpeg",
+      "img/products/jjk-sticker-1/jjk-sticker-1_03.jpeg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "sticker-2": {
+    "id": "sticker-2",
+    "name": "One Punch Man Anime Sticker Pack Style 2",
+    "price": 12000,
+    "priceStr": "UGX 12,000",
+    "originalPriceStr": "UGX 15,000",
+    "discount": "20% OFF",
+    "series": "ONE PUNCH MAN",
+    "category": "gifts",
+    "description": "Premium ONE PUNCH MAN themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/sticker-2/sticker-2_01.jpeg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "tote-bag-1": {
+    "id": "tote-bag-1",
+    "name": "Whataboutanime Canvas Tote Bag Style 1",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "whataboutanime",
+    "category": "accessories",
+    "description": "Eco-friendly canvas tote bag with a high-density print of whataboutanime. Large main compartment with thick shoulder strap carrying handles.",
+    "images": [
+      "img/products/tote-bag-1/tote-bag-1_01.jpeg",
+      "img/products/tote-bag-1/tote-bag-1_02.jpeg",
+      "img/products/tote-bag-1/tote-bag-1_03.jpeg"
+    ],
+    "specs": [
+      "Woven canvas fabric",
+      "Vibrant graphic print front",
+      "Thick dual shoulder handles",
+      "Spacious open top"
+    ]
+  },
+  "tote-bag-2": {
+    "id": "tote-bag-2",
+    "name": "Fandom Tote Bags Canvas Tote Bag Style 2",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "fandom tote bags",
+    "category": "accessories",
+    "description": "Eco-friendly canvas tote bag with a high-density print of fandom tote bags. Large main compartment with thick shoulder strap carrying handles.",
+    "images": [
+      "img/products/tote-bag-2/tote-bag-2_01.jpg"
+    ],
+    "specs": [
+      "Woven canvas fabric",
+      "Vibrant graphic print front",
+      "Thick dual shoulder handles",
+      "Spacious open top"
+    ]
+  },
+  "tshirt-1": {
+    "id": "tshirt-1",
+    "name": "Other Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Other",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Other. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/tshirt-1/tshirt-1_01.jpg",
+      "img/products/tshirt-1/tshirt-1_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "tshirt-2": {
+    "id": "tshirt-2",
+    "name": "Other Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Other",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Other. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/tshirt-2/tshirt-2_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "tshirt-3": {
+    "id": "tshirt-3",
+    "name": "Other Graphic T-Shirt Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Other",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Other. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/tshirt-3/tshirt-3_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "aot-tshirt-1": {
+    "id": "aot-tshirt-1",
+    "name": "Attack On Titan Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Attack On Titan Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/aot-tshirt-1/aot-tshirt-1_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "aot-tshirt-2": {
+    "id": "aot-tshirt-2",
+    "name": "Attack On Titan Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Attack On Titan Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/aot-tshirt-2/aot-tshirt-2_01.jpg",
+      "img/products/aot-tshirt-2/aot-tshirt-2_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "aot-tshirt-3": {
+    "id": "aot-tshirt-3",
+    "name": "Attack On Titan Tshirts Graphic T-Shirt Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Attack On Titan Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Attack On Titan Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/aot-tshirt-3/aot-tshirt-3_01.jpg",
+      "img/products/aot-tshirt-3/aot-tshirt-3_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "bleach-tshirt-1": {
+    "id": "bleach-tshirt-1",
+    "name": "Bleach Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Bleach Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Bleach Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/bleach-tshirt-1/bleach-tshirt-1_01.jpg",
+      "img/products/bleach-tshirt-1/bleach-tshirt-1_02.jpg",
+      "img/products/bleach-tshirt-1/bleach-tshirt-1_03.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "bleach-tshirt-2": {
+    "id": "bleach-tshirt-2",
+    "name": "Bleach Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Bleach Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Bleach Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/bleach-tshirt-2/bleach-tshirt-2_01.jpg",
+      "img/products/bleach-tshirt-2/bleach-tshirt-2_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "demon-slayer-tshirt-1": {
+    "id": "demon-slayer-tshirt-1",
+    "name": "Demon Slayer Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Demon Slayer Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/demon-slayer-tshirt-1/demon-slayer-tshirt-1_01.jpg",
+      "img/products/demon-slayer-tshirt-1/demon-slayer-tshirt-1_02.jpg",
+      "img/products/demon-slayer-tshirt-1/demon-slayer-tshirt-1_03.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "demon-slayer-tshirt-2": {
+    "id": "demon-slayer-tshirt-2",
+    "name": "Demon Slayer Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Demon Slayer Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/demon-slayer-tshirt-2/demon-slayer-tshirt-2_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "demon-slayer-tshirt-3": {
+    "id": "demon-slayer-tshirt-3",
+    "name": "Demon Slayer Tshirts Graphic T-Shirt Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Demon Slayer Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/demon-slayer-tshirt-3/demon-slayer-tshirt-3_01.jpg",
+      "img/products/demon-slayer-tshirt-3/demon-slayer-tshirt-3_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "demon-slayer-tshirt-4": {
+    "id": "demon-slayer-tshirt-4",
+    "name": "Demon Slayer Tshirts Graphic T-Shirt Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Demon Slayer Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/demon-slayer-tshirt-4/demon-slayer-tshirt-4_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "demon-slayer-tshirt-5": {
+    "id": "demon-slayer-tshirt-5",
+    "name": "Demon Slayer Tshirts Graphic T-Shirt Style 5",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Demon Slayer Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/demon-slayer-tshirt-5/demon-slayer-tshirt-5_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "tshirt-4": {
+    "id": "tshirt-4",
+    "name": "Fandom Hub Tshirts Graphic T-Shirt Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Fandom Hub Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Fandom Hub Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/tshirt-4/tshirt-4_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "jjk-tshirt-1": {
+    "id": "jjk-tshirt-1",
+    "name": "Jujutsu Kaisen Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Jujutsu Kaisen Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Jujutsu Kaisen Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/jjk-tshirt-1/jjk-tshirt-1_01.jpg",
+      "img/products/jjk-tshirt-1/jjk-tshirt-1_02.jpg",
+      "img/products/jjk-tshirt-1/jjk-tshirt-1_03.jpg",
+      "img/products/jjk-tshirt-1/jjk-tshirt-1_04.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "jjk-tshirt-2": {
+    "id": "jjk-tshirt-2",
+    "name": "Jujutsu Kaisen Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Jujutsu Kaisen Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Jujutsu Kaisen Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/jjk-tshirt-2/jjk-tshirt-2_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "naruto-tshirt-1": {
+    "id": "naruto-tshirt-1",
+    "name": "Naruto Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Naruto Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Naruto Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/naruto-tshirt-1/naruto-tshirt-1_01.jpg",
+      "img/products/naruto-tshirt-1/naruto-tshirt-1_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "naruto-tshirt-2": {
+    "id": "naruto-tshirt-2",
+    "name": "Naruto Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Naruto Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Naruto Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/naruto-tshirt-2/naruto-tshirt-2_01.jpg",
+      "img/products/naruto-tshirt-2/naruto-tshirt-2_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "naruto-tshirt-3": {
+    "id": "naruto-tshirt-3",
+    "name": "Naruto Tshirts Graphic T-Shirt Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Naruto Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Naruto Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/naruto-tshirt-3/naruto-tshirt-3_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "naruto-tshirt-4": {
+    "id": "naruto-tshirt-4",
+    "name": "Naruto Tshirts Graphic T-Shirt Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Naruto Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Naruto Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/naruto-tshirt-4/naruto-tshirt-4_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "naruto-tshirt-5": {
+    "id": "naruto-tshirt-5",
+    "name": "Naruto Tshirts Graphic T-Shirt Style 5",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Naruto Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Naruto Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/naruto-tshirt-5/naruto-tshirt-5_01.jpg",
+      "img/products/naruto-tshirt-5/naruto-tshirt-5_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-1": {
+    "id": "one-piece-tshirt-1",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-1/one-piece-tshirt-1_01.jpg",
+      "img/products/one-piece-tshirt-1/one-piece-tshirt-1_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-2": {
+    "id": "one-piece-tshirt-2",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-2/one-piece-tshirt-2_01.jpg",
+      "img/products/one-piece-tshirt-2/one-piece-tshirt-2_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-3": {
+    "id": "one-piece-tshirt-3",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-3/one-piece-tshirt-3_01.jpg",
+      "img/products/one-piece-tshirt-3/one-piece-tshirt-3_02.jpg",
+      "img/products/one-piece-tshirt-3/one-piece-tshirt-3_03.jpg",
+      "img/products/one-piece-tshirt-3/one-piece-tshirt-3_04.jpg",
+      "img/products/one-piece-tshirt-3/one-piece-tshirt-3_05.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-4": {
+    "id": "one-piece-tshirt-4",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-4/one-piece-tshirt-4_01.jpg",
+      "img/products/one-piece-tshirt-4/one-piece-tshirt-4_02.jpg",
+      "img/products/one-piece-tshirt-4/one-piece-tshirt-4_03.jpg",
+      "img/products/one-piece-tshirt-4/one-piece-tshirt-4_04.jpg",
+      "img/products/one-piece-tshirt-4/one-piece-tshirt-4_05.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-5": {
+    "id": "one-piece-tshirt-5",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 5",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-5/one-piece-tshirt-5_01.jpg",
+      "img/products/one-piece-tshirt-5/one-piece-tshirt-5_02.jpg",
+      "img/products/one-piece-tshirt-5/one-piece-tshirt-5_03.jpg",
+      "img/products/one-piece-tshirt-5/one-piece-tshirt-5_04.jpg",
+      "img/products/one-piece-tshirt-5/one-piece-tshirt-5_05.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-6": {
+    "id": "one-piece-tshirt-6",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 6",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-6/one-piece-tshirt-6_01.jpg",
+      "img/products/one-piece-tshirt-6/one-piece-tshirt-6_02.jpg",
+      "img/products/one-piece-tshirt-6/one-piece-tshirt-6_03.jpg",
+      "img/products/one-piece-tshirt-6/one-piece-tshirt-6_04.jpg",
+      "img/products/one-piece-tshirt-6/one-piece-tshirt-6_05.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "one-piece-tshirt-7": {
+    "id": "one-piece-tshirt-7",
+    "name": "One Piece Tshirts Graphic T-Shirt Style 7",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "One Piece Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by One Piece Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/one-piece-tshirt-7/one-piece-tshirt-7_01.jpg",
+      "img/products/one-piece-tshirt-7/one-piece-tshirt-7_02.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "solo-leveling-tshirt-1": {
+    "id": "solo-leveling-tshirt-1",
+    "name": "Solo Leveling Tshirts Graphic T-Shirt Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Solo Leveling Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Solo Leveling Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/solo-leveling-tshirt-1/solo-leveling-tshirt-1_01.jpg",
+      "img/products/solo-leveling-tshirt-1/solo-leveling-tshirt-1_02.jpg",
+      "img/products/solo-leveling-tshirt-1/solo-leveling-tshirt-1_03.jpg",
+      "img/products/solo-leveling-tshirt-1/solo-leveling-tshirt-1_04.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "solo-leveling-tshirt-2": {
+    "id": "solo-leveling-tshirt-2",
+    "name": "Solo Leveling Tshirts Graphic T-Shirt Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Solo Leveling Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Solo Leveling Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/solo-leveling-tshirt-2/solo-leveling-tshirt-2_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "solo-leveling-tshirt-3": {
+    "id": "solo-leveling-tshirt-3",
+    "name": "Solo Leveling Tshirts Graphic T-Shirt Style 3",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Solo Leveling Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Solo Leveling Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/solo-leveling-tshirt-3/solo-leveling-tshirt-3_01.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "solo-leveling-tshirt-4": {
+    "id": "solo-leveling-tshirt-4",
+    "name": "Solo Leveling Tshirts Graphic T-Shirt Style 4",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Solo Leveling Tshirts",
+    "category": "clothing",
+    "description": "Premium quality graphic tee featuring a vibrant printed design inspired by Solo Leveling Tshirts. Short sleeves and standard crew neck collar make it perfect for casual street fashion.",
+    "images": [
+      "img/products/solo-leveling-tshirt-4/solo-leveling-tshirt-4_01.jpg",
+      "img/products/solo-leveling-tshirt-4/solo-leveling-tshirt-4_02.jpg",
+      "img/products/solo-leveling-tshirt-4/solo-leveling-tshirt-4_03.jpg",
+      "img/products/solo-leveling-tshirt-4/solo-leveling-tshirt-4_04.jpg",
+      "img/products/solo-leveling-tshirt-4/solo-leveling-tshirt-4_05.jpg"
+    ],
+    "specs": [
+      "Crew neck collar",
+      "Front graphic print design",
+      "Short sleeve styling",
+      "Double-stitched seams"
+    ]
+  },
+  "demon-slayer-vest-1": {
+    "id": "demon-slayer-vest-1",
+    "name": "Demon Slayer Vests Cosplay Vest Style 1",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Vests",
+    "category": "clothing",
+    "description": "Premium Demon Slayer Vests themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/demon-slayer-vest-1/demon-slayer-vest-1_01.jpg",
+      "img/products/demon-slayer-vest-1/demon-slayer-vest-1_02.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "demon-slayer-vest-2": {
+    "id": "demon-slayer-vest-2",
+    "name": "Demon Slayer Vests Cosplay Vest Style 2",
+    "price": 45000,
+    "priceStr": "UGX 45,000",
+    "originalPriceStr": "UGX 55,000",
+    "discount": "18% OFF",
+    "series": "Demon Slayer Vests",
+    "category": "clothing",
+    "description": "Premium Demon Slayer Vests themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/demon-slayer-vest-2/demon-slayer-vest-2_01.jpeg",
+      "img/products/demon-slayer-vest-2/demon-slayer-vest-2_02.jpeg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "wallets-1": {
+    "id": "wallets-1",
+    "name": "Leather Wallet Style 1",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/wallets-1/wallets-1_01.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "wallets-2": {
+    "id": "wallets-2",
+    "name": "Leather Wallet Style 2",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/wallets-2/wallets-2_01.jpg",
+      "img/products/wallets-2/wallets-2_02.jpg",
+      "img/products/wallets-2/wallets-2_03.jpg",
+      "img/products/wallets-2/wallets-2_04.jpg",
+      "img/products/wallets-2/wallets-2_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "wallets-3": {
+    "id": "wallets-3",
+    "name": "Leather Wallet Style 3",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/wallets-3/wallets-3_01.jpg",
+      "img/products/wallets-3/wallets-3_02.jpg",
+      "img/products/wallets-3/wallets-3_03.jpg",
+      "img/products/wallets-3/wallets-3_04.jpg",
+      "img/products/wallets-3/wallets-3_05.jpg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  },
+  "pins-1": {
+    "id": "pins-1",
+    "name": "Product Style 1",
+    "price": 25000,
+    "priceStr": "UGX 25,000",
+    "originalPriceStr": "UGX 30,000",
+    "discount": "17% OFF",
+    "series": "Anime",
+    "category": "accessories",
+    "description": "Premium anime themed merchandise. Designed with high quality materials and authentic detailing.",
+    "images": [
+      "img/products/pins-1/pins-1_01.jpeg",
+      "img/products/pins-1/pins-1_02.jpeg"
+    ],
+    "specs": [
+      "Authentic design detailing",
+      "Durable construction",
+      "Perfect for collectors and fans"
+    ]
+  }
+}

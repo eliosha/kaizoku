@@ -37,6 +37,7 @@
       <div class="products-grid" id="realmProductsGrid">
         <!-- Dynamic products -->
       </div>
+      <div class="pagination-container" id="alloyPagination"></div>
 
       <!-- Realm Switcher (Bottom) -->
       <section class="realm-switcher-section">
@@ -73,6 +74,9 @@
         const searchInput = document.getElementById('realmSearch');
         const sortSelect = document.getElementById('realmSort');
 
+        let currentPage = 1;
+        const itemsPerPage = 16;
+
         function renderProducts() {
           if (!window.productsDB) return;
           const searchVal = searchInput.value.toLowerCase().trim();
@@ -104,12 +108,23 @@
             });
           }
 
-          if (items.length === 0) {
+          // Pagination Calculations
+          const totalItems = items.length;
+          const totalPages = Math.ceil(totalItems / itemsPerPage);
+          if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+
+          const start = (currentPage - 1) * itemsPerPage;
+          const end = start + itemsPerPage;
+          const pageItems = items.slice(start, end);
+
+          if (totalItems === 0) {
             grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">No products found in this realm.</div>`;
+            const paginationContainer = document.getElementById('alloyPagination');
+            if (paginationContainer) paginationContainer.innerHTML = '';
             return;
           }
 
-          grid.innerHTML = items.map(item => {
+          grid.innerHTML = pageItems.map(item => {
             let badgeHTML = item.discount ? `<span class="product-badge">${item.discount}</span>` : '';
             let actionBtnHTML = '';
             if (item.price === null) {
@@ -143,10 +158,76 @@
               </div>
             `;
           }).join('');
+
+          // Render Pagination
+          const paginationContainer = document.getElementById('alloyPagination');
+          if (paginationContainer) {
+            if (totalPages <= 1) {
+              paginationContainer.innerHTML = '';
+            } else {
+              let buttonsHTML = '';
+              buttonsHTML += `
+                <button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="window.setPage(1)">
+                  |&lt;
+                </button>
+              `;
+              buttonsHTML += `
+                <button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="window.setPage(${currentPage - 1})">
+                  &lt;
+                </button>
+              `;
+              const startPage = Math.max(1, currentPage - 1);
+              const endPage = Math.min(totalPages, currentPage + 1);
+              if (startPage > 1) {
+                buttonsHTML += `<button class="pagination-btn" onclick="window.setPage(1)">1</button>`;
+                if (startPage > 2) {
+                  buttonsHTML += `<span style="color: var(--muted); margin: 0 4px;">...</span>`;
+                }
+              }
+              for (let p = startPage; p <= endPage; p++) {
+                buttonsHTML += `
+                  <button class="pagination-btn ${p === currentPage ? 'active' : ''}" onclick="window.setPage(${p})">
+                    ${p}
+                  </button>
+                `;
+              }
+              if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                  buttonsHTML += `<span style="color: var(--muted); margin: 0 4px;">...</span>`;
+                }
+                buttonsHTML += `<button class="pagination-btn" onclick="window.setPage(${totalPages})">${totalPages}</button>`;
+              }
+              buttonsHTML += `
+                <button class="pagination-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="window.setPage(${currentPage + 1})">
+                  &gt;
+                </button>
+              `;
+              buttonsHTML += `
+                <button class="pagination-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="window.setPage(${totalPages})">
+                  &gt;|
+                </button>
+              `;
+              paginationContainer.innerHTML = buttonsHTML;
+            }
+          }
         }
 
-        searchInput.addEventListener('input', renderProducts);
-        sortSelect.addEventListener('change', renderProducts);
+        window.setPage = (page) => {
+          currentPage = page;
+          renderProducts();
+          const mainContent = document.getElementById('realmProductsGrid');
+          if (mainContent) {
+            mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        };
+
+        const handleFilterChange = () => {
+          currentPage = 1;
+          renderProducts();
+        };
+
+        searchInput.addEventListener('input', handleFilterChange);
+        sortSelect.addEventListener('change', handleFilterChange);
 
         // Initial render
         renderProducts();

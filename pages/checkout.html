@@ -6,6 +6,8 @@
     <title>Checkout | Kaizoku Realm</title>
     <link rel="stylesheet" href="../index.css" />
     <link rel="icon" type="image/png" href="../public/kaizoku.png" />
+
+
     <style>
       .form-group {
         margin-bottom: 1.5rem;
@@ -189,10 +191,39 @@
             alert('Your cart is empty!');
             return;
           }
-          alert('Order placed successfully! We will verify your transaction and contact you shortly.');
+
+          const name = document.getElementById('name').value;
+          const deliverySelect = document.getElementById('delivery_location');
+          const deliveryLocationText = deliverySelect.options[deliverySelect.selectedIndex].text;
+          const address = document.getElementById('address').value;
+          const phone = document.getElementById('phone').value;
+          const provider = document.getElementById('provider').value;
+          const trxId = document.getElementById('trx_id').value;
+
+          // Calculate total price
+          const selectedOption = deliverySelect.options[deliverySelect.selectedIndex];
+          const deliveryPrice = selectedOption && selectedOption.dataset.price ? parseInt(selectedOption.dataset.price) : 0;
+          const finalTotal = subtotal + deliveryPrice;
+
+          // Format items list for WhatsApp message
+          const itemsText = cart.map((item, index) => `${index + 1}. ${item.name} (Qty: ${item.qty}) - UGX ${(item.price * item.qty).toLocaleString()}`).join('\n');
+
+          // Construct WhatsApp message content
+          const message = `Hi Kaizoku Realm! 🏴‍☠️\nI would like to place an order:\n\n*Customer Details:*\n- Name: ${name}\n- Phone: ${phone}\n- Delivery Option: ${deliveryLocationText}\n- Address/Landmark: ${address}\n\n*Payment Details:*\n- Provider: ${provider.toUpperCase()}\n- Transaction ID: ${trxId}\n- Total Amount: UGX ${finalTotal.toLocaleString()}\n\n*Ordered Items:*\n${itemsText}\n\nThank you!`;
+
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/256703765398?text=${encodedMessage}`;
+
+          // Open WhatsApp in a new tab/window
+          window.open(whatsappUrl, '_blank');
+
+          alert('Opening WhatsApp to send your order details. Once you send the message, we will confirm your order and schedule dispatch!');
+
+          // Clear local storage cart
           localStorage.removeItem('kaizoku_cart');
-          // Dispatch storage event to keep other pages updated
           window.dispatchEvent(new Event('cartUpdated'));
+          
+          // Redirect to home page
           window.location.href = '../index.html';
         });
       });

@@ -123,7 +123,7 @@
     <a href="#shop" class="btn-outline" style="white-space:nowrap">View All Categories</a>
   </div>
   <div class="cats-grid">
-    <a href="pages/aesthetic-nerds.html" class="cat-card">
+    <a href="pages/shop.html?category=clothing" class="cat-card">
       <img src="img/clothing.jpg" alt="Clothing"/>
       <div class="cat-overlay">
         <div class="cat-name">Clothing</div>
@@ -131,7 +131,7 @@
       </div>
       <div class="cat-arrow">→</div>
     </a>
-    <a href="#shop" class="cat-card">
+    <a href="pages/shop.html?category=accessories" class="cat-card">
       <img src="img/accessories.jpg" alt="Accessories"/>
       <div class="cat-overlay">
         <div class="cat-name">Accessories</div>
@@ -139,7 +139,7 @@
       </div>
       <div class="cat-arrow">→</div>
     </a>
-    <a href="pages/shop.html?category=figurines" class="cat-card">
+    <a href="pages/shop.html?category=collectibles&q=figure" class="cat-card">
       <img src="img/figures.jpg" alt="Figurines"/>
       <div class="cat-overlay">
         <div class="cat-name">Figurines</div>
@@ -189,116 +189,7 @@
     <button class="slider-arrow arrow-prev" aria-label="Previous Products">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
     </button>
-    <div class="products-grid">
-      <!-- Product 1 -->
-      <div class="product-card" onclick="openProduct('ace-one-piece-earrings')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/hanafuda-earrings2.jpg" alt="Ace One Piece Earrings"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Ace One Piece Earrings', 'img/products/Anime Merch/hanafuda-earrings2.jpg', 10000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">One Piece</div>
-          <div class="product-name">Ace One Piece Earrings</div>
-          <div class="product-price">UGX 10,000</div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="product-card" onclick="openProduct('akatsuki-keychain')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/stickers.jpg" alt="Akatsuki Keychain"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Akatsuki Keychain', 'img/products/Anime Merch/stickers.jpg', 20000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Naruto</div>
-          <div class="product-name">Akatsuki Keychain</div>
-          <div class="product-price">UGX 20,000</div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="product-card" onclick="openProduct('jjk-nobara-tote-bag')">
-        <div class="product-img">
-          <img src="img/JJK-bag.jpg" alt="JJK Nobara Tote Bag"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('JJK Nobara Tote Bag', 'img/JJK-bag.jpg', 25000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Jujutsu Kaisen</div>
-          <div class="product-name">JJK Nobara Tote Bag</div>
-          <div class="product-price">UGX 25,000</div>
-        </div>
-      </div>
-      <!-- Product 4 -->
-      <div class="product-card" onclick="openProduct('akatsuki-rings-red-and-white')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/rings.jpg" alt="Akatsuki Rings Red and White"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Akatsuki Rings Red and White', 'img/products/Anime Merch/rings.jpg', 30000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Naruto</div>
-          <div class="product-name">Akatsuki Rings Red and White</div>
-          <div class="product-price">UGX 30,000</div>
-        </div>
-      </div>
-      <!-- Product 5 -->
-      <div class="product-card" onclick="openProduct('aot-wings-of-freedom-bracelet')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/bracelet.jpg" alt="AOT Wings of Freedom Bracelet"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('AOT Wings of Freedom Bracelet', 'img/products/Anime Merch/bracelet.jpg', 15000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Attack on Titan</div>
-          <div class="product-name">AOT Wings of Freedom Bracelet</div>
-          <div class="product-price">UGX 15,000</div>
-        </div>
-      </div>
-      <!-- Product 6 -->
-      <div class="product-card" onclick="openProduct('itachi-uchiha-ring')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/rings.jpg" alt="Itachi Uchiha Ring"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Itachi Uchiha Ring', 'img/products/Anime Merch/rings.jpg', 25000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Naruto</div>
-          <div class="product-name">Itachi Uchiha Ring</div>
-          <div class="product-price">UGX 25,000</div>
-        </div>
-      </div>
-      <!-- Product 7 -->
-      <div class="product-card" onclick="openProduct('harry-potter-golden-snitch-necklace')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/bracelet.jpg" alt="Harry Potter Golden Snitch Necklace"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Harry Potter Golden Snitch Necklace', 'img/products/Anime Merch/bracelet.jpg', 15000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Harry Potter</div>
-          <div class="product-name">Harry Potter Golden Snitch Necklace</div>
-          <div class="product-price">UGX 15,000</div>
-        </div>
-      </div>
-      <!-- Product 8 -->
-      <div class="product-card" onclick="openProduct('deadpool-keychain')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/phantomtroupe-cap.jpg" alt="Phantom Troupe Cap"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Phantom Troupe Cap', 'img/products/Anime Merch/phantomtroupe-cap.jpg', 40000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Hunter x Hunter</div>
-          <div class="product-name">Phantom Troupe Cap</div>
-          <div class="product-price">UGX 40,000</div>
-        </div>
-      </div>
-      <!-- Product 9 -->
-      <div class="product-card" onclick="openProduct('tanjiro-hanafuda-earrings')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/hanafuda-earrings1.jpg" alt="Tanjiro Hanafuda Earrings"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Tanjiro Hanafuda Earrings', 'img/products/Anime Merch/hanafuda-earrings1.jpg', 15000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Demon Slayer</div>
-          <div class="product-name">Tanjiro Hanafuda Earrings</div>
-          <div class="product-price">UGX 15,000</div>
-        </div>
-      </div>
-    </div>
+      <div class="products-grid" id="bestsellersGrid"></div>
     <button class="slider-arrow arrow-next" aria-label="Next Products">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
     </button>
@@ -329,128 +220,7 @@
     <button class="slider-arrow arrow-prev" aria-label="Previous Products">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
     </button>
-    <div class="products-grid">
-      <!-- Product 1 -->
-      <div class="product-card" data-category="clothing" onclick="openProduct('akatsuki-premium-hoodie')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/AOT-hoodie.jpg" alt="AOT Hoodie"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('AOT Hoodie', 'img/products/Anime Merch/AOT-hoodie.jpg', 85000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Attack on Titan</div>
-          <div class="product-name">AOT Hoodie</div>
-          <div class="product-price">UGX 85,000</div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="product-card" data-category="alloy" onclick="openProduct('zoro-s-wado-ichimonji')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/katanas.jpg" alt="Zoro's Wado Ichimonji"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Zoro\'s Wado Ichimonji', 'img/products/Anime Merch/katanas.jpg', 120000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">One Piece</div>
-          <div class="product-name">Zoro's Wado Ichimonji</div>
-          <div class="product-price">UGX 120,000</div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="product-card" data-category="alloy" onclick="openProduct('bugatti-chiron-alloy-model-1-24')">
-        <div class="product-img">
-          <img src="img/alloy_collection_bg.jpg" alt="Bugatti Chiron Alloy Model"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Bugatti Chiron Alloy Model 1:24', 'img/alloy_collection_bg.jpg', 95000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Alloy Collection</div>
-          <div class="product-name">Bugatti Chiron Alloy Model 1:24</div>
-          <div class="product-price">UGX 95,000</div>
-        </div>
-      </div>
-      <!-- Product 4 -->
-      <div class="product-card" data-category="accessories" onclick="openProduct('jjk-nobara-tote-bag')">
-        <div class="product-img">
-          <img src="img/JJK-bag.jpg" alt="JJK Nobara Tote Bag"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('JJK Nobara Tote Bag', 'img/JJK-bag.jpg', 25000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Jujutsu Kaisen</div>
-          <div class="product-name">JJK Nobara Tote Bag</div>
-          <div class="product-price">UGX 25,000</div>
-        </div>
-      </div>
-      <!-- Product 5 -->
-      <div class="product-card" data-category="decor" onclick="openProduct('attack-on-titan-poster-a3')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/stickers.jpg" alt="Attack on Titan Poster"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Attack on Titan Poster (A3)', 'img/products/Anime Merch/stickers.jpg', 15000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Attack on Titan</div>
-          <div class="product-name">Attack on Titan Poster (A3)</div>
-          <div class="product-price">UGX 15,000</div>
-        </div>
-      </div>
-      <!-- Product 6 -->
-      <div class="product-card" data-category="accessories" onclick="openProduct('itachi-uchiha-ring')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/rings.jpg" alt="Itachi Uchiha Ring"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Itachi Uchiha Ring', 'img/products/Anime Merch/rings.jpg', 25000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Naruto</div>
-          <div class="product-name">Itachi Uchiha Ring</div>
-          <div class="product-price">UGX 25,000</div>
-        </div>
-      </div>
-      <!-- Product 7 -->
-      <div class="product-card" data-category="figurines" onclick="openProduct('goku-ultra-instinct-figure')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/figures.jpg" alt="Goku Ultra Instinct Figure"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Goku Ultra Instinct Figure', 'img/products/Anime Merch/figures.jpg', 150000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Dragon Ball</div>
-          <div class="product-name">Goku Ultra Instinct Figure</div>
-          <div class="product-price">UGX 150,000</div>
-        </div>
-      </div>
-      <!-- Product 8 -->
-      <div class="product-card" data-category="alloy" onclick="openProduct('porsche-911-gt3-alloy-model-1-24')">
-        <div class="product-img">
-          <img src="img/alloy_collection_bg.jpg" alt="Porsche 911 GT3 Alloy Model"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Porsche 911 GT3 Alloy Model 1:24', 'img/alloy_collection_bg.jpg', 85000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Alloy Collection</div>
-          <div class="product-name">Porsche 911 GT3 Alloy Model 1:24</div>
-          <div class="product-price">UGX 85,000</div>
-        </div>
-      </div>
-      <!-- Product 9 -->
-      <div class="product-card" data-category="decor" onclick="openProduct('demon-slayer-manga-vol-1')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/demonslayer-manga.jpg" alt="Demon Slayer Manga Vol. 1"/>
-          <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('Demon Slayer Manga Vol. 1', 'img/products/Anime Merch/demonslayer-manga.jpg', 35000)">+ Add to Cart</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Demon Slayer</div>
-          <div class="product-name">Demon Slayer Manga Vol. 1</div>
-          <div class="product-price">UGX 35,000</div>
-        </div>
-      </div>
-      <!-- Product 10 -->
-      <div class="product-card" data-category="figurines" onclick="openProduct('akaza-figurine')">
-        <div class="product-img">
-          <img src="img/products/Anime Merch/demonslayer-figure.jpg" alt="Akaza Figurine"/>
-          <button class="product-quick-add" style="background:#22c55e;" onclick="event.stopPropagation(); window.open('https://wa.me/256703765398?text=Hi! I\'m interested in: Akaza Figurine', '_blank')">WhatsApp to Order</button>
-        </div>
-        <div class="product-info">
-          <div class="product-series">Demon Slayer</div>
-          <div class="product-name">Akaza Figurine</div>
-          <div class="product-price">Contact for Price</div>
-        </div>
-      </div>
-    </div>
+    <div class="products-grid" id="recommendedGrid"></div>
     <button class="slider-arrow arrow-next" aria-label="Next Products">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
     </button>
@@ -815,6 +585,128 @@
     input.value = '';
     input.disabled = true;
   }
+
+  // ── NEWSLETTER ──
+  function handleNewsletter(btn) {
+    const input = btn.previousElementSibling;
+    if (!input.value || !input.value.includes('@')) {
+      input.style.borderColor = 'var(--red)';
+      input.placeholder = 'Enter a valid email';
+      return;
+    }
+    btn.textContent = '✓ Subscribed!';
+    btn.style.background = '#22c55e';
+    input.value = '';
+    input.disabled = true;
+  }
+
+  // ── DYNAMIC PRODUCTS RENDER ──
+  document.addEventListener('DOMContentLoaded', () => {
+    const initGrids = () => {
+      if (!window.productsDB || Object.keys(window.productsDB).length === 0) {
+        setTimeout(initGrids, 100);
+        return;
+      }
+      
+      const bestsellersGrid = document.getElementById('bestsellersGrid');
+      const recommendedGrid = document.getElementById('recommendedGrid');
+      
+      const usedGridKeys = new Set();
+
+      const bestsellersDefs = [
+        { kw: 'hanafuda-earrings', fallback: 'tanjiro-hanafuda-earrings' },
+        { kw: 'spider-man-emblem', fallback: 'insomniac-spider-man-emblem-keychain' },
+        { kw: 'nobara-tote-bag', fallback: 'jjk-nobara-tote-bag' },
+        { kw: 'straw-hat-wallet', fallback: 'stealth-black-embossed-straw-hat-wallet' },
+        { kw: 'akatsuki-rings', fallback: 'akatsuki-rings-red-and-white' },
+        { kw: 'survey-corps-bracelet', fallback: 'attack-on-titan-survey-corps-bracelet' },
+        { kw: 'gaze-grid-canvas-tote-bag', fallback: 'anime-iconic-eyes-dojutsu-gaze-grid-canvas-tote-bag' },
+        { kw: 'bleach-stickers', fallback: 'bleach-stickers' }
+      ];
+
+      const recommendedDefs = [
+        { kw: 'tanjiro-kamado-hoodie', fallback: 'tanjiro-kamado-hoodie-demon-slayer', cat: 'clothing' },
+        { kw: 'katana-blades', fallback: 'katana-blades', cat: 'alloy' },
+        { kw: 'phantom-viii', fallback: 'rolls-royce-phantom-viii-two-tone-black-gold', cat: 'alloy' },
+        { kw: 'hollow-mask-tote', fallback: 'bleach-ichigo-kurosaki-hollow-mask-tote', cat: 'accessories' },
+        { kw: 'leap-of-faith', fallback: 'miles-morales-leap-of-faith-spider-man-into-the-spider-verse', cat: 'decor' },
+        { kw: 'wings-of-freedom-stealth-black-wallet', fallback: 'attack-on-titan-wings-of-freedom-stealth-black-wallet', cat: 'accessories' },
+        { kw: 'attack-titan-figure', fallback: 'attack-titan-figure', cat: 'figurines' },
+        { kw: 'porsche-911-gt3-rs', fallback: 'porsche-911-gt3-rs-9912-generation', cat: 'alloy' }
+      ];
+
+      const findProduct = (def) => {
+        let key = def.fallback;
+        if (window.productsDB[key] && !usedGridKeys.has(key)) {
+          usedGridKeys.add(key);
+          return { key, item: window.productsDB[key] };
+        }
+        key = Object.keys(window.productsDB).find(k => k.includes(def.kw) && !usedGridKeys.has(k));
+        if (key) {
+          usedGridKeys.add(key);
+          return { key, item: window.productsDB[key] };
+        }
+        // General fallback to any unused key in the database
+        key = Object.keys(window.productsDB).find(k => !usedGridKeys.has(k));
+        if (key) {
+          usedGridKeys.add(key);
+          return { key, item: window.productsDB[key] };
+        }
+        // Absolute fallback to first key
+        const firstKey = Object.keys(window.productsDB)[0];
+        return { key: firstKey, item: window.productsDB[firstKey] };
+      };
+
+      if (bestsellersGrid) {
+        bestsellersGrid.innerHTML = bestsellersDefs.map(def => {
+          const { key, item } = findProduct(def);
+          const name = item.name;
+          const img = window.resolveImagePath(item.images[0]);
+          const priceStr = item.priceStr;
+          const series = item.series;
+          const price = item.price || 0;
+          return `
+            <div class="product-card" onclick="openProduct('${key}')">
+              <div class="product-img">
+                <img src="${img}" alt="${name}"/>
+                <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('${name}', ${price}, '${img}', 1)">+ Add to Cart</button>
+              </div>
+              <div class="product-info">
+                <div class="product-series">${series}</div>
+                <div class="product-name">${name}</div>
+                <div class="product-price">${priceStr}</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      if (recommendedGrid) {
+        recommendedGrid.innerHTML = recommendedDefs.map(def => {
+          const { key, item } = findProduct(def);
+          const name = item.name;
+          const img = window.resolveImagePath(item.images[0]);
+          const priceStr = item.priceStr;
+          const series = item.series;
+          const price = item.price || 0;
+          return `
+            <div class="product-card" data-category="${def.cat}" onclick="openProduct('${key}')">
+              <div class="product-img">
+                <img src="${img}" alt="${name}"/>
+                <button class="product-quick-add" onclick="event.stopPropagation(); addToCart('${name}', ${price}, '${img}', 1)">+ Add to Cart</button>
+              </div>
+              <div class="product-info">
+                <div class="product-series">${series}</div>
+                <div class="product-name">${name}</div>
+                <div class="product-price">${priceStr}</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    };
+    initGrids();
+  });
 
   // ── FILTERS ──
   function filterBestsellers(val) {
