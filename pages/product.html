@@ -199,7 +199,34 @@
           // Breadcrumbs
           const catName = product.category.charAt(0).toUpperCase() + product.category.slice(1);
           document.getElementById('breadcrumbCategory').textContent = catName;
-          document.getElementById('breadcrumbCategoryLink').setAttribute('href', `shop.html?category=${product.category}`);
+          
+          let catHref = `shop.html?category=${product.category}`;
+          if (product.category === 'alloy-collectibles') {
+            catHref = 'alloy-collection.html';
+          } else if (product.category === 'clothing') {
+            const fandomSeries = [
+              'marvel', 'dc', 'harry potter', 'breaking bad', 'game of thrones', 
+              'stranger things', 'peaky blinders', 'the godfather', 'invincible',
+              'goodfellas', 'kill bill'
+            ];
+            const seriesLower = (product.series || '').toLowerCase();
+            if (fandomSeries.some(fs => seriesLower.includes(fs))) {
+              catHref = 'fandom.html';
+            } else {
+              catHref = 'aesthetic-nerds.html';
+            }
+          } else {
+            const fandomSeries = [
+              'marvel', 'dc', 'harry potter', 'breaking bad', 'game of thrones', 
+              'stranger things', 'peaky blinders', 'the godfather', 'invincible',
+              'goodfellas', 'kill bill'
+            ];
+            const seriesLower = (product.series || '').toLowerCase();
+            if (fandomSeries.some(fs => seriesLower.includes(fs))) {
+              catHref = 'fandom.html';
+            }
+          }
+          document.getElementById('breadcrumbCategoryLink').setAttribute('href', catHref);
           document.getElementById('breadcrumbName').textContent = product.name;
 
           // Details Sidebar Info

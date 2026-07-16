@@ -577,14 +577,14 @@ window.productsDB = {
     ]
   },
   'bellion-figure': {
-    name: 'Bellion Figure Action Figure',
+    name: 'Bellion 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/bellion-figure/bellion-figure_01.jpg'
     ],
@@ -595,14 +595,14 @@ window.productsDB = {
     ]
   },
   'beru-figure': {
-    name: 'Beru Figure Action Figure',
+    name: 'Beru 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/beru-figure/beru-figure_01.jpg',
       'img/products/beru-figure/beru-figure_02.jpg',
@@ -1512,30 +1512,112 @@ window.productsDB = {
       'Perfect for collectors and fans'
     ]
   },
-  'demon-slayer-necklaces': {
-    name: 'Demon Slayer Necklace',
+  'demon-slayer-necklace-style-1': {
+    name: 'Demon Slayer Necklace - Style 1',
     price: 15000,
     priceStr: 'UGX 15,000',
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
-    series: 'One Piece',
+    series: 'Demon Slayer',
     category: 'jewelry',
-    description: 'Authentic One Piece themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    description: 'Authentic Demon Slayer themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
     images: [
-      'img/products/demon-slayer-necklaces/demon-slayer-necklaces_01.jpg',
-      'img/products/demon-slayer-necklaces/demon-slayer-necklaces_02.jpg',
-      'img/products/demon-slayer-necklaces/demon-slayer-necklaces_03.jpg',
-      'img/products/demon-slayer-necklaces/demon-slayer-necklaces_04.jpg',
-      'img/products/demon-slayer-necklaces/demon-slayer-necklaces_05.jpg',
-      'img/products/demon-slayer-necklaces/demon-slayer-necklaces_pink_01.jpg'
+      'img/products/demon-slayer-necklace-style-1/demon-slayer-necklace-style-1_01.jpg'
     ],
     specs: [
       'Rust-resistant metal alloy',
       'Embossed emblem detailing',
       'Adjustable length sizing'
+    ]
+  },
+  'demon-slayer-necklace-style-2': {
+    name: 'Demon Slayer Necklace - Style 2',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Demon Slayer',
+    category: 'jewelry',
+    description: 'Authentic Demon Slayer themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    images: [
+      'img/products/demon-slayer-necklace-style-2/demon-slayer-necklace-style-2_01.jpg'
     ],
-    colors: [
-      'Pink'
+    specs: [
+      'Rust-resistant metal alloy',
+      'Embossed emblem detailing',
+      'Adjustable length sizing'
+    ]
+  },
+  'demon-slayer-necklace-style-3': {
+    name: 'Demon Slayer Necklace - Style 3',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Demon Slayer',
+    category: 'jewelry',
+    description: 'Authentic Demon Slayer themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    images: [
+      'img/products/demon-slayer-necklace-style-3/demon-slayer-necklace-style-3_01.jpg'
+    ],
+    specs: [
+      'Rust-resistant metal alloy',
+      'Embossed emblem detailing',
+      'Adjustable length sizing'
+    ]
+  },
+  'demon-slayer-necklace-style-4': {
+    name: 'Demon Slayer Necklace - Style 4',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Demon Slayer',
+    category: 'jewelry',
+    description: 'Authentic Demon Slayer themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    images: [
+      'img/products/demon-slayer-necklace-style-4/demon-slayer-necklace-style-4_01.jpg'
+    ],
+    specs: [
+      'Rust-resistant metal alloy',
+      'Embossed emblem detailing',
+      'Adjustable length sizing'
+    ]
+  },
+  'demon-slayer-necklace-style-5': {
+    name: 'Demon Slayer Necklace - Style 5',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Demon Slayer',
+    category: 'jewelry',
+    description: 'Authentic Demon Slayer themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    images: [
+      'img/products/demon-slayer-necklace-style-5/demon-slayer-necklace-style-5_01.jpg'
+    ],
+    specs: [
+      'Rust-resistant metal alloy',
+      'Embossed emblem detailing',
+      'Adjustable length sizing'
+    ]
+  },
+  'demon-slayer-necklace-pink': {
+    name: 'Demon Slayer Necklace - Pink Style',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Demon Slayer',
+    category: 'jewelry',
+    description: 'Authentic Demon Slayer themed Necklace featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    images: [
+      'img/products/demon-slayer-necklace-pink/demon-slayer-necklace-pink_01.jpg'
+    ],
+    specs: [
+      'Rust-resistant metal alloy',
+      'Embossed emblem detailing',
+      'Adjustable length sizing'
     ]
   },
   'demon-slayer-shorts': {
@@ -1624,9 +1706,9 @@ window.productsDB = {
     priceStr: 'UGX 15,000',
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
-    series: 'Anime',
+    series: 'Doom',
     category: 'jewelry',
-    description: 'Authentic Anime themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    description: 'Authentic Doom themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
     images: [
       'img/products/doom-blade-doom-eternal-keychain/doom-blade-doom-eternal-keychain_01.jpg',
       'img/products/doom-blade-doom-eternal-keychain/doom-blade-doom-eternal-keychain_02.jpg'
@@ -1925,29 +2007,77 @@ window.productsDB = {
       'Perfect for collectors and fans'
     ]
   },
-  'f1-cars': {
-    name: 'F1 Cars Alloy Model Car',
+  'scuderia-ferrari-charles-leclerc-f1-car': {
+    name: 'Scuderia Ferrari #16 Charles Leclerc Alloy F1 Car',
     price: 75000,
     priceStr: 'UGX 75,000',
     originalPriceStr: 'UGX 90,000',
     discount: '17% OFF',
     series: 'Alloy Collectibles',
     category: 'alloy-collectibles',
-    description: 'Authentic Alloy Collectibles themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Alloy Collectibles themed F1 Car model featuring premium detailed designs. Exquisite scale detail representing authentic racing car engineering.',
     images: [
-      'img/products/f1-cars/f1-cars_01.jpg',
-      'img/products/f1-cars/f1-cars_02.jpg',
-      'img/products/f1-cars/f1-cars_03.jpg',
-      'img/products/f1-cars/f1-cars_04.jpg',
-      'img/products/f1-cars/f1-cars_red_01.jpg'
+      'img/products/scuderia-ferrari-charles-leclerc-f1-car/scuderia-ferrari-charles-leclerc-f1-car_01.jpg',
+      'img/products/scuderia-ferrari-charles-leclerc-f1-car/scuderia-ferrari-charles-leclerc-f1-car_02.jpg'
     ],
     specs: [
-      'Highly detailed molding',
-      'Matte finish coloring',
+      'Highly detailed racing decals',
+      'Rubber tires & die-cast body',
       'Collector display packaging'
+    ]
+  },
+  'mercedes-amg-petronas-lewis-hamilton-f1-car': {
+    name: 'Mercedes-AMG Petronas F1 Team #44 Lewis Hamilton Alloy F1 Car',
+    price: 75000,
+    priceStr: 'UGX 75,000',
+    originalPriceStr: 'UGX 90,000',
+    discount: '17% OFF',
+    series: 'Alloy Collectibles',
+    category: 'alloy-collectibles',
+    description: 'Authentic Alloy Collectibles themed F1 Car model featuring premium detailed designs. Exquisite scale detail representing authentic racing car engineering.',
+    images: [
+      'img/products/mercedes-amg-petronas-lewis-hamilton-f1-car/mercedes-amg-petronas-lewis-hamilton-f1-car_01.jpg'
     ],
-    colors: [
-      'Red'
+    specs: [
+      'Highly detailed racing decals',
+      'Rubber tires & die-cast body',
+      'Collector display packaging'
+    ]
+  },
+  'oracle-red-bull-racing-max-verstappen-f1-car': {
+    name: 'Oracle Red Bull Racing Max Verstappen Alloy F1 Car',
+    price: 75000,
+    priceStr: 'UGX 75,000',
+    originalPriceStr: 'UGX 90,000',
+    discount: '17% OFF',
+    series: 'Alloy Collectibles',
+    category: 'alloy-collectibles',
+    description: 'Authentic Alloy Collectibles themed F1 Car model featuring premium detailed designs. Exquisite scale detail representing authentic racing car engineering.',
+    images: [
+      'img/products/oracle-red-bull-racing-max-verstappen-f1-car/oracle-red-bull-racing-max-verstappen-f1-car_01.jpg'
+    ],
+    specs: [
+      'Highly detailed racing decals',
+      'Rubber tires & die-cast body',
+      'Collector display packaging'
+    ]
+  },
+  'mclaren-f1-team-papaya-chrome-alloy-f1-car': {
+    name: 'McLaren F1 Team Papaya & Chrome Alloy F1 Car',
+    price: 75000,
+    priceStr: 'UGX 75,000',
+    originalPriceStr: 'UGX 90,000',
+    discount: '17% OFF',
+    series: 'Alloy Collectibles',
+    category: 'alloy-collectibles',
+    description: 'Authentic Alloy Collectibles themed F1 Car model featuring premium detailed designs. Exquisite scale detail representing authentic racing car engineering.',
+    images: [
+      'img/products/mclaren-f1-team-papaya-chrome-alloy-f1-car/mclaren-f1-team-papaya-chrome-alloy-f1-car_01.jpg'
+    ],
+    specs: [
+      'Highly detailed racing decals',
+      'Rubber tires & die-cast body',
+      'Collector display packaging'
     ]
   },
   'female-titan-figurine': {
@@ -4846,6 +4976,25 @@ window.productsDB = {
       'Adjustable length sizing'
     ]
   },
+  'naruto-uzumaki-multi-charm-keychain': {
+    name: 'Naruto Uzumaki Multi-Charm Keychain',
+    price: 15000,
+    priceStr: 'UGX 15,000',
+    originalPriceStr: 'UGX 20,000',
+    discount: '25% OFF',
+    series: 'Naruto',
+    category: 'jewelry',
+    description: 'Authentic Naruto themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    images: [
+      'img/products/naruto-uzumaki-multi-charm-keychain/naruto-uzumaki-multi-charm-keychain_01.jpg',
+      'img/products/naruto-uzumaki-multi-charm-keychain/naruto-uzumaki-multi-charm-keychain_02.jpg'
+    ],
+    specs: [
+      'Rust-resistant metal alloy',
+      'Embossed emblem detailing',
+      'Adjustable length sizing'
+    ]
+  },
   'naruto-shippuden-stealth-crest-embossed-wallet': {
     name: 'Naruto Shippuden Leather Wallet',
     price: 25000,
@@ -5929,14 +6078,14 @@ window.productsDB = {
     ]
   },
   'saitama-2d-acrylic-standee-figure': {
-    name: 'Saitama 2D Acrylic Standee Figure Action Figure',
+    name: 'Saitama 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'One Punch Man',
     category: 'figurines',
-    description: 'Authentic One Punch Man themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic One Punch Man themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/saitama-2d-acrylic-standee-figure/saitama-2d-acrylic-standee-figure_01.jpg',
       'img/products/saitama-2d-acrylic-standee-figure/saitama-2d-acrylic-standee-figure_02.jpg',
@@ -6922,14 +7071,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwoo-sharp-suit-version-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Sharp Suit Version 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwoo-sharp-suit-version-figure/sung-jinwoo-sharp-suit-version-figure_01.jpg',
       'img/products/sung-jinwoo-sharp-suit-version-figure/sung-jinwoo-sharp-suit-version-figure_02.jpg'
@@ -6941,14 +7090,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwoo-streetwear-hoodie-version-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Streetwear Hoodie Version 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwoo-streetwear-hoodie-version-figure/sung-jinwoo-streetwear-hoodie-version-figure_01.jpg',
       'img/products/sung-jinwoo-streetwear-hoodie-version-figure/sung-jinwoo-streetwear-hoodie-version-figure_02.jpg'
@@ -6960,14 +7109,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwoo-the-throne-pose-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Throne Pose 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwoo-the-throne-pose-figure/sung-jinwoo-the-throne-pose-figure_01.jpg',
       'img/products/sung-jinwoo-the-throne-pose-figure/sung-jinwoo-the-throne-pose-figure_02.jpg'
@@ -6979,14 +7128,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwoo-trench-coat-shadow-aura-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Trench Coat Shadow Aura 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwoo-trench-coat-shadow-aura-figure/sung-jinwoo-trench-coat-shadow-aura-figure_01.jpg',
       'img/products/sung-jinwoo-trench-coat-shadow-aura-figure/sung-jinwoo-trench-coat-shadow-aura-figure_02.jpg'
@@ -6998,14 +7147,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwoocasual-monarch-walk-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Casual Monarch Walk 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwoocasual-monarch-walk-figure/sung-jinwoocasual-monarch-walk-figure_01.jpg',
       'img/products/sung-jinwoocasual-monarch-walk-figure/sung-jinwoocasual-monarch-walk-figure_02.jpg',
@@ -7019,14 +7168,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwoomonarch-with-greatsword-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Monarch with Greatsword 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwoomonarch-with-greatsword-figure/sung-jinwoomonarch-with-greatsword-figure_01.jpg',
       'img/products/sung-jinwoomonarch-with-greatsword-figure/sung-jinwoomonarch-with-greatsword-figure_02.jpg'
@@ -7038,14 +7187,14 @@ window.productsDB = {
     ]
   },
   'sung-jinwooshadow-monarch-awakened-form-figure': {
-    name: 'Sung Jinwoo Figure Action Figure',
+    name: 'Sung Jinwoo Shadow Monarch Awakened Form 2D Acrylic Standee Figure',
     price: null,
     priceStr: 'Contact for Price',
     originalPriceStr: null,
     discount: 'Request',
     series: 'Solo Leveling',
     category: 'figurines',
-    description: 'Authentic Solo Leveling themed Action Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Solo Leveling themed 2D Acrylic Standee Figure featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/sung-jinwooshadow-monarch-awakened-form-figure/sung-jinwooshadow-monarch-awakened-form-figure_01.jpg',
       'img/products/sung-jinwooshadow-monarch-awakened-form-figure/sung-jinwooshadow-monarch-awakened-form-figure_02.jpg',
@@ -7118,14 +7267,14 @@ window.productsDB = {
     ]
   },
   'tanjiro-hanafuda-earrings': {
-    name: 'Tanjiro Kamado Hanafuda Earring Earrings',
+    name: 'Tanjiro Kamado Hanafuda Earring & Keychain',
     price: 15000,
     priceStr: 'UGX 15,000',
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
     series: 'Demon Slayer',
     category: 'jewelry',
-    description: 'Authentic Demon Slayer themed Earrings featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    description: 'Authentic Demon Slayer themed Earrings & Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
     images: [
       'img/products/tanjiro-kamado-hanafuda-earring-keychain-demon-slayer/tanjiro-kamado-hanafuda-earring-keychain-demon-slayer_01.jpeg',
       'img/products/tanjiro-kamado-hanafuda-earring-keychain-demon-slayer/tanjiro-kamado-hanafuda-earring-keychain-demon-slayer_02.jpeg',
@@ -7365,9 +7514,9 @@ window.productsDB = {
     priceStr: 'UGX 15,000',
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
-    series: 'Anime',
+    series: 'God of War',
     category: 'jewelry',
-    description: 'Authentic Anime themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    description: 'Authentic God of War themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
     images: [
       'img/products/the-blade-of-chaos-god-of-war-keychain/the-blade-of-chaos-god-of-war-keychain_01.jpg',
       'img/products/the-blade-of-chaos-god-of-war-keychain/the-blade-of-chaos-god-of-war-keychain_02.jpg',
@@ -7385,9 +7534,9 @@ window.productsDB = {
     priceStr: 'UGX 15,000',
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
-    series: 'Anime',
+    series: 'God of War',
     category: 'jewelry',
-    description: 'Authentic Anime themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    description: 'Authentic God of War themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
     images: [
       'img/products/the-blade-of-olympus-god-of-war-keychain/the-blade-of-olympus-god-of-war-keychain_01.jpg',
       'img/products/the-blade-of-olympus-god-of-war-keychain/the-blade-of-olympus-god-of-war-keychain_02.jpg'
@@ -9580,6 +9729,17 @@ window.renderCheckout = function() {
 // ── NAV AND FOOTER TEMPLATES ──
 const getNavbarHTML = () => `
   <nav>
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay" style="display: none;">
+      <div class="search-overlay-inner">
+        <div class="search-overlay-bar">
+          <svg class="search-bar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input class="nav-search" id="overlaySearchInput" type="text" placeholder="What are you looking for?" autocomplete="off"/>
+          <button class="search-close-btn" onclick="toggleSearchOverlay(false)">&times;</button>
+        </div>
+        <div class="search-suggestions" id="navSuggestions" style="display: none;"></div>
+      </div>
+    </div>
     <div class="nav-inner">
       <a href="${homePrefix}" class="nav-logo">
         <img src="${logoPrefix}public/kaizoku.png" alt="Kaizoku Realm Logo" onerror="this.src='${logoPrefix}kaizoku.png'" style="height: 40px; object-fit: contain;"/>
@@ -9613,7 +9773,7 @@ const getNavbarHTML = () => `
         <li class="dropdown">
           <a href="${pathPrefix}shop.html?category=jewelry">Jewelry <span class="arrow">&#9662;</span></a>
           <ul class="dropdown-menu">
-            <li><a href="${pathPrefix}shop.html?category=gifts&q=keychain">Keychains</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=keychain">Keychains</a></li>
             <li><a href="${pathPrefix}shop.html?category=jewelry&q=necklace">Necklaces</a></li>
             <li><a href="${pathPrefix}shop.html?category=jewelry&q=bracelet">Bracelets</a></li>
             <li><a href="${pathPrefix}shop.html?category=jewelry&q=earring">Earrings</a></li>
@@ -9636,7 +9796,7 @@ const getNavbarHTML = () => `
           <ul class="dropdown-menu">
             <li><a href="${pathPrefix}shop.html?category=decor&q=wall">Wall Hangings</a></li>
             <li><a href="${pathPrefix}shop.html?category=decor&q=poster">Posters</a></li>
-            <li><a href="${pathPrefix}shop.html?category=gifts&q=sticker">Stickers</a></li>
+            <li><a href="${pathPrefix}shop.html?category=jewelry&q=sticker">Stickers</a></li>
             <li><a href="${pathPrefix}shop.html?category=decor&q=framed">Framed prints</a></li>
             <li><a href="${pathPrefix}shop.html?category=decor&q=canvas">Canvas prints</a></li>
             <li><a href="${pathPrefix}shop.html?category=decor&q=board">Art board prints</a></li>
@@ -9666,10 +9826,9 @@ const getNavbarHTML = () => `
         </li>
       </ul>
       <div class="nav-actions">
-        <div class="search-wrapper">
-          <input class="nav-search" type="text" placeholder="Search merch…" autocomplete="off"/>
-          <div class="search-suggestions" id="navSuggestions" style="display: none;"></div>
-        </div>
+        <button class="search-toggle-btn" aria-label="Search" onclick="toggleSearchOverlay(true)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
         <button class="cart-btn" onclick="openCart()">
           Cart <span class="cart-count" id="cartCount">0</span>
         </button>
@@ -9762,6 +9921,44 @@ document.addEventListener("DOMContentLoaded", () => {
     header.innerHTML = getNavbarHTML();
     updateThemeIcon();
 
+    // Toggle Search Overlay
+    window.toggleSearchOverlay = function(show) {
+      const overlay = document.getElementById('searchOverlay');
+      if (overlay) {
+        if (show) {
+          overlay.style.display = 'flex';
+          overlay.offsetHeight; // force reflow
+          overlay.classList.add('active');
+          const input = document.getElementById('overlaySearchInput');
+          if (input) {
+            input.focus();
+          }
+        } else {
+          overlay.classList.remove('active');
+          setTimeout(() => {
+            overlay.style.display = 'none';
+          }, 200);
+        }
+      }
+    };
+
+    // Close on clicking outside search container
+    const searchOverlay = header.querySelector('#searchOverlay');
+    if (searchOverlay) {
+      searchOverlay.addEventListener('click', (e) => {
+        if (e.target === searchOverlay) {
+          window.toggleSearchOverlay(false);
+        }
+      });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        window.toggleSearchOverlay(false);
+      }
+    });
+
     // Hook up navbar search to redirect to shop.html with query
     // Hook up navbar search to redirect to shop.html with query and show suggestions
     const navSearch = header.querySelector('.nav-search');
@@ -9787,14 +9984,52 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
+        // Split query into terms
+        const terms = query.split(/\s+/).map(word => {
+          if (word.endsWith('s') && word.length > 3) {
+            if (!['series', 'glass', 'jeans', 'dress', 'accessories', 'collectibles'].includes(word)) {
+              return word.slice(0, -1);
+            }
+          }
+          return word;
+        }).filter(w => w.length > 0);
+
+        if (terms.length === 0) {
+          navSuggestions.style.display = 'none';
+          navSuggestions.innerHTML = '';
+          return;
+        }
+
         // Search through productsDB
         const matches = [];
         for (let key in window.productsDB) {
           const product = window.productsDB[key];
-          const name = product.name.toLowerCase();
-          const series = (product.series || '').toLowerCase();
+          const nameLower = product.name.toLowerCase();
+          const seriesLower = (product.series || '').toLowerCase();
+          const descLower = (product.description || '').toLowerCase();
+          const categoryLower = (product.category || '').toLowerCase();
           
-          if (name.includes(query) || series.includes(query)) {
+          const isMatch = terms.every(term => {
+            // Ring/rings specific mapping: do not match earrings or keychains
+            if (term === 'ring') {
+              return nameLower.includes('ring') && !nameLower.includes('earring') && !nameLower.includes('keychain');
+            }
+            if (term === 'figure' || term === 'figurine' || term === 'standee') {
+              return categoryLower === 'figurines' || nameLower.includes('figure') || nameLower.includes('standee') || nameLower.includes('figurine');
+            }
+            if (term === 'car' || term === 'model' || term === 'diecast') {
+              return categoryLower === 'alloy-collectibles' || nameLower.includes('car') || nameLower.includes('model') || nameLower.includes('die-cast');
+            }
+            if (term === 'keychain' || term === 'key-chain') {
+              return nameLower.includes('keychain') || nameLower.includes('key chain') || descLower.includes('keychain') || descLower.includes('key chain');
+            }
+            if (term === 'hat' || term === 'cap' || term === 'beanie') {
+              return nameLower.includes('hat') || nameLower.includes('cap') || nameLower.includes('beanie') || descLower.includes('hat') || descLower.includes('cap') || descLower.includes('beanie');
+            }
+            return nameLower.includes(term) || seriesLower.includes(term) || descLower.includes(term) || categoryLower.includes(term);
+          });
+
+          if (isMatch) {
             matches.push({
               id: key,
               name: product.name,

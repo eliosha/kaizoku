@@ -127,18 +127,110 @@
           const includeUnpriced = document.getElementById('includeUnpriced');
           const sortBy = document.getElementById('sortBy');
           const categoryLinks = document.querySelectorAll('.category-link');
-          const fandomCheckboxes = document.querySelectorAll('.fandom-checkbox');
           const grid = document.getElementById('shopProductsGrid');
 
           let currentCategory = 'all';
 
           const getSelectedFandoms = () => {
             const selected = [];
-            fandomCheckboxes.forEach(cb => {
+            document.querySelectorAll('.fandom-checkbox').forEach(cb => {
               if (cb.checked) selected.push(cb.value);
             });
             return selected;
           };
+
+          const updateFilterCounts = () => {
+            const allItems = Object.keys(window.productsDB).map(key => ({
+              id: key,
+              ...window.productsDB[key]
+            }));
+
+            const catCounts = {
+              all: allItems.length,
+              clothing: 0,
+              collectibles: 0,
+              accessories: 0,
+              decor: 0,
+              manga: 0,
+              'cosplay-kits': 0,
+              jewelry: 0,
+              gifts: 0
+            };
+
+            const fandomCounts = {
+              'One Piece': 0,
+              'Naruto': 0,
+              'Demon Slayer': 0,
+              'Attack on Titan': 0,
+              'Dragon Ball': 0,
+              'Marvel': 0
+            };
+
+            allItems.forEach(item => {
+              const cat = item.category;
+              if (cat in catCounts) {
+                catCounts[cat]++;
+              }
+              if (cat === 'figurines' || cat === 'alloy-collectibles' || cat === 'collectibles') {
+                catCounts['collectibles']++;
+              }
+              const series = item.series;
+              if (series in fandomCounts) {
+                fandomCounts[series]++;
+              }
+            });
+
+            categoryLinks.forEach(link => {
+              const cat = link.getAttribute('data-category');
+              if (cat in catCounts) {
+                let baseName = '';
+                if (cat === 'all') baseName = 'All Loot';
+                else if (cat === 'clothing') baseName = 'Clothing';
+                else if (cat === 'collectibles') baseName = 'Collectibles';
+                else if (cat === 'accessories') baseName = 'Accessories';
+                else if (cat === 'decor') baseName = 'Decor';
+                else if (cat === 'manga') baseName = 'Manga & Comics';
+                else if (cat === 'cosplay-kits') baseName = 'Cosplay Kits';
+                else if (cat === 'jewelry') baseName = 'Jewelry';
+                else if (cat === 'gifts') baseName = 'Gifts';
+
+                link.innerHTML = `
+                  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                    <span>${baseName}</span>
+                    <span style="font-size: 11px; background: rgba(255, 255, 255, 0.08); padding: 2px 6px; border-radius: 10px; color: var(--muted); font-weight: 600;">${catCounts[cat]}</span>
+                  </div>
+                `;
+              }
+            });
+
+            const fandomContainer = document.getElementById('fandomCheckboxes');
+            if (fandomContainer) {
+              const checkedFandoms = [];
+              document.querySelectorAll('.fandom-checkbox').forEach(cb => {
+                if (cb.checked) checkedFandoms.push(cb.value);
+              });
+
+              fandomContainer.innerHTML = Object.keys(fandomCounts).map(fandom => `
+                <label style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: var(--muted); cursor: pointer; user-select: none; width: 100%;">
+                  <span style="display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" value="${fandom}" class="fandom-checkbox" ${checkedFandoms.includes(fandom) ? 'checked' : ''} style="accent-color: var(--green); width: 16px; height: 16px;" />
+                    <span>${fandom}</span>
+                  </span>
+                  <span style="font-size: 11px; background: rgba(255, 255, 255, 0.08); padding: 2px 6px; border-radius: 10px; color: var(--muted); font-weight: 600;">${fandomCounts[fandom]}</span>
+                </label>
+              `).join('');
+
+              const newFandomCheckboxes = fandomContainer.querySelectorAll('.fandom-checkbox');
+              newFandomCheckboxes.forEach(cb => {
+                cb.addEventListener('change', () => {
+                  currentPage = 1;
+                  updateProducts();
+                });
+              });
+            }
+          };
+
+          updateFilterCounts();
 
           let currentPage = 1;
           const itemsPerPage = 15;
@@ -167,21 +259,70 @@
               }
             }
 
-            // Filter by search query
+            // Filter by search query (Smart Multi-word matching & Category Synonyms)
             if (query) {
-              items = items.filter(item => {
-                const name = item.name.toLowerCase();
-                const series = item.series.toLowerCase();
-                const desc = item.description.toLowerCase();
-                if (query === 'hat') {
-                  if (name.includes('wallet') || name.includes('tote') || name.includes('bag')) {
-                    return false;
+              const queryLower = query.toLowerCase().trim();
+              const terms = queryLower.split(/\s+/).map(word => {
+                if (word.endsWith('s') && word.length > 3) {
+                  if (!['series', 'glass', 'jeans', 'dress', 'accessories', 'collectibles'].includes(word)) {
+                    return word.slice(0, -1);
                   }
-                  return name.includes('hat') || name.includes('cap') || name.includes('beanie') ||
-                         desc.includes('hat') || desc.includes('cap') || desc.includes('beanie') ||
-                         series.includes(query);
                 }
-                return name.includes(query) || series.includes(query) || desc.includes(query);
+                return word;
+              }).filter(w => w.length > 0);
+
+              if (terms.length > 0) {
+                items = items.filter(item => {
+                  const nameLower = item.name.toLowerCase();
+                  const seriesLower = (item.series || '').toLowerCase();
+                  const descLower = (item.description || '').toLowerCase();
+                  const categoryLower = (item.category || '').toLowerCase();
+
+                  return terms.every(term => {
+                    // Ring/rings specific mapping: do not match earrings or keychains
+                    if (term === 'ring') {
+                      return nameLower.includes('ring') && !nameLower.includes('earring') && !nameLower.includes('keychain') && !nameLower.includes('key chain');
+                    }
+                    // Special mappings for common category terms
+                    if (term === 'figure' || term === 'figurine' || term === 'standee') {
+                      return categoryLower === 'figurines' || nameLower.includes('figure') || nameLower.includes('standee') || nameLower.includes('figurine');
+                    }
+                    if (term === 'car' || term === 'model' || term === 'diecast') {
+                      return categoryLower === 'alloy-collectibles' || nameLower.includes('car') || nameLower.includes('model') || nameLower.includes('die-cast');
+                    }
+                    if (term === 'keychain' || term === 'key-chain') {
+                      return nameLower.includes('keychain') || nameLower.includes('key chain') || descLower.includes('keychain') || descLower.includes('key chain');
+                    }
+                    if (term === 'hat' || term === 'cap' || term === 'beanie') {
+                      if (nameLower.includes('wallet') || nameLower.includes('tote') || nameLower.includes('bag')) {
+                        return false;
+                      }
+                      return nameLower.includes('hat') || nameLower.includes('cap') || nameLower.includes('beanie') || descLower.includes('hat') || descLower.includes('cap') || descLower.includes('beanie');
+                    }
+
+                    return nameLower.includes(term) || 
+                           seriesLower.includes(term) || 
+                           descLower.includes(term) || 
+                           categoryLower.includes(term);
+                  });
+                });
+              }
+            }
+
+            // Exclude fandom series from the main shop unless explicitly checked or searched
+            const fandomSeries = [
+              'marvel', 'dc', 'harry potter', 'breaking bad', 'game of thrones', 
+              'stranger things', 'peaky blinders', 'the godfather', 'invincible',
+              'goodfellas', 'kill bill', 'god of war', 'doom'
+            ];
+            const queryLower = query ? query.toLowerCase() : '';
+            const queryMentionsFandom = fandomSeries.some(fs => queryLower.includes(fs)) || 
+                                        ['joker', 'batman', 'spiderman', 'grayson', 'breaking', 'stranger', 'vito', 'godfather', 'batarang', 'avengers', 'deadpool', 'invincible', 'peaky', 'ferrari', 'leclerc', 'mercedes', 'hamilton', 'verstappen', 'red bull', 'mclaren', 'kratos', 'doom', 'slayer', 'chaos', 'olympus'].some(word => queryLower.includes(word));
+
+            if (selectedFandoms.length === 0 && !queryMentionsFandom) {
+              items = items.filter(item => {
+                const seriesLower = (item.series || '').toLowerCase();
+                return !fandomSeries.some(fs => seriesLower.includes(fs));
               });
             }
 
@@ -370,9 +511,6 @@
           includeUnpriced.addEventListener('change', handleFilterChange);
           sortBy.addEventListener('change', handleFilterChange);
 
-          fandomCheckboxes.forEach(cb => {
-            cb.addEventListener('change', handleFilterChange);
-          });
 
           categoryLinks.forEach(link => {
             link.addEventListener('click', (e) => {
