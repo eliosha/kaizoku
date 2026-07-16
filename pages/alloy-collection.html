@@ -45,19 +45,21 @@
         <h3 class="text-center" style="font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 0.05em; margin-bottom: 24px;">Explore Other Realms</h3>
         <div class="switcher-grid">
           <!-- Switch to Aesthetic Nerds -->
-          <a href="aesthetic-nerds.html" class="switcher-card switch-purple">
-            <div class="switcher-info">
-              <span class="switcher-label">Next Destination</span>
-              <span class="switcher-title">Aesthetic Nerds</span>
-              <span class="switcher-desc">Heavyweight hoodies and premium apparel.</span>
+          <a href="aesthetic-nerds.html" class="switcher-card switch-purple" style="position: relative; overflow: hidden; background: url('../img/aesthetic2.jpeg') no-repeat center center / cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(10, 5, 20, 0.9) 30%, rgba(10, 5, 20, 0.4) 100%); z-index: 1;"></div>
+            <div class="switcher-info" style="position: relative; z-index: 2;">
+              <span class="switcher-label" style="color: #a855f7; font-weight: 700;">Next Destination</span>
+              <span class="switcher-title" style="color: var(--white); font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.05em; margin: 4px 0;">Aesthetic Nerds</span>
+              <span class="switcher-desc" style="color: rgba(255, 255, 255, 0.7); font-size: 13px;">Heavyweight hoodies and premium apparel.</span>
             </div>
           </a>
           <!-- Switch to Fandom -->
-          <a href="fandom.html" class="switcher-card switch-yellow">
-            <div class="switcher-info">
-              <span class="switcher-label">Next Destination</span>
-              <span class="switcher-title">Fandom Hub</span>
-              <span class="switcher-desc">DC, Marvel, and pop culture classics.</span>
+          <a href="fandom.html" class="switcher-card switch-yellow" style="position: relative; overflow: hidden; background: url('../img/fandom.jpeg') no-repeat center center / cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(10, 5, 20, 0.9) 30%, rgba(10, 5, 20, 0.4) 100%); z-index: 1;"></div>
+            <div class="switcher-info" style="position: relative; z-index: 2;">
+              <span class="switcher-label" style="color: #eab308; font-weight: 700;">Next Destination</span>
+              <span class="switcher-title" style="color: var(--white); font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.05em; margin: 4px 0;">Fandom Hub</span>
+              <span class="switcher-desc" style="color: rgba(255, 255, 255, 0.7); font-size: 13px;">DC, Marvel, and pop culture classics.</span>
             </div>
           </a>
         </div>
@@ -75,7 +77,7 @@
         const sortSelect = document.getElementById('realmSort');
 
         let currentPage = 1;
-        const itemsPerPage = 16;
+        const itemsPerPage = 15;
 
         function renderProducts() {
           if (!window.productsDB) return;

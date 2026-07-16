@@ -268,35 +268,7 @@ window.productsDB = {
       'Collector display packaging'
     ]
   },
-  'all': {
-    name: 'All Graphic T-Shirt',
-    price: 45000,
-    priceStr: 'UGX 45,000',
-    originalPriceStr: 'UGX 55,000',
-    discount: '18% OFF',
-    series: 'Anime',
-    category: 'clothing',
-    description: 'Authentic Anime themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
-    images: [
-      'img/products/all/all_01.jpg',
-      'img/products/all/all_02.jpg',
-      'img/products/all/all_03.jpg',
-      'img/products/all/all_04.jpg',
-      'img/products/all/all_05.jpg'
-    ],
-    specs: [
-      'High-density graphic design',
-      'Comfortable fit collar',
-      'Premium stitched seams'
-    ],
-    sizes: [
-      'SM',
-      'MD',
-      'LG',
-      'XL',
-      '2X'
-    ]
-  },
+
   'alucard-from-hellsing-bracelet': {
     name: 'Alucard From Hellsing Bracelet',
     price: 15000,
@@ -2045,9 +2017,9 @@ window.productsDB = {
     priceStr: 'UGX 75,000',
     originalPriceStr: 'UGX 90,000',
     discount: '17% OFF',
-    series: 'Peaky Blinders',
+    series: 'Alloy Collectibles',
     category: 'alloy-collectibles',
-    description: 'Authentic Peaky Blinders themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Alloy Collectibles themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/ford-mustang-shelby-gt500-track-pack-edition/ford-mustang-shelby-gt500-track-pack-edition_01.jpg'
     ],
@@ -2407,9 +2379,9 @@ window.productsDB = {
     priceStr: 'UGX 45,000',
     originalPriceStr: 'UGX 55,000',
     discount: '18% OFF',
-    series: 'Goodfellas — Minimalist Poster T-shirt.JPG',
+    series: 'Goodfellas',
     category: 'clothing',
-    description: 'Authentic Goodfellas — Minimalist Poster T-shirt.JPG themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
+    description: 'Authentic Goodfellas themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
     images: [
       'img/products/goodfellas-minimalist-poster-t-shirt/goodfellas-minimalist-poster-t-shirt_01.jpg'
     ],
@@ -3535,9 +3507,9 @@ window.productsDB = {
     priceStr: 'UGX 45,000',
     originalPriceStr: 'UGX 55,000',
     discount: '18% OFF',
-    series: 'Kill Bill — "The Bride" Silhouette T-shirt.JPG',
+    series: 'Kill Bill',
     category: 'clothing',
-    description: 'Authentic Kill Bill — "The Bride" Silhouette T-shirt.JPG themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
+    description: 'Authentic Kill Bill themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
     images: [
       'img/products/kill-bill-the-bride-silhouette-t-shirt/kill-bill-the-bride-silhouette-t-shirt_01.jpg'
     ],
@@ -5413,9 +5385,9 @@ window.productsDB = {
     priceStr: 'UGX 45,000',
     originalPriceStr: 'UGX 55,000',
     discount: '18% OFF',
-    series: 'Peaky Blinders — "By Order Of" T-shirt',
+    series: 'Peaky Blinders',
     category: 'clothing',
-    description: 'Authentic Peaky Blinders — "By Order Of" T-shirt themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
+    description: 'Authentic Peaky Blinders themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
     images: [
       'img/products/peaky-blinders-by-order-of-t-shirt/peaky-blinders-by-order-of-t-shirt_01.jpg',
       'img/products/peaky-blinders-by-order-of-t-shirt/peaky-blinders-by-order-of-t-shirt_02.jpg'
@@ -6426,9 +6398,9 @@ window.productsDB = {
     priceStr: 'UGX 75,000',
     originalPriceStr: 'UGX 90,000',
     discount: '17% OFF',
-    series: 'Peaky Blinders',
+    series: 'Alloy Collectibles',
     category: 'alloy-collectibles',
-    description: 'Authentic Peaky Blinders themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Alloy Collectibles themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/shelby-cobra-427-sc/shelby-cobra-427-sc_01.jpg'
     ],
@@ -6444,9 +6416,9 @@ window.productsDB = {
     priceStr: 'UGX 75,000',
     originalPriceStr: 'UGX 90,000',
     discount: '17% OFF',
-    series: 'Peaky Blinders',
+    series: 'Alloy Collectibles',
     category: 'alloy-collectibles',
-    description: 'Authentic Peaky Blinders themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Alloy Collectibles themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/shelby-cobra-427-sc-gloss-black-with-leds/shelby-cobra-427-sc-gloss-black-with-leds_black_01.jpg'
     ],
@@ -6462,9 +6434,9 @@ window.productsDB = {
     priceStr: 'UGX 75,000',
     originalPriceStr: 'UGX 90,000',
     discount: '17% OFF',
-    series: 'Peaky Blinders',
+    series: 'Alloy Collectibles',
     category: 'alloy-collectibles',
-    description: 'Authentic Peaky Blinders themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
+    description: 'Authentic Alloy Collectibles themed Alloy Model Car featuring premium detailed designs. Exquisite detail representing authentic character modeling or scale dimensions.',
     images: [
       'img/products/shelby-cobra-427-sc-metallic-red/shelby-cobra-427-sc-metallic-red_red_01.jpg'
     ],
@@ -6636,9 +6608,9 @@ window.productsDB = {
     priceStr: 'UGX 15,000',
     originalPriceStr: 'UGX 20,000',
     discount: '25% OFF',
-    series: 'Game of Thrones',
+    series: 'Marvel',
     category: 'jewelry',
-    description: 'Authentic Game of Thrones themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
+    description: 'Authentic Marvel themed Keychain featuring premium detailed designs. Crafted with durable polished metal accents and secure locking closures.',
     images: [
       'img/products/stark-tech-captain-america-shield-keychain/stark-tech-captain-america-shield-keychain_01.jpg',
       'img/products/stark-tech-captain-america-shield-keychain/stark-tech-captain-america-shield-keychain_02.jpg',
@@ -7578,9 +7550,9 @@ window.productsDB = {
     priceStr: 'UGX 45,000',
     originalPriceStr: 'UGX 55,000',
     discount: '18% OFF',
-    series: 'The Godfather — Vito Corleone Portrait T-shirt',
+    series: 'The Godfather',
     category: 'clothing',
-    description: 'Authentic The Godfather — Vito Corleone Portrait T-shirt themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
+    description: 'Authentic The Godfather themed Graphic T-Shirt featuring premium detailed designs. Made with ultra-comfortable cotton fabric for standard daily wear and street styling.',
     images: [
       'img/products/the-godfather-vito-corleone-portrait-t-shirt/the-godfather-vito-corleone-portrait-t-shirt_01.jpg',
       'img/products/the-godfather-vito-corleone-portrait-t-shirt/the-godfather-vito-corleone-portrait-t-shirt_02.jpg'
