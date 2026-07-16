@@ -361,35 +361,41 @@ nav.nav-hidden {
   box-shadow: 0 0 15px rgba(0, 255, 170, 0.25);
 }
 .cart-btn {
-  background: var(--purple);
-  color: white;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
   border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--white);
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
-  transition: background 0.2s;
-  white-space: nowrap;
+  justify-content: center;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 42px;
+  height: 42px;
 }
-.cart-btn:hover { background: var(--purple-hover); }
+.cart-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.05);
+}
 .cart-count {
-  background: var(--green);
-  color: #000;
-  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--purple);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
   width: 18px;
   height: 18px;
-  font-size: 11px;
-  font-weight: 900;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1.5px solid #07030c; /* contrast border */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 /* ── HERO ── */
@@ -3427,6 +3433,7 @@ body.theme-fandom::before {
 
 .search-overlay-bar .nav-search {
   flex: 1;
+  display: block !important;
   background: none !important;
   border: none !important;
   padding: 10px 0 !important;
@@ -3459,6 +3466,162 @@ body.theme-fandom::before {
   border: 2px solid var(--border, rgba(255,255,255,0.12)) !important;
   border-radius: 12px !important;
   box-shadow: 0 20px 45px rgba(0,0,0,0.6) !important;
+}
+
+/* ── MOBILE NAV OVERRIDES & CATEGORY PILLS ── */
+.mobile-search-row, .mobile-category-pills {
+  display: none;
+}
+
+/* Mobile dropdown collapse logic */
+@media (max-width: 1024px) {
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 16px !important;
+    min-width: 0 !important;
+    display: none !important;
+  }
+  .dropdown.active .dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    pointer-events: auto !important;
+    display: block !important;
+    padding: 8px 16px !important;
+  }
+  
+  .dropdown > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .dropdown > a span.arrow {
+    transition: transform 0.2s ease;
+  }
+  .dropdown.active > a span.arrow {
+    transform: rotate(180deg);
+  }
+}
+
+/* Disney Store Mobile Layout overrides */
+@media (max-width: 768px) {
+  nav {
+    height: auto !important;
+  }
+  .nav-inner {
+    height: 60px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+    position: relative;
+  }
+  
+  /* Order elements: Menu (Left), Logo (Center), Cart (Right) */
+  .mobile-menu-btn {
+    display: flex !important;
+    order: 1 !important;
+    z-index: 100;
+  }
+  .nav-logo {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    order: 2 !important;
+    margin: 0 !important;
+    z-index: 99;
+  }
+  .nav-actions {
+    order: 3 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 100;
+  }
+  .search-toggle-btn {
+    display: none !important;
+  }
+
+  /* Vertical mobile menu drawer positioning */
+  .nav-links.show {
+    top: 60px !important;
+    position: fixed !important;
+    height: calc(100vh - 60px) !important;
+    overflow-y: auto !important;
+  }
+
+  /* Mobile Search Row (Matches Disney Store layout) */
+  .mobile-search-row {
+    display: block !important;
+    padding: 8px 16px 12px;
+  }
+  .mobile-search-input {
+    background: #171c26;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  .mobile-search-input:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .mobile-search-input svg {
+    stroke: var(--muted);
+  }
+  .mobile-search-input span {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  /* Horizontal Category slidebar */
+  .mobile-category-pills {
+    display: flex !important;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 16px 12px;
+    gap: 8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-category-pills::-webkit-scrollbar {
+    display: none;
+  }
+  .category-pill {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--muted);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+  }
+  .category-pill:hover, .category-pill.active {
+    background: var(--white);
+    color: var(--ink) !important;
+    border-color: var(--white);
+  }
 }
 
 

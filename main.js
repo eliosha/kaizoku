@@ -9740,7 +9740,9 @@ const getNavbarHTML = () => `
         <div class="search-suggestions" id="navSuggestions" style="display: none;"></div>
       </div>
     </div>
+    
     <div class="nav-inner">
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
       <a href="${homePrefix}" class="nav-logo">
         <img src="${logoPrefix}public/kaizoku.png" alt="Kaizoku Realm Logo" onerror="this.src='${logoPrefix}kaizoku.png'" style="height: 40px; object-fit: contain;"/>
         KAIZOKU<span>REALM</span>
@@ -9829,11 +9831,32 @@ const getNavbarHTML = () => `
         <button class="search-toggle-btn" aria-label="Search" onclick="toggleSearchOverlay(true)">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
-        <button class="cart-btn" onclick="openCart()">
-          Cart <span class="cart-count" id="cartCount">0</span>
+        <button class="cart-btn" onclick="openCart()" aria-label="Open Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-count" id="cartCount">0</span>
         </button>
-        <button class="mobile-menu-btn">☰</button>
       </div>
+    </div>
+
+    <!-- Mobile Search Row -->
+    <div class="mobile-search-row" onclick="toggleSearchOverlay(true)">
+      <div class="mobile-search-input">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>SEARCH</span>
+      </div>
+    </div>
+
+    <!-- Mobile Slideable Category Pills -->
+    <div class="mobile-category-pills">
+      <a href="${pathPrefix}shop.html" class="category-pill">ALL LOOT</a>
+      <a href="${pathPrefix}aesthetic-nerds.html" class="category-pill">CLOTHING</a>
+      <a href="${pathPrefix}alloy-collection.html" class="category-pill">ALLOY CARS</a>
+      <a href="${pathPrefix}shop.html?category=accessories" class="category-pill">ACCESSORIES</a>
+      <a href="${pathPrefix}shop.html?category=jewelry" class="category-pill">JEWELRY</a>
+      <a href="${pathPrefix}shop.html?category=decor" class="category-pill">DECOR</a>
+      <a href="${pathPrefix}shop.html?category=cosplay-kits" class="category-pill">COSPLAY</a>
+      <a href="${pathPrefix}shop.html?category=manga" class="category-pill">MANGA</a>
+      <a href="${pathPrefix}fandom.html" class="category-pill">FANDOM</a>
     </div>
   </nav>
 `;
@@ -10127,7 +10150,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(div);
   }
 
-  // Mobile menu toggle
+  // Mobile menu toggle & Accordion dropdown toggle handling
   const mobBtn = document.querySelector('.mobile-menu-btn');
   const navLinks = document.querySelector('.nav-links');
   if (mobBtn && navLinks) {
@@ -10135,8 +10158,38 @@ document.addEventListener("DOMContentLoaded", () => {
       e.stopPropagation();
       navLinks.classList.toggle('show');
     });
-    document.addEventListener('click', () => {
-      navLinks.classList.remove('show');
+    
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !mobBtn.contains(e.target)) {
+        navLinks.classList.remove('show');
+      }
+    });
+
+    // Mobile navigation accordion submenus
+    const dropdowns = navLinks.querySelectorAll('.dropdown');
+    dropdowns.forEach(drop => {
+      const trigger = drop.querySelector('a');
+      if (trigger) {
+        trigger.addEventListener('click', (e) => {
+          if (window.innerWidth <= 1024) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const isActive = drop.classList.contains('active');
+            
+            // Close other dropdown submenus
+            dropdowns.forEach(d => {
+              if (d !== drop) d.classList.remove('active');
+            });
+            
+            if (isActive) {
+              drop.classList.remove('active');
+            } else {
+              drop.classList.add('active');
+            }
+          }
+        });
+      }
     });
   }
 
